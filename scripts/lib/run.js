@@ -9,6 +9,7 @@ import { runBacktest } from './backtest.js';
 import { analyzeCompetition, applyConfidence } from './pipeline.js';
 import { analyzeMatch, warningsFromAi } from './ai.js';
 import { validateOutput } from './validateOutput.js';
+import { updateHistory } from './history.js';
 
 export async function run({ cfg, env = process.env, fetchImpl = globalThis.fetch, now = Date.now(), outDir, cacheDir, sleep, log = console.log }) {
   const getJson = createHttp({ cacheDir: cacheDir && join(cacheDir, 'http'), fetchImpl, now: () => now, sleep, log });
@@ -128,6 +129,15 @@ export async function run({ cfg, env = process.env, fetchImpl = globalThis.fetch
     mkdirSync(outDir, { recursive: true });
     writeFileSync(join(outDir, 'predictions.json'), JSON.stringify(out));
     writeFileSync(join(outDir, 'validation.json'), JSON.stringify(validation, null, 1));
+    // Historial: solo pronósticos vistos antes del partido + resultado real cuando termina
+    const results = new Map();
+    for (const c of comps) for (const m of c.matches) if (m.usable && m.gh != null) results.set(m.id, { home: m.gh, away: m.ga });
+    try {
+      const sm = updateHistory({ dir: join(outDir, 'history'), matches, results, now, cfg });
+      log(`Historial: ${sm.totals.n} evaluados, ${sm.pending} pendientes`);
+    } catch (e) {
+      log(`Historial no actualizado: ${e.message}`); // no debe tumbar la publicación
+    }
   }
   return out;
 }
