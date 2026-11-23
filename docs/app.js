@@ -1,7 +1,7 @@
 'use strict';
 (function () {
   var DATA_URL = 'data/predictions.json';
-  var state = { data: null, dayKey: null, filter: 'all', query: '', favs: loadFavs(), open: {} };
+  var state = { data: null, dayKey: null, filter: 'all', query: '', favs: loadFavs(), open: {}, hist: {}, summary: null };
   var tz = (function () { try { return Intl.DateTimeFormat().resolvedOptions().timeZone; } catch (e) { return undefined; } })();
   var $ = function (id) { return document.getElementById(id); };
 
@@ -33,7 +33,13 @@
   function days() {
     var today = dayKeyOf(new Date());
     var out = [];
-    for (var i = -1; i <= 7; i++) out.push(addDays(today, i));
+    for (var i = -30; i <= 7; i++) out.push(addDays(today, i));
+    return out;
+  }
+  function weekDays() {
+    var today = dayKeyOf(new Date());
+    var out = [];
+    for (var i = 0; i <= 7; i++) out.push(addDays(today, i));
     return out;
   }
 
@@ -60,8 +66,58 @@
       .then(function () { setTimeout(function () { btn.classList.remove('spin'); }, 300); });
   }
 
+  // ---------- historial (un archivo por mes) ----------
+  function monthsFor(key) {
+    var a = [key.slice(0, 7), addDays(key, -1).slice(0, 7), addDays(key, 1).slice(0, 7)];
+    return a.filter(function (m, i) { return a.indexOf(m) === i; });
+  }
+  function ensureHist(key) {
+    var need = monthsFor(key).filter(function (mk) { return !(mk in state.hist); });
+    if (!need.length) return;
+    need.forEach(function (mk) { state.hist[mk] = null; });
+    Promise.all(need.map(function (mk) {
+      return fetch('data/history/' + mk + '.json').then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; });
+    })).then(function (res) { need.forEach(function (mk, i) { state.hist[mk] = res[i]; }); render(); });
+  }
+  function histOfDay(key) {
+    var out = [];
+    monthsFor(key).forEach(function (mk) {
+      var h = state.hist[mk];
+      if (h && h.matches) Object.keys(h.matches).forEach(function (id) {
+        var r = h.matches[id];
+        if (dayKeyOf(new Date(r.kickoff)) === key) out.push(r);
+      });
+    });
+    return out;
+  }
+  function hitOf(m) {
+    if (!m.result || m.dataStatus !== 'OK' || !m.favorite || !m.probs) return null;
+    var o = m.result.home > m.result.away ? 'home' : m.result.home < m.result.away ? 'away' : 'draw';
+    return o === m.favorite;
+  }
+  function loadSummary() {
+    fetch('data/history/summary.json').then(function (r) { return r.ok ? r.json() : null; }).then(function (s) { state.summary = s; renderRecord(); }).catch(function () { /* sin historial todavía */ });
+  }
+  function renderRecord() {
+    var box = $('recordBox');
+    var s = state.summary;
+    if (!s || !s.totals || !s.totals.n) {
+      box.innerHTML = '<b>Récord real de aciertos</b><br><span class="muted">Aún no hay partidos evaluados. Se llena solo: cada pronóstico se guarda antes del partido y se compara con el resultado final.</span>' + (s && s.pending ? '<br><span class="muted">' + s.pending + ' pronóstico(s) guardado(s) esperando resultado.</span>' : '');
+      return;
+    }
+    var t = s.totals;
+    function line(label, x) {
+      if (!x.n) return '';
+      return '<div>' + label + ': <b>' + x.hits + '/' + x.n + ' (' + Math.round(100 * x.hits / x.n) + '%)</b> <span class="muted">· el modelo esperaba ' + Math.round(100 * x.sumPred / x.n) + '%</span></div>';
+    }
+    box.innerHTML = '<b>Récord real de aciertos</b> <span class="muted">(pronósticos guardados antes del partido)</span>' +
+      line('Confianza alta', t.byTier.alta) + line('Confianza media', t.byTier.media) + line('Sin nivel', t.byTier.none) +
+      '<div>Total: <b>' + t.hits + '/' + t.n + ' (' + Math.round(100 * t.hits / t.n) + '%)</b>' + (s.pending ? ' <span class="muted">· ' + s.pending + ' pendiente(s)</span>' : '') + '</div>';
+  }
+
   function matchesOfDay(key) {
     if (!state.data) return [];
+    if (key < dayKeyOf(new Date())) return histOfDay(key);
     return state.data.matches.filter(function (m) { return dayKeyOf(new Date(m.kickoff)) === key; });
   }
   function isFav(m) { return state.favs.m.indexOf(m.id) >= 0 || state.favs.l.indexOf(m.competition.key) >= 0; }
@@ -114,6 +170,8 @@
       var t = m.confidence.tier;
       h += t ? '<span class="pill ' + t + '">Confianza ' + t + '</span>' : '<span class="pill none">Sin nivel</span>';
       h += '</div>';
+      var hit = hitOf(m);
+      if (hit !== null) h += '<div class="resLine ' + (hit ? 'ok' : 'bad') + '">' + (hit ? '✅ Acertó' : '❌ Falló') + ' · Final ' + m.result.home + '-' + m.result.away + '</div>';
       var w = (m.warnings || [])[0];
       if (w) h += '<div class="warnLine">' + esc(w.text) + '</div>';
     }
@@ -192,6 +250,7 @@
     banner.className = cls;
     banner.textContent = msgs.join(' ');
 
+    if (key < dayKeyOf(new Date())) ensureHist(key);
     var ms = matchesOfDay(key).filter(passes);
     var byLeague = {};
     ms.forEach(function (m) { (byLeague[m.competition.key] = byLeague[m.competition.key] || { c: m.competition, items: [] }).items.push(m); });
@@ -205,7 +264,8 @@
     });
     if (!h) {
       var total = matchesOfDay(key).length;
-      h = '<div class="empty">' + (total ? '<b>Ningún partido coincide con el filtro.</b><br>Hay ' + total + ' partido(s) este día.' : '<b>No hay partidos analizados para este día.</b><br>Solo se muestran ligas con datos verificables en las fuentes configuradas.') + '</div>';
+      var past = key < dayKeyOf(new Date());
+      h = past && !total ? '<div class="empty"><b>No hay pronósticos guardados para este día.</b><br>El historial empieza a llenarse desde la primera actualización con esta versión.</div>' : '<div class="empty">' + (total ? '<b>Ningún partido coincide con el filtro.</b><br>Hay ' + total + ' partido(s) este día.' : '<b>No hay partidos analizados para este día.</b><br>Solo se muestran ligas con datos verificables en las fuentes configuradas.') + '</div>';
     }
     $('list').innerHTML = h;
 
@@ -223,7 +283,7 @@
   function renderWeek() {
     var today = dayKeyOf(new Date());
     var h = '';
-    days().forEach(function (k) {
+    weekDays().forEach(function (k) {
       var ms = matchesOfDay(k);
       var a = ms.filter(function (m) { return m.confidence.tier === 'alta'; }).length;
       var me = ms.filter(function (m) { return m.confidence.tier === 'media'; }).length;
@@ -277,13 +337,14 @@
   $('prevDay').onclick = function () { state.dayKey = addDays(state.dayKey, -1); render(); };
   $('nextDay').onclick = function () { state.dayKey = addDays(state.dayKey, 1); render(); };
   $('todayBtn').onclick = function () { state.dayKey = dayKeyOf(new Date()); render(); };
-  $('btnRefresh').onclick = function () { load(true); };
+  $('btnRefresh').onclick = function () { state.hist = {}; load(true); loadSummary(); };
   $('btnWeek').onclick = function () { renderWeek(); $('weekSheet').hidden = false; };
   $('closeWeek').onclick = function () { $('weekSheet').hidden = true; };
   $('weekSheet').addEventListener('click', function (e) { if (e.target === $('weekSheet')) $('weekSheet').hidden = true; });
   $('search').addEventListener('input', function (e) { state.query = e.target.value; render(); });
 
   load(false);
+  loadSummary();
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js').catch(function () { /* sin SW: la app sigue funcionando */ }); });
   }
