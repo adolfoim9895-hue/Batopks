@@ -64,7 +64,7 @@ export function buildPrompt(entry, todayISO) {
   ].join('\n');
 }
 
-const normUrl = (u) => String(u || '').replace(/[?#].*$/, '').replace(/\/+$/, '').toLowerCase();
+export const normUrl = (u) => String(u || '').replace(/[?#].*$/, '').replace(/\/+$/, '').toLowerCase();
 
 export function parseResponse(resp) {
   const citations = new Map();

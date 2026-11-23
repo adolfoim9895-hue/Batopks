@@ -10,6 +10,7 @@ import { analyzeCompetition, applyConfidence } from './pipeline.js';
 import { analyzeMatch, warningsFromAi } from './ai.js';
 import { validateOutput } from './validateOutput.js';
 import { updateHistory } from './history.js';
+import { buildResearchRequest, loadResearch, applyResearch } from './research.js';
 
 export async function run({ cfg, env = process.env, fetchImpl = globalThis.fetch, now = Date.now(), outDir, cacheDir, sleep, log = console.log }) {
   const getJson = createHttp({ cacheDir: cacheDir && join(cacheDir, 'http'), fetchImpl, now: () => now, sleep, log });
@@ -108,6 +109,10 @@ export async function run({ cfg, env = process.env, fetchImpl = globalThis.fetch
   }
   sources.push(aiInfo);
 
+  // 4b) Investigación manual (research.json que entrega Claude): sustituye a la IA cuando no hay clave de OpenAI
+  const researchInfo = applyResearch({ file: outDir ? loadResearch(join(outDir, 'research.json')) : null, matches, now, cfg, validation });
+  sources.push(researchInfo);
+
   matches.sort((a, b) => Date.parse(a.kickoff) - Date.parse(b.kickoff) || a.competition.order - b.competition.order);
   const out = {
     schema: 2,
@@ -129,6 +134,7 @@ export async function run({ cfg, env = process.env, fetchImpl = globalThis.fetch
     mkdirSync(outDir, { recursive: true });
     writeFileSync(join(outDir, 'predictions.json'), JSON.stringify(out));
     writeFileSync(join(outDir, 'validation.json'), JSON.stringify(validation, null, 1));
+    writeFileSync(join(outDir, 'research-request.json'), JSON.stringify(buildResearchRequest(matches, now, cfg), null, 1));
     // Historial: solo pronósticos vistos antes del partido + resultado real cuando termina
     const results = new Map();
     for (const c of comps) for (const m of c.matches) if (m.usable && m.gh != null) results.set(m.id, { home: m.gh, away: m.ga });
