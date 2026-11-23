@@ -1,0 +1,71 @@
+name: Actualizar y publicar
+
+on:
+  schedule:
+    - cron: "23 */6 * * *"      # cada 6 horas
+  workflow_dispatch:             # botón manual en la pestaña Actions
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # Caché: respuestas de proveedores, resultados de IA y últimos datos publicados.
+      - name: Restaurar caché
+        uses: actions/cache@v4
+        with:
+          path: |
+            .cache
+            docs/data
+          key: radar-${{ github.run_id }}
+          restore-keys: |
+            radar-
+
+      - name: Pruebas (si fallan, NO se publica)
+        run: npm test
+
+      - name: Actualizar pronósticos
+        id: update
+        continue-on-error: true      # si un proveedor cae, se publica con los últimos datos válidos
+        env:
+          FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+        run: node scripts/update.js
+
+      - name: Validar el JSON que se va a publicar
+        run: node scripts/validate-output.js docs/data/predictions.json
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
