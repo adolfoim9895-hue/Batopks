@@ -284,4 +284,7 @@
   $('search').addEventListener('input', function (e) { state.query = e.target.value; render(); });
 
   load(false);
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js').catch(function () { /* sin SW: la app sigue funcionando */ }); });
+  }
 })();
