@@ -28,6 +28,9 @@ Dependencias de código: **ninguna** (Node 20+, `fetch` y `node:test` integrados
    - Si football-data devuelve 403 en temporadas anteriores, tu plan no incluye historial: el modelo usará menos datos y quizá no logre validarse (verás «Validación histórica insuficiente»). Es el comportamiento honesto, no un error.
 7. A partir de ahí corre solo cada 6 h, y al hacer push a `main`.
 
+## Historial y récord de aciertos
+Cada pronóstico se guarda **antes del partido** (se congela al empezar) y se evalúa cuando termina. Se guarda en `docs/data/history/AAAA-MM.json` (un archivo por mes; la app solo descarga el mes que ves) y `summary.json` (aciertos acumulados por nivel, liga y mes). El workflow hace un commit automático de esa carpeta (`[skip ci]`). `config.json → history` define cuántos meses se conservan (24) y a los cuántos días se anula un partido sin resultado (21); al borrar meses viejos el resumen conserva sus aciertos.
+
 ## Qué detecta errores antes de publicar
 `npm test` corre 24 pruebas (modelo, ausencia de fuga de datos, calibración, reglas de confianza, caché, caídas de proveedores, IA que inventa fuentes, validador de salida, interfaz sin claves). El workflow **no publica si fallan**, y además valida `predictions.json` (1X2 suma 1, sin niveles sin validación, sin «alta» con advertencias, afirmaciones de IA con fuente). Si solo falla la descarga de datos, se publica el último JSON válido (la app avisa si tiene >36 h).
 

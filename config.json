@@ -14,60 +14,206 @@
     "minTrain": 120,
     "stepDays": 7,
     "minTeamMatches": 6,
-    "buckets": [0, 0.35, 0.45, 0.55, 0.65, 0.75, 1.01]
+    "buckets": [
+      0,
+      0.35,
+      0.45,
+      0.55,
+      0.65,
+      0.75,
+      1.01
+    ]
   },
   "confidence": {
-    "alta": { "minHomeProb": 0.60, "minBucketN": 40, "minHitRate": 0.62, "maxCalibrationGap": 0.06 },
-    "media": { "minHomeProb": 0.45, "minBucketN": 30, "minHitRate": 0.45, "maxCalibrationGap": 0.08 }
+    "alta": {
+      "minHomeProb": 0.6,
+      "minBucketN": 40,
+      "minHitRate": 0.62,
+      "maxCalibrationGap": 0.06
+    },
+    "media": {
+      "minHomeProb": 0.45,
+      "minBucketN": 30,
+      "minHitRate": 0.45,
+      "maxCalibrationGap": 0.08
+    }
   },
   "footballData": {
     "seasonsBack": 2,
     "minIntervalMs": 6500,
-    "competitions": ["PL", "ELC", "PD", "SA", "BL1", "FL1", "DED", "PPL", "BSA", "CL"]
+    "competitions": [
+      "PL",
+      "ELC",
+      "PD",
+      "SA",
+      "BL1",
+      "FL1",
+      "DED",
+      "PPL",
+      "BSA",
+      "CL"
+    ]
   },
   "apiFootball": {
     "maxRequestsPerRun": 30,
     "leagues": [
-      { "id": 136, "name": "Serie B", "country": "Italy", "seasonMode": "euro" },
-      { "id": 79, "name": "2. Bundesliga", "country": "Germany", "seasonMode": "euro" },
-      { "id": 141, "name": "La Liga 2", "country": "Spain", "seasonMode": "euro" },
-      { "id": 62, "name": "Ligue 2", "country": "France", "seasonMode": "euro" },
-      { "id": 144, "name": "Jupiler Pro League", "country": "Belgium", "seasonMode": "euro" },
-      { "id": 203, "name": "Süper Lig", "country": "Turkey", "seasonMode": "euro" },
-      { "id": 128, "name": "Liga Profesional", "country": "Argentina", "seasonMode": "calendar" },
-      { "id": 262, "name": "Liga MX", "country": "Mexico", "seasonMode": "euro" },
-      { "id": 253, "name": "MLS", "country": "USA", "seasonMode": "calendar" }
+      {
+        "id": 136,
+        "name": "Serie B",
+        "country": "Italy",
+        "seasonMode": "euro"
+      },
+      {
+        "id": 79,
+        "name": "2. Bundesliga",
+        "country": "Germany",
+        "seasonMode": "euro"
+      },
+      {
+        "id": 141,
+        "name": "La Liga 2",
+        "country": "Spain",
+        "seasonMode": "euro"
+      },
+      {
+        "id": 62,
+        "name": "Ligue 2",
+        "country": "France",
+        "seasonMode": "euro"
+      },
+      {
+        "id": 144,
+        "name": "Jupiler Pro League",
+        "country": "Belgium",
+        "seasonMode": "euro"
+      },
+      {
+        "id": 203,
+        "name": "Süper Lig",
+        "country": "Turkey",
+        "seasonMode": "euro"
+      },
+      {
+        "id": 128,
+        "name": "Liga Profesional",
+        "country": "Argentina",
+        "seasonMode": "calendar"
+      },
+      {
+        "id": 262,
+        "name": "Liga MX",
+        "country": "Mexico",
+        "seasonMode": "euro"
+      },
+      {
+        "id": 253,
+        "name": "MLS",
+        "country": "USA",
+        "seasonMode": "calendar"
+      }
     ]
   },
   "openfootball": {
     "files": [
-      { "file": "en.1", "fd": "PL", "name": "Premier League", "country": "England" },
-      { "file": "en.2", "fd": "ELC", "name": "Championship", "country": "England" },
-      { "file": "es.1", "fd": "PD", "name": "Primera Division", "country": "Spain" },
-      { "file": "it.1", "fd": "SA", "name": "Serie A", "country": "Italy" },
-      { "file": "de.1", "fd": "BL1", "name": "Bundesliga", "country": "Germany" },
-      { "file": "fr.1", "fd": "FL1", "name": "Ligue 1", "country": "France" },
-      { "file": "nl.1", "fd": "DED", "name": "Eredivisie", "country": "Netherlands" },
-      { "file": "pt.1", "fd": "PPL", "name": "Primeira Liga", "country": "Portugal" },
-      { "file": "de.2", "fd": null, "name": "2. Bundesliga", "country": "Germany" },
-      { "file": "it.2", "fd": null, "name": "Serie B", "country": "Italy" },
-      { "file": "es.2", "fd": null, "name": "Segunda División", "country": "Spain" },
-      { "file": "fr.2", "fd": null, "name": "Ligue 2", "country": "France" }
+      {
+        "file": "en.1",
+        "fd": "PL",
+        "name": "Premier League",
+        "country": "England"
+      },
+      {
+        "file": "en.2",
+        "fd": "ELC",
+        "name": "Championship",
+        "country": "England"
+      },
+      {
+        "file": "es.1",
+        "fd": "PD",
+        "name": "Primera Division",
+        "country": "Spain"
+      },
+      {
+        "file": "it.1",
+        "fd": "SA",
+        "name": "Serie A",
+        "country": "Italy"
+      },
+      {
+        "file": "de.1",
+        "fd": "BL1",
+        "name": "Bundesliga",
+        "country": "Germany"
+      },
+      {
+        "file": "fr.1",
+        "fd": "FL1",
+        "name": "Ligue 1",
+        "country": "France"
+      },
+      {
+        "file": "nl.1",
+        "fd": "DED",
+        "name": "Eredivisie",
+        "country": "Netherlands"
+      },
+      {
+        "file": "pt.1",
+        "fd": "PPL",
+        "name": "Primeira Liga",
+        "country": "Portugal"
+      },
+      {
+        "file": "de.2",
+        "fd": null,
+        "name": "2. Bundesliga",
+        "country": "Germany"
+      },
+      {
+        "file": "it.2",
+        "fd": null,
+        "name": "Serie B",
+        "country": "Italy"
+      },
+      {
+        "file": "es.2",
+        "fd": null,
+        "name": "Segunda División",
+        "country": "Spain"
+      },
+      {
+        "file": "fr.2",
+        "fd": null,
+        "name": "Ligue 2",
+        "country": "France"
+      }
     ]
   },
   "ai": {
     "enabled": true,
     "defaultModel": "gpt-5-mini",
     "maxMatches": 30,
-    "minHomeProb": 0.50,
+    "minHomeProb": 0.5,
     "maxOutputTokens": 2500,
     "searchContextSize": "low",
     "cacheHours": 12,
     "warnHomeAbsences": 2,
     "severeHomeAbsences": 4,
     "prices": {
-      "gpt-5-mini": { "input": 0.25, "output": 2.0, "searchPer1000": 10 },
-      "gpt-5-nano": { "input": 0.05, "output": 0.4, "searchPer1000": 10 }
+      "gpt-5-mini": {
+        "input": 0.25,
+        "output": 2.0,
+        "searchPer1000": 10
+      },
+      "gpt-5-nano": {
+        "input": 0.05,
+        "output": 0.4,
+        "searchPer1000": 10
+      }
     }
+  },
+  "history": {
+    "keepMonths": 24,
+    "voidAfterDays": 21
   }
 }
