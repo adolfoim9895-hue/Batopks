@@ -215,5 +215,10 @@
   "history": {
     "keepMonths": 24,
     "voidAfterDays": 21
+  },
+  "research": {
+    "maxMatches": 15,
+    "minHomeProb": 0.5,
+    "validHours": 30
   }
 }
