@@ -200,7 +200,7 @@
     if ((m.warnings || []).length) h += '<h3>Advertencias</h3>' + m.warnings.map(function (w) { return '<div class="warnLine">' + esc(w.text) + '</div>'; }).join('');
     if ((m.explain || []).length) h += '<h3>Explicación</h3><ul>' + m.explain.map(function (e) { return '<li>' + esc(e) + '</li>'; }).join('') + '</ul>';
     if (m.ai) {
-      h += '<h3>Bajas, rotaciones y alineaciones (IA con búsqueda web)</h3>';
+      h += '<h3>Bajas, rotaciones y alineaciones (' + esc(m.ai.provider || 'IA con búsqueda web') + ')</h3>';
       if (m.ai.status === 'OK') {
         var list = (m.ai.injuries || []).concat(m.ai.suspensions || []);
         h += list.length ? '<ul>' + list.map(function (c) { return '<li>' + (c.team === 'home' ? esc(m.home.name) : esc(m.away.name)) + ': ' + esc(c.player) + ' — ' + (c.status === 'out' ? 'baja' : 'duda') + (c.detail ? ' (' + esc(c.detail) + ')' : '') + (c.source_date ? ' · fuente del ' + esc(c.source_date) : '') + '</li>'; }).join('') + '</ul>' : '<div class="muted">Sin bajas verificadas.</div>';
