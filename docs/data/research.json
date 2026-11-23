@@ -1,0 +1,516 @@
+{
+ "schema": 1,
+ "provider": "Claude (búsqueda web manual)",
+ "generatedAt": "2026-11-23T09:40:00.000Z",
+ "matches": {
+  "fd:558512": {
+   "consultedAt": "2026-11-23T09:40:00.000Z",
+   "injuries": [],
+   "suspensions": [],
+   "rotation": {
+    "level": "unknown",
+    "team": "none",
+    "reason": null,
+    "source_url": null
+   },
+   "lineup": {
+    "confirmed": false,
+    "home": [],
+    "away": [],
+    "source_url": null
+   },
+   "summary": "Sin información fiable y vigente encontrada: DATOS INSUFICIENTES.",
+   "sources": []
+  },
+  "fd:575398": {
+   "consultedAt": "2026-11-23T09:40:00.000Z",
+   "injuries": [
+    {
+     "team": "home",
+     "player": "Antoine Semenyo",
+     "status": "out",
+     "detail": "Lesión de rodilla; unas 8 semanas de baja, regreso posible el 19-dic. (artículo previo al partido vs Fulham)",
+     "source_url": "https://www.sportsmole.co.uk/football/man-city/injury-news/injuries-and-suspensions/guehi-semenyo-latest-man-city-injury-suspension-list-vs-fulham_609340.html",
+     "source_date": "2026-11-18"
+    }
+   ],
+   "suspensions": [],
+   "rotation": {
+    "level": "unknown",
+    "team": "none",
+    "reason": null,
+    "source_url": null
+   },
+   "lineup": {
+    "confirmed": false,
+    "home": [],
+    "away": [],
+    "source_url": null
+   },
+   "summary": "Solo Semenyo (Man City) con fuente reciente. Guehi y Khusanov eran duda grave el 18-nov. y no hay actualización verificada; sin datos de Napoli.",
+   "sources": [
+    {
+     "url": "https://www.sportsmole.co.uk/football/man-city/injury-news/injuries-and-suspensions/guehi-semenyo-latest-man-city-injury-suspension-list-vs-fulham_609340.html",
+     "title": "Sports Mole: Man City injury list vs Fulham",
+     "date": "2026-11-18"
+    }
+   ]
+  },
+  "fd:558826": {
+   "consultedAt": "2026-11-23T09:40:00.000Z",
+   "injuries": [],
+   "suspensions": [],
+   "rotation": {
+    "level": "unknown",
+    "team": "none",
+    "reason": null,
+    "source_url": null
+   },
+   "lineup": {
+    "confirmed": false,
+    "home": [],
+    "away": [],
+    "source_url": null
+   },
+   "summary": "Sin información fiable y vigente encontrada: DATOS INSUFICIENTES.",
+   "sources": []
+  },
+  "fd:564762": {
+   "consultedAt": "2026-11-23T09:40:00.000Z",
+   "injuries": [],
+   "suspensions": [],
+   "rotation": {
+    "level": "unknown",
+    "team": "none",
+    "reason": null,
+    "source_url": null
+   },
+   "lineup": {
+    "confirmed": false,
+    "home": [],
+    "away": [],
+    "source_url": null
+   },
+   "summary": "Sin información fiable y vigente encontrada: DATOS INSUFICIENTES.",
+   "sources": []
+  },
+  "fd:558820": {
+   "consultedAt": "2026-11-23T09:40:00.000Z",
+   "injuries": [],
+   "suspensions": [],
+   "rotation": {
+    "level": "unknown",
+    "team": "none",
+    "reason": null,
+    "source_url": null
+   },
+   "lineup": {
+    "confirmed": false,
+    "home": [],
+    "away": [],
+    "source_url": null
+   },
+   "summary": "Sin información fiable y vigente encontrada: DATOS INSUFICIENTES.",
+   "sources": []
+  },
+  "fd:575399": {
+   "consultedAt": "2026-11-23T09:40:00.000Z",
+   "injuries": [
+    {
+     "team": "home",
+     "player": "Bukayo Saka",
+     "status": "out",
+     "detail": "Lesión de cuádriceps; unas 8 semanas, regreso posible 20-dic.",
+     "source_url": "https://sportsmole.co.uk/football/arsenal/champions-league/injuries-and-suspensions/raya-saka-zubimendi-latest-arsenal-injury-suspension-list-vs-borussia-dortmund_609585.html",
+     "source_date": "2026-11-21"
+    },
+    {
+     "team": "home",
+     "player": "David Raya",
+     "status": "doubtful",
+     "detail": "Lesión de hombro; resonancia el lunes; \"muy improbable\" que juegue",
+     "source_url": "https://sportsmole.co.uk/football/arsenal/champions-league/injuries-and-suspensions/raya-saka-zubimendi-latest-arsenal-injury-suspension-list-vs-borussia-dortmund_609585.html",
+     "source_date": "2026-11-21"
+    },
+    {
+     "team": "home",
+     "player": "Martin Zubimendi",
+     "status": "doubtful",
+     "detail": "Lesión de isquiotibial; baja prevista hasta mediados de diciembre (otra fuente lo da como baja)",
+     "source_url": "https://sportsmole.co.uk/football/arsenal/champions-league/injuries-and-suspensions/raya-saka-zubimendi-latest-arsenal-injury-suspension-list-vs-borussia-dortmund_609585.html",
+     "source_date": "2026-11-21"
+    },
+    {
+     "team": "away",
+     "player": "Emre Can",
+     "status": "out",
+     "detail": "Rotura de ligamento cruzado; baja larga",
+     "source_url": "https://www.bvb.de/de/en/news/news-overview/news.html/2026/11/19/Four-Question-Marks-Ahead-of-the-Gladbach-Match.html",
+     "source_date": "2026-11-19"
+    },
+    {
+     "team": "away",
+     "player": "Giannis Konstantelias",
+     "status": "out",
+     "detail": "Rotura de ligamento cruzado; baja larga",
+     "source_url": "https://www.bvb.de/de/en/news/news-overview/news.html/2026/11/19/Four-Question-Marks-Ahead-of-the-Gladbach-Match.html",
+     "source_date": "2026-11-19"
+    },
+    {
+     "team": "away",
+     "player": "Justin Lerma",
+     "status": "out",
+     "detail": "Lesión muscular; baja larga",
+     "source_url": "https://www.bvb.de/de/en/news/news-overview/news.html/2026/11/19/Four-Question-Marks-Ahead-of-the-Gladbach-Match.html",
+     "source_date": "2026-11-19"
+    },
+    {
+     "team": "away",
+     "player": "Samuele Inacio",
+     "status": "out",
+     "detail": "Baja según preview del 22-nov.; el club lo dio como duda el 19-nov.",
+     "source_url": "https://khelnow.com/football/arsenal-vs-borussia-dortmund-preview-champions-league-202611",
+     "source_date": "2026-11-22"
+    },
+    {
+     "team": "away",
+     "player": "Carney Chukwuemeka",
+     "status": "doubtful",
+     "detail": "Posible baja por falta de forma física (lesión muscular)",
+     "source_url": "https://khelnow.com/football/arsenal-vs-borussia-dortmund-preview-champions-league-202611",
+     "source_date": "2026-11-22"
+    }
+   ],
+   "suspensions": [],
+   "rotation": {
+    "level": "unknown",
+    "team": "none",
+    "reason": null,
+    "source_url": null
+   },
+   "lineup": {
+    "confirmed": false,
+    "home": [],
+    "away": [],
+    "source_url": null
+   },
+   "summary": "Arsenal sin Saka y con Raya/Zubimendi en duda; Dortmund con 3 bajas largas confirmadas. Alineación aún no publicada.",
+   "sources": [
+    {
+     "url": "https://sportsmole.co.uk/football/arsenal/champions-league/injuries-and-suspensions/raya-saka-zubimendi-latest-arsenal-injury-suspension-list-vs-borussia-dortmund_609585.html",
+     "title": "Sports Mole: Arsenal injury list vs Dortmund",
+     "date": "2026-11-21"
+    },
+    {
+     "url": "https://khelnow.com/football/arsenal-vs-borussia-dortmund-preview-champions-league-202611",
+     "title": "Khel Now: Arsenal vs Dortmund preview",
+     "date": "2026-11-22"
+    },
+    {
+     "url": "https://www.bvb.de/de/en/news/news-overview/news.html/2026/11/19/Four-Question-Marks-Ahead-of-the-Gladbach-Match.html",
+     "title": "BVB.de: Four question marks ahead of Gladbach",
+     "date": "2026-11-19"
+    }
+   ]
+  },
+  "fd:575397": {
+   "consultedAt": "2026-11-23T09:40:00.000Z",
+   "injuries": [
+    {
+     "team": "home",
+     "player": "Rodrygo",
+     "status": "out",
+     "detail": "Recuperación de rotura de ligamento cruzado; regreso a inicios de 2027",
+     "source_url": "https://www.sportsmole.co.uk/football/real-madrid/injury-news/injuries-and-suspensions/rodrygo-mendy-asencio-updates-real-madrid-injury-suspension-news-vs-psv_609591.html",
+     "source_date": "2026-11-21"
+    },
+    {
+     "team": "home",
+     "player": "Ferland Mendy",
+     "status": "out",
+     "detail": "Lesión muscular; no está en la lista de la fase de liga de la Champions",
+     "source_url": "https://www.sportsmole.co.uk/football/real-madrid/injury-news/injuries-and-suspensions/rodrygo-mendy-asencio-updates-real-madrid-injury-suspension-news-vs-psv_609591.html",
+     "source_date": "2026-11-21"
+    },
+    {
+     "team": "home",
+     "player": "Raúl Asencio",
+     "status": "out",
+     "detail": "Fractura por estrés de tibia (operado 1-oct.); aún no llega",
+     "source_url": "https://www.sportsmole.co.uk/football/real-madrid/injury-news/injuries-and-suspensions/rodrygo-mendy-asencio-updates-real-madrid-injury-suspension-news-vs-psv_609591.html",
+     "source_date": "2026-11-21"
+    },
+    {
+     "team": "away",
+     "player": "Adamo Nagalo",
+     "status": "out",
+     "detail": "Lesionado según preview",
+     "source_url": "https://khelnow.com/football/real-madrid-vs-psv-preview-champions-league-202611",
+     "source_date": "2026-11-22"
+    },
+    {
+     "team": "away",
+     "player": "Sami Ouaissa",
+     "status": "out",
+     "detail": "Lesionado según preview",
+     "source_url": "https://khelnow.com/football/real-madrid-vs-psv-preview-champions-league-202611",
+     "source_date": "2026-11-22"
+    },
+    {
+     "team": "away",
+     "player": "Alassane Pléa",
+     "status": "out",
+     "detail": "Lesionado según preview",
+     "source_url": "https://khelnow.com/football/real-madrid-vs-psv-preview-champions-league-202611",
+     "source_date": "2026-11-22"
+    },
+    {
+     "team": "away",
+     "player": "Jerdy Schouten",
+     "status": "out",
+     "detail": "Lesionado según preview",
+     "source_url": "https://khelnow.com/football/real-madrid-vs-psv-preview-champions-league-202611",
+     "source_date": "2026-11-22"
+    }
+   ],
+   "suspensions": [],
+   "rotation": {
+    "level": "unknown",
+    "team": "none",
+    "reason": null,
+    "source_url": null
+   },
+   "lineup": {
+    "confirmed": false,
+    "home": [],
+    "away": [],
+    "source_url": null
+   },
+   "summary": "Real Madrid con 3 bajas confirmadas; PSV con 4 según un solo preview (detalle sin ampliar). Alineación aún no publicada.",
+   "sources": [
+    {
+     "url": "https://www.sportsmole.co.uk/football/real-madrid/injury-news/injuries-and-suspensions/rodrygo-mendy-asencio-updates-real-madrid-injury-suspension-news-vs-psv_609591.html",
+     "title": "Sports Mole: Real Madrid injury list vs PSV",
+     "date": "2026-11-21"
+    },
+    {
+     "url": "https://khelnow.com/football/real-madrid-vs-psv-preview-champions-league-202611",
+     "title": "Khel Now: Real Madrid vs PSV preview",
+     "date": "2026-11-22"
+    }
+   ]
+  },
+  "fd:558518": {
+   "consultedAt": "2026-11-23T09:40:00.000Z",
+   "injuries": [],
+   "suspensions": [],
+   "rotation": {
+    "level": "unknown",
+    "team": "none",
+    "reason": null,
+    "source_url": null
+   },
+   "lineup": {
+    "confirmed": false,
+    "home": [],
+    "away": [],
+    "source_url": null
+   },
+   "summary": "Sin información fiable y vigente encontrada: DATOS INSUFICIENTES.",
+   "sources": []
+  },
+  "fd:561970": {
+   "consultedAt": "2026-11-23T09:40:00.000Z",
+   "injuries": [],
+   "suspensions": [],
+   "rotation": {
+    "level": "unknown",
+    "team": "none",
+    "reason": null,
+    "source_url": null
+   },
+   "lineup": {
+    "confirmed": false,
+    "home": [],
+    "away": [],
+    "source_url": null
+   },
+   "summary": "Sin información fiable y vigente encontrada: DATOS INSUFICIENTES.",
+   "sources": []
+  },
+  "fd:559614": {
+   "consultedAt": "2026-11-23T09:40:00.000Z",
+   "injuries": [],
+   "suspensions": [],
+   "rotation": {
+    "level": "unknown",
+    "team": "none",
+    "reason": null,
+    "source_url": null
+   },
+   "lineup": {
+    "confirmed": false,
+    "home": [],
+    "away": [],
+    "source_url": null
+   },
+   "summary": "Sin información fiable y vigente encontrada: DATOS INSUFICIENTES.",
+   "sources": []
+  },
+  "fd:560659": {
+   "consultedAt": "2026-11-23T09:40:00.000Z",
+   "injuries": [
+    {
+     "team": "home",
+     "player": "Evan Ferguson",
+     "status": "out",
+     "detail": "Lesión de tobillo (lista previa al partido vs Hull, 22-nov.)",
+     "source_url": "https://www.flashscore.co.uk/news/football-premier-league-who-s-missing-gameweek-11/0IFp8LcJ/",
+     "source_date": "2026-11-22"
+    },
+    {
+     "team": "home",
+     "player": "Kaoru Mitoma",
+     "status": "out",
+     "detail": "Lesión de isquiotibial (lista previa al partido vs Hull)",
+     "source_url": "https://www.flashscore.co.uk/news/football-premier-league-who-s-missing-gameweek-11/0IFp8LcJ/",
+     "source_date": "2026-11-22"
+    },
+    {
+     "team": "home",
+     "player": "Stefanos Tzimas",
+     "status": "out",
+     "detail": "Lesión de rodilla (lista previa al partido vs Hull)",
+     "source_url": "https://www.flashscore.co.uk/news/football-premier-league-who-s-missing-gameweek-11/0IFp8LcJ/",
+     "source_date": "2026-11-22"
+    },
+    {
+     "team": "home",
+     "player": "Zadok Yohanna",
+     "status": "out",
+     "detail": "Lesión (sin detalle) (lista previa al partido vs Hull)",
+     "source_url": "https://www.flashscore.co.uk/news/football-premier-league-who-s-missing-gameweek-11/0IFp8LcJ/",
+     "source_date": "2026-11-22"
+    },
+    {
+     "team": "away",
+     "player": "Joelinton",
+     "status": "out",
+     "detail": "Lesión muscular/isquiotibial; sin plazo",
+     "source_url": "https://www.fantasyfootballscout.co.uk/2026/11/19/fpl-gameweek-11-team-news-thursdays-live-injury-updates-3",
+     "source_date": "2026-11-19"
+    },
+    {
+     "team": "away",
+     "player": "Ewen Jaouen",
+     "status": "out",
+     "detail": "Lesión muscular",
+     "source_url": "https://www.fantasyfootballscout.co.uk/2026/11/19/fpl-gameweek-11-team-news-thursdays-live-injury-updates-3",
+     "source_date": "2026-11-19"
+    }
+   ],
+   "suspensions": [],
+   "rotation": {
+    "level": "unknown",
+    "team": "none",
+    "reason": null,
+    "source_url": null
+   },
+   "lineup": {
+    "confirmed": false,
+    "home": [],
+    "away": [],
+    "source_url": null
+   },
+   "summary": "Listas de bajas de la jornada anterior (hay 6-7 días hasta el partido): pueden cambiar. Revisar el 27-28 nov.",
+   "sources": [
+    {
+     "url": "https://www.flashscore.co.uk/news/football-premier-league-who-s-missing-gameweek-11/0IFp8LcJ/",
+     "title": "Flashscore: Who's missing, Premier League GW11",
+     "date": "2026-11-22"
+    },
+    {
+     "url": "https://www.fantasyfootballscout.co.uk/2026/11/19/fpl-gameweek-11-team-news-thursdays-live-injury-updates-3",
+     "title": "Fantasy Football Scout: GW11 team news",
+     "date": "2026-11-19"
+    }
+   ]
+  },
+  "fd:567360": {
+   "consultedAt": "2026-11-23T09:40:00.000Z",
+   "injuries": [],
+   "suspensions": [],
+   "rotation": {
+    "level": "unknown",
+    "team": "none",
+    "reason": null,
+    "source_url": null
+   },
+   "lineup": {
+    "confirmed": false,
+    "home": [],
+    "away": [],
+    "source_url": null
+   },
+   "summary": "Sin información fiable y vigente encontrada: DATOS INSUFICIENTES.",
+   "sources": []
+  },
+  "fd:565870": {
+   "consultedAt": "2026-11-23T09:40:00.000Z",
+   "injuries": [],
+   "suspensions": [],
+   "rotation": {
+    "level": "unknown",
+    "team": "none",
+    "reason": null,
+    "source_url": null
+   },
+   "lineup": {
+    "confirmed": false,
+    "home": [],
+    "away": [],
+    "source_url": null
+   },
+   "summary": "Sin información fiable y vigente encontrada: DATOS INSUFICIENTES.",
+   "sources": []
+  },
+  "fd:561957": {
+   "consultedAt": "2026-11-23T09:40:00.000Z",
+   "injuries": [],
+   "suspensions": [],
+   "rotation": {
+    "level": "unknown",
+    "team": "none",
+    "reason": null,
+    "source_url": null
+   },
+   "lineup": {
+    "confirmed": false,
+    "home": [],
+    "away": [],
+    "source_url": null
+   },
+   "summary": "Sin información fiable y vigente encontrada: DATOS INSUFICIENTES.",
+   "sources": []
+  },
+  "fd:565867": {
+   "consultedAt": "2026-11-23T09:40:00.000Z",
+   "injuries": [],
+   "suspensions": [],
+   "rotation": {
+    "level": "unknown",
+    "team": "none",
+    "reason": null,
+    "source_url": null
+   },
+   "lineup": {
+    "confirmed": false,
+    "home": [],
+    "away": [],
+    "source_url": null
+   },
+   "summary": "Sin información fiable y vigente encontrada: DATOS INSUFICIENTES.",
+   "sources": []
+  }
+ }
+}
