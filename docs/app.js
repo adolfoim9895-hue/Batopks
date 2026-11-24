@@ -120,7 +120,15 @@
   function matchesOfDay(key) {
     if (!state.data) return [];
     if (key < dayKeyOf(new Date())) return histOfDay(key).filter(isHomeFav);
-    return state.data.matches.filter(function (m) { return dayKeyOf(new Date(m.kickoff)) === key && isHomeFav(m); });
+    var cur = state.data.matches.filter(function (m) { return dayKeyOf(new Date(m.kickoff)) === key; });
+    if (key === dayKeyOf(new Date())) {
+      // Hoy: los partidos que ya se jugaron salen del historial (el JSON de pronósticos empieza en el día UTC en curso)
+      var ids = {};
+      cur.forEach(function (m) { ids[m.id] = 1; });
+      histOfDay(key).forEach(function (r) { if (!ids[r.id]) cur.push(r); });
+      cur.sort(function (a, b) { return Date.parse(a.kickoff) - Date.parse(b.kickoff); });
+    }
+    return cur.filter(isHomeFav);
   }
   function isFav(m) { return state.favs.m.indexOf(m.id) >= 0 || state.favs.l.indexOf(m.competition.key) >= 0; }
   function passes(m) {
@@ -252,7 +260,7 @@
     banner.className = cls;
     banner.textContent = msgs.join(' ');
 
-    if (key < dayKeyOf(new Date())) ensureHist(key);
+    if (key <= dayKeyOf(new Date())) ensureHist(key);
     var ms = matchesOfDay(key).filter(passes);
     var byLeague = {};
     ms.forEach(function (m) { (byLeague[m.competition.key] = byLeague[m.competition.key] || { c: m.competition, items: [] }).items.push(m); });

@@ -1,7 +1,7 @@
 'use strict';
 // Service worker: app instalable y utilizable sin conexión.
 // Los pronósticos (data/*.json) siempre se piden primero a la red; la caché es solo respaldo.
-var VERSION = 'radar-v6';
+var VERSION = 'radar-v7';
 var SHELL = ['./', 'index.html', 'styles.css', 'app.js', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png'];
 
 self.addEventListener('install', function (e) {
