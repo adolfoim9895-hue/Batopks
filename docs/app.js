@@ -124,6 +124,7 @@
   function passes(m) {
     var f = state.filter;
     if (f === 'fav' && !isFav(m)) return false;
+    if (f === 'local' && !(m.probs && m.probs.home >= m.probs.draw && m.probs.home >= m.probs.away)) return false;
     if (f === 'alta' && m.confidence.tier !== 'alta') return false;
     if (f === 'media' && m.confidence.tier !== 'media') return false;
     var q = state.query.trim().toLowerCase();
