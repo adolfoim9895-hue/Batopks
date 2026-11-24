@@ -115,16 +115,17 @@
       '<div>Total: <b>' + t.hits + '/' + t.n + ' (' + Math.round(100 * t.hits / t.n) + '%)</b>' + (s.pending ? ' <span class="muted">· ' + s.pending + ' pendiente(s)</span>' : '') + '</div>';
   }
 
+  // Solo se muestran partidos donde el modelo ve al LOCAL como resultado más probable.
+  function isHomeFav(m) { return !!(m.probs && m.probs.home >= m.probs.draw && m.probs.home >= m.probs.away); }
   function matchesOfDay(key) {
     if (!state.data) return [];
-    if (key < dayKeyOf(new Date())) return histOfDay(key);
-    return state.data.matches.filter(function (m) { return dayKeyOf(new Date(m.kickoff)) === key; });
+    if (key < dayKeyOf(new Date())) return histOfDay(key).filter(isHomeFav);
+    return state.data.matches.filter(function (m) { return dayKeyOf(new Date(m.kickoff)) === key && isHomeFav(m); });
   }
   function isFav(m) { return state.favs.m.indexOf(m.id) >= 0 || state.favs.l.indexOf(m.competition.key) >= 0; }
   function passes(m) {
     var f = state.filter;
     if (f === 'fav' && !isFav(m)) return false;
-    if (f === 'local' && !(m.probs && m.probs.home >= m.probs.draw && m.probs.home >= m.probs.away)) return false;
     if (f === 'alta' && m.confidence.tier !== 'alta') return false;
     if (f === 'media' && m.confidence.tier !== 'media') return false;
     var q = state.query.trim().toLowerCase();
@@ -266,7 +267,7 @@
     if (!h) {
       var total = matchesOfDay(key).length;
       var past = key < dayKeyOf(new Date());
-      h = past && !total ? '<div class="empty"><b>No hay pronósticos guardados para este día.</b><br>El historial empieza a llenarse desde la primera actualización con esta versión.</div>' : '<div class="empty">' + (total ? '<b>Ningún partido coincide con el filtro.</b><br>Hay ' + total + ' partido(s) este día.' : '<b>No hay partidos analizados para este día.</b><br>Solo se muestran ligas con datos verificables en las fuentes configuradas.') + '</div>';
+      h = past && !total ? '<div class="empty"><b>No hay pronósticos guardados para este día.</b><br>El historial empieza a llenarse desde la primera actualización con esta versión.</div>' : '<div class="empty">' + (total ? '<b>Ningún partido coincide con el filtro.</b><br>Hay ' + total + ' partido(s) este día.' : '<b>No hay partidos con local favorito este día.</b><br>La app solo muestra partidos donde el modelo ve al local como resultado más probable.') + '</div>';
     }
     $('list').innerHTML = h;
 
