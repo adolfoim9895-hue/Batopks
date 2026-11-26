@@ -1,0 +1,611 @@
+{
+ "schema": 2,
+ "createdAt": "2026-11-26T18:10:00Z",
+ "matches": [
+  {
+   "kickoff": "2026-11-29T18:15:00Z",
+   "competition": "Eliteserien",
+   "country": "Noruega",
+   "home": "Viking",
+   "away": "Valerenga",
+   "homeOdds": 1.31,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-26T18:10:00Z",
+   "probs": {
+    "home": 0.63,
+    "draw": 0.2,
+    "away": 0.17
+   },
+   "scores": [
+    {
+     "score": "2-1",
+     "p": 0.13
+    },
+    {
+     "score": "2-0",
+     "p": 0.12
+    },
+    {
+     "score": "1-1",
+     "p": 0.11
+    },
+    {
+     "score": "3-1",
+     "p": 0.09
+    }
+   ],
+   "reasoning": [
+    "Viking es 2º con 62 pts tras 27 jornadas (20 victorias, 2 empates, 5 derrotas, diferencia +41); Vålerenga es 8º con 32 pts (diferencia -5).",
+    "Vålerenga ganó 1-0 en Bodø (24 oct) y 4-0 a Tromsø (1 nov), pero perdió 0-1 en Kristiansund (9 nov) y 1-2 con Start (21 nov).",
+    "En los últimos duelos Viking ganó 1-0 en Oslo (abr 2026) y 5-1 en casa (nov 2025); en 2025 Vålerenga ganó dos veces 3-1.",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 Las fuentes no coinciden en la hora (18:15 UTC según FotMob y ESPN; 16:00 según Sofascore). Usé la de tu app.",
+    "🔴 Las bajas de Viking no coinciden entre páginas: FotMob lista 5 lesionados y Oddspedia dice que no falta nadie.",
+    "🔴 La forma de Viking no pude verificarla con fechas ni marcadores; solo hay cadenas de resultados sin orden claro.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [
+     {
+      "opponent": "Fredrikstad",
+      "score": "3-2",
+      "source_url": "https://gainblers.com/us/bets/football/norway/eliteserien/viking-valerenga/",
+      "date": "2026-10-17"
+     }
+    ],
+    "away": [
+     {
+      "opponent": "Bodø/Glimt",
+      "score": "1-0",
+      "source_url": "https://gainblers.com/us/bets/football/norway/eliteserien/viking-valerenga/",
+      "date": "2026-10-24",
+      "venue": "A"
+     },
+     {
+      "opponent": "Tromsø",
+      "score": "4-0",
+      "source_url": "https://gainblers.com/us/bets/football/norway/eliteserien/viking-valerenga/",
+      "date": "2026-11-01",
+      "venue": "H"
+     },
+     {
+      "opponent": "Kristiansund",
+      "score": "0-1",
+      "source_url": "https://gainblers.com/us/bets/football/norway/eliteserien/viking-valerenga/",
+      "date": "2026-11-09",
+      "venue": "A"
+     },
+     {
+      "opponent": "Start",
+      "score": "1-2",
+      "source_url": "https://gainblers.com/us/bets/football/norway/eliteserien/viking-valerenga/",
+      "date": "2026-11-21",
+      "venue": "H"
+     }
+    ]
+   },
+   "h2h": [
+    {
+     "date": "2026-04-06",
+     "home": "Valerenga",
+     "away": "Viking",
+     "score": "0-1",
+     "competition": "Eliteserien",
+     "source_url": "https://vikingstadion.com/match/viking-vs-valerenga-2026-11-29/1494819"
+    },
+    {
+     "date": "2025-11-30",
+     "home": "Viking",
+     "away": "Valerenga",
+     "score": "5-1",
+     "competition": "Eliteserien",
+     "source_url": "https://vikingstadion.com/match/viking-vs-valerenga-2026-11-29/1494819"
+    },
+    {
+     "date": "2025-03-30",
+     "home": "Valerenga",
+     "away": "Viking",
+     "score": "3-1",
+     "competition": "Eliteserien",
+     "source_url": "https://vikingstadion.com/match/viking-vs-valerenga-2026-11-29/1494819"
+    },
+    {
+     "date": "2025-02-22",
+     "home": "Valerenga",
+     "away": "Viking",
+     "score": "3-1",
+     "competition": "Copa",
+     "source_url": "https://vikingstadion.com/match/viking-vs-valerenga-2026-11-29/1494819"
+    }
+   ],
+   "injuries": [
+    {
+     "team": "home",
+     "player": "Sondre Bjørshol",
+     "status": "out",
+     "detail": "Rodilla",
+     "source_url": "https://www.fotmob.com/matches/valerenga-vs-viking/28woql"
+    },
+    {
+     "team": "home",
+     "player": "Nicholas D'Agostino",
+     "status": "out",
+     "detail": "Rodilla",
+     "source_url": "https://www.fotmob.com/matches/valerenga-vs-viking/28woql"
+    },
+    {
+     "team": "home",
+     "player": "Anders Bærtelsen",
+     "status": "out",
+     "detail": "Pie roto",
+     "source_url": "https://www.fotmob.com/matches/valerenga-vs-viking/28woql"
+    },
+    {
+     "team": "home",
+     "player": "Veton Berisha",
+     "status": "out",
+     "detail": "Muslo",
+     "source_url": "https://www.fotmob.com/matches/valerenga-vs-viking/28woql"
+    },
+    {
+     "team": "home",
+     "player": "Martin Roseth",
+     "status": "out",
+     "detail": "Rodilla",
+     "source_url": "https://www.fotmob.com/matches/valerenga-vs-viking/28woql"
+    },
+    {
+     "team": "away",
+     "player": "Omar Bully Drammeh",
+     "status": "out",
+     "detail": "Lesión",
+     "source_url": "https://www.fotmob.com/matches/valerenga-vs-viking/28woql"
+    }
+   ],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://www.fotmob.com/matches/valerenga-vs-viking/28woql",
+     "title": "www.fotmob.com"
+    },
+    {
+     "url": "https://vikingstadion.com/match/viking-vs-valerenga-2026-11-29/1494819",
+     "title": "vikingstadion.com"
+    },
+    {
+     "url": "https://gainblers.com/us/bets/football/norway/eliteserien/viking-valerenga/",
+     "title": "gainblers.com"
+    },
+    {
+     "url": "https://www.apwin.com/match/valerenga-viking/VTkad/",
+     "title": "www.apwin.com"
+    },
+    {
+     "url": "https://www.espn.com/soccer/team/fixtures/_/id/2791/league/NOR.1",
+     "title": "www.espn.com"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-29T17:00:00Z",
+   "competition": "HNL",
+   "country": "Croacia",
+   "home": "Hajduk Split",
+   "away": "Rudes",
+   "homeOdds": 1.29,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-26T18:10:00Z",
+   "probs": {
+    "home": 0.69,
+    "draw": 0.19,
+    "away": 0.12
+   },
+   "scores": [
+    {
+     "score": "2-0",
+     "p": 0.17
+    },
+    {
+     "score": "2-1",
+     "p": 0.12
+    },
+    {
+     "score": "3-0",
+     "p": 0.11
+    },
+    {
+     "score": "1-0",
+     "p": 0.11
+    }
+   ],
+   "reasoning": [
+    "Hajduk lidera con 32 pts en 14 jornadas (10-2-2, goles 29:12); Rudeš es 8º con 16 pts (5-1-8) y tiene la peor defensa de la liga: 29 goles en contra.",
+    "Hajduk ganó 2-1 en Lokomotiva (21 nov) y viene ganando a Osijek (1-0) y Gorica (5-0).",
+    "Rudeš ganó 1-0 a Dinamo (31 oct), 1-0 en Lokomotiva (6 nov) y 1-0 en Osijek (25 oct), pero perdió 0-2 con Varaždin y 2-3 en Copa con Segesta.",
+    "H2H: Hajduk ganó los 6 duelos recientes con 18 goles a favor y 2 en contra (último, 4-0 el 6 sep 2026).",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 Hajduk juega en Conference League antes (Sint-Truiden): posible rotación.",
+    "🔴 Hadžikadunić (rotura en la pantorrilla, unas 3 semanas fuera), Brajković y Pajaziti figuran ausentes en la fuente; Ivušić también según Telegram.",
+    "🔴 Una fuente dice 18:00 hora local (17:00 UTC); es la hora que usé.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [
+     {
+      "opponent": "Lokomotiva",
+      "score": "2-1",
+      "source_url": "https://www.svijetkladjenja.com/najave-utakmica/hajduk-rudes-prognoza-hnl/",
+      "date": "2026-11-21",
+      "venue": "A"
+     },
+     {
+      "opponent": "Osijek",
+      "score": "1-0",
+      "source_url": "https://www.svijetkladjenja.com/najave-utakmica/hajduk-rudes-prognoza-hnl/"
+     },
+     {
+      "opponent": "Gorica",
+      "score": "5-0",
+      "source_url": "https://www.svijetkladjenja.com/najave-utakmica/hajduk-rudes-prognoza-hnl/"
+     }
+    ],
+    "away": [
+     {
+      "opponent": "Varaždin",
+      "score": "0-2",
+      "source_url": "https://www.svijetkladjenja.com/najave-utakmica/hajduk-rudes-prognoza-hnl/",
+      "venue": "H"
+     },
+     {
+      "opponent": "Segesta",
+      "score": "2-3",
+      "source_url": "https://www.svijetkladjenja.com/najave-utakmica/hajduk-rudes-prognoza-hnl/",
+      "date": "2026-11-14",
+      "competition": "Copa"
+     },
+     {
+      "opponent": "Lokomotiva",
+      "score": "1-0",
+      "source_url": "https://www.svijetkladjenja.com/najave-utakmica/hajduk-rudes-prognoza-hnl/",
+      "date": "2026-11-06",
+      "venue": "A"
+     },
+     {
+      "opponent": "Dinamo",
+      "score": "1-0",
+      "source_url": "https://www.svijetkladjenja.com/najave-utakmica/hajduk-rudes-prognoza-hnl/",
+      "date": "2026-10-31"
+     },
+     {
+      "opponent": "Osijek",
+      "score": "1-0",
+      "source_url": "https://www.svijetkladjenja.com/najave-utakmica/hajduk-rudes-prognoza-hnl/",
+      "date": "2026-10-25",
+      "venue": "A"
+     }
+    ]
+   },
+   "h2h": [
+    {
+     "date": "2026-09-06",
+     "home": "Rudes",
+     "away": "Hajduk Split",
+     "score": "0-4",
+     "competition": "HNL",
+     "source_url": "https://www.svijetkladjenja.com/najave-utakmica/hajduk-rudes-prognoza-hnl/"
+    },
+    {
+     "date": "2024-04-27",
+     "home": "Hajduk Split",
+     "away": "Rudes",
+     "score": "5-1",
+     "source_url": "https://www.svijetkladjenja.com/najave-utakmica/hajduk-rudes-prognoza-hnl/"
+    },
+    {
+     "date": "2024-02-17",
+     "home": "Hajduk Split",
+     "away": "Rudes",
+     "score": "2-0",
+     "source_url": "https://www.svijetkladjenja.com/najave-utakmica/hajduk-rudes-prognoza-hnl/"
+    },
+    {
+     "date": "2023-11-04",
+     "home": "Hajduk Split",
+     "away": "Rudes",
+     "score": "1-0",
+     "source_url": "https://www.svijetkladjenja.com/najave-utakmica/hajduk-rudes-prognoza-hnl/"
+    }
+   ],
+   "injuries": [
+    {
+     "team": "home",
+     "player": "Dennis Hadžikadunić",
+     "status": "out",
+     "detail": "Rotura en la pantorrilla, ~3 semanas",
+     "source_url": "https://www.svijetkladjenja.com/najave-utakmica/hajduk-rudes-prognoza-hnl/"
+    },
+    {
+     "team": "home",
+     "player": "Rok Brajković",
+     "status": "out",
+     "detail": "Ausente",
+     "source_url": "https://www.svijetkladjenja.com/najave-utakmica/hajduk-rudes-prognoza-hnl/"
+    },
+    {
+     "team": "home",
+     "player": "Adrion Pajaziti",
+     "status": "out",
+     "detail": "Ausente",
+     "source_url": "https://www.svijetkladjenja.com/najave-utakmica/hajduk-rudes-prognoza-hnl/"
+    },
+    {
+     "team": "home",
+     "player": "Dominik Ivušić",
+     "status": "doubtful",
+     "detail": "Según Telegram",
+     "source_url": "https://www.svijetkladjenja.com/najave-utakmica/hajduk-rudes-prognoza-hnl/"
+    }
+   ],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://www.svijetkladjenja.com/najave-utakmica/hajduk-rudes-prognoza-hnl/",
+     "title": "www.svijetkladjenja.com"
+    },
+    {
+     "url": "https://www.sofascore.com/football/match/nk-rudes-hnk-hajduk-split/LPsBeo",
+     "title": "www.sofascore.com"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-29T12:00:00Z",
+   "competition": "Chance Liga",
+   "country": "Chequia",
+   "home": "Slavia Praga",
+   "away": "Banik Ostrava",
+   "homeOdds": 1.28,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-26T18:10:00Z",
+   "probs": {
+    "home": 0.77,
+    "draw": 0.16,
+    "away": 0.07
+   },
+   "scores": [
+    {
+     "score": "2-0",
+     "p": 0.17
+    },
+    {
+     "score": "3-0",
+     "p": 0.13
+    },
+    {
+     "score": "2-1",
+     "p": 0.11
+    },
+    {
+     "score": "1-0",
+     "p": 0.11
+    }
+   ],
+   "reasoning": [
+    "Slavia lidera invicto con 37 pts en 15 partidos (11 victorias, 4 empates, goles 38:8); Baník es 13º con 14 pts (4-2-8, goles 11:25).",
+    "Slavia ha ganado 11 partidos de liga seguidos a Baník, 7 con la portería a cero; en la ida de esta temporada ganó 4-0 en Ostrava (1 ago).",
+    "Slavia ganó 5-0 en Jablonec y empató 1-1 con Mladá Boleslav; Baník ganó 3-1 en Zbrojovka Brno (7 nov), perdió 0-4 con Plzeň y 0-1 con Bohemians.",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 Slavia jugó Champions League el miércoles 25 (contra Villarreal): posible desgaste o rotación.",
+    "🔴 Ouanda (molestia), Ogbu (tendón de Aquiles) y Diachuk figuran como dudas sin confirmar.",
+    "🔴 La forma reciente viene de páginas sin fechas completas.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [
+     {
+      "opponent": "Jablonec",
+      "score": "5-0",
+      "source_url": "https://www.prahalove.cz/slavia-banik-2026-11-29-pred-zapasem/",
+      "venue": "A"
+     },
+     {
+      "opponent": "Mladá Boleslav",
+      "score": "1-1",
+      "source_url": "https://www.prahalove.cz/slavia-banik-2026-11-29-pred-zapasem/",
+      "venue": "H"
+     }
+    ],
+    "away": [
+     {
+      "opponent": "Zbrojovka Brno",
+      "score": "3-1",
+      "source_url": "https://www.prahalove.cz/slavia-banik-2026-11-29-pred-zapasem/",
+      "date": "2026-11-07",
+      "venue": "A"
+     },
+     {
+      "opponent": "Plzeň",
+      "score": "0-4",
+      "source_url": "https://www.prahalove.cz/slavia-banik-2026-11-29-pred-zapasem/",
+      "venue": "H"
+     },
+     {
+      "opponent": "Sparta",
+      "score": "0-0",
+      "source_url": "https://www.prahalove.cz/slavia-banik-2026-11-29-pred-zapasem/"
+     },
+     {
+      "opponent": "Bohemians",
+      "score": "0-1",
+      "source_url": "https://www.prahalove.cz/slavia-banik-2026-11-29-pred-zapasem/"
+     },
+     {
+      "opponent": "Slovácko",
+      "score": "2-2",
+      "source_url": "https://www.prahalove.cz/slavia-banik-2026-11-29-pred-zapasem/",
+      "venue": "A"
+     }
+    ]
+   },
+   "h2h": [
+    {
+     "date": "2026-08-01",
+     "home": "Banik Ostrava",
+     "away": "Slavia Praga",
+     "score": "0-4",
+     "competition": "Chance Liga",
+     "source_url": "https://www.prahalove.cz/slavia-banik-2026-11-29-pred-zapasem/"
+    }
+   ],
+   "injuries": [
+    {
+     "team": "home",
+     "player": "Adonija Ouanda",
+     "status": "doubtful",
+     "detail": "Molestia física",
+     "source_url": "https://mediapronos.com/pronostic-sk-slavia-praha-banik-ostrava-compo-probable-29-11/"
+    },
+    {
+     "team": "home",
+     "player": "Igoh Ogbu",
+     "status": "doubtful",
+     "detail": "Tendón de Aquiles",
+     "source_url": "https://mediapronos.com/pronostic-sk-slavia-praha-banik-ostrava-compo-probable-29-11/"
+    },
+    {
+     "team": "home",
+     "player": "Maksym Diachuk",
+     "status": "doubtful",
+     "detail": "Por confirmar",
+     "source_url": "https://mediapronos.com/pronostic-sk-slavia-praha-banik-ostrava-compo-probable-29-11/"
+    }
+   ],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://www.prahalove.cz/slavia-banik-2026-11-29-pred-zapasem/",
+     "title": "www.prahalove.cz"
+    },
+    {
+     "url": "https://isport.blesk.cz/clanek/fotbal-chance-liga/482583/footcast-kdo-bude-trenovat-spartu-ve-zline-slavia-porazi-banik-podvanacte-za-sebou.html",
+     "title": "isport.blesk.cz"
+    },
+    {
+     "url": "https://mediapronos.com/pronostic-sk-slavia-praha-banik-ostrava-compo-probable-29-11/",
+     "title": "mediapronos.com"
+    },
+    {
+     "url": "https://www.sofascore.com/football/match/sk-slavia-praha-banik-ostrava/eUsqU",
+     "title": "www.sofascore.com"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-29T16:00:00Z",
+   "competition": "Süper Lig",
+   "country": "Turquía",
+   "home": "Fenerbahce",
+   "away": "Erzurumspor FK",
+   "homeOdds": 1.29,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-26T18:10:00Z",
+   "probs": {
+    "home": 0.73,
+    "draw": 0.17,
+    "away": 0.1
+   },
+   "scores": [
+    {
+     "score": "2-0",
+     "p": 0.16
+    },
+    {
+     "score": "3-0",
+     "p": 0.12
+    },
+    {
+     "score": "2-1",
+     "p": 0.12
+    },
+    {
+     "score": "3-1",
+     "p": 0.1
+    }
+   ],
+   "reasoning": [
+    "Fenerbahçe es 6º con 20 pts tras 12 jornadas (6-2-4, goles 31:12) y es el equipo con más goles de la liga; Erzurumspor es 13º con 14 pts (4-2-6, goles 10:18).",
+    "Fenerbahçe viene de ganar en Shakhtar por Champions (25 nov); Erzurumspor llegó a esta jornada tras perder 0-1 con Göztepe.",
+    "H2H: Fenerbahçe ganó 4 y empató 1 de los 5 duelos que registra FotMob (dato de febrero 2026).",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 Fenerbahçe jugó el miércoles en Champions: posible rotación y cansancio.",
+    "🔴 Oosterwolde y Asensio figuran como bajas en una página que no pude abrir completa.",
+    "🔴 No pude verificar marcadores recientes de ninguno de los dos equipos; solo tabla y rachas.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [],
+    "away": [
+     {
+      "opponent": "Göztepe",
+      "score": "0-1",
+      "source_url": "https://sporzip.com/erzurumspor-fk",
+      "venue": "H",
+      "competition": "Süper Lig"
+     }
+    ]
+   },
+   "h2h": [],
+   "injuries": [
+    {
+     "team": "home",
+     "player": "Jayden Oosterwolde",
+     "status": "out",
+     "detail": "Según SportyTrader",
+     "source_url": "https://www.sportytrader.com/en/results-live/fenerbahce-erzurum-buyuksehir-8628413/"
+    },
+    {
+     "team": "home",
+     "player": "Marco Asensio",
+     "status": "out",
+     "detail": "Según SportyTrader",
+     "source_url": "https://www.sportytrader.com/en/results-live/fenerbahce-erzurum-buyuksehir-8628413/"
+    }
+   ],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://www.goal.com/tr/tak%C4%B1m/erzurumspor-fk/puan-durumu/ea2gyhkv6vwmxbxevdb4u3796",
+     "title": "www.goal.com"
+    },
+    {
+     "url": "https://www.dogayidinle.com/spor/super-lig-13-hafta-fiksturu-besiktas-galatasaray-fenerbahce-ve-trabzonspor-ne-zaman-oynayacak/10408",
+     "title": "www.dogayidinle.com"
+    },
+    {
+     "url": "https://www.habercitv.com.tr/super-lig-13-hafta-maclari-ne-zaman-hangi-kanalda",
+     "title": "www.habercitv.com.tr"
+    },
+    {
+     "url": "https://sporzip.com/erzurumspor-fk",
+     "title": "sporzip.com"
+    },
+    {
+     "url": "https://www.fotmob.com/it/matches/fenerbahce-vs-erzurumspor-fk/jc7jyfm",
+     "title": "www.fotmob.com"
+    },
+    {
+     "url": "https://www.sportytrader.com/en/results-live/fenerbahce-erzurum-buyuksehir-8628413/",
+     "title": "www.sportytrader.com"
+    }
+   ]
+  }
+ ]
+}
