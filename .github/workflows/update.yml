@@ -1,14 +1,13 @@
 name: Actualizar y publicar
 
+# Sin APIs ni claves: solo procesa los archivos que subes a docs/data/lotes/ y publica la app.
 on:
-  schedule:
-    - cron: "23 */6 * * *"      # cada 6 horas
   workflow_dispatch:             # botón manual en la pestaña Actions
   push:
     branches: [main]
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
@@ -19,7 +18,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
 
@@ -27,48 +26,11 @@ jobs:
         with:
           node-version: 20
 
-      # Caché: respuestas de proveedores, resultados de IA y últimos datos publicados.
-      - name: Restaurar caché
-        uses: actions/cache@v4
-        with:
-          path: |
-            .cache
-            docs/data/predictions.json
-            docs/data/validation.json
-          key: radar-${{ github.run_id }}
-          restore-keys: |
-            radar-
-
       - name: Pruebas (si fallan, NO se publica)
         run: npm test
 
-      - name: Actualizar pronósticos
-        id: update
-        continue-on-error: true      # si un proveedor cae, se publica con los últimos datos válidos
-        env:
-          FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
-          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
-        run: node scripts/update.js
-
-      - name: Validar el JSON que se va a publicar
-        run: node scripts/validate-output.js docs/data/predictions.json
-
-      # El historial vive en el repositorio (docs/data/history). Un push con GITHUB_TOKEN no relanza el workflow.
-      - name: Guardar historial en el repositorio
-        continue-on-error: true
-        run: |
-          git config user.name "radar-local-bot"
-          git config user.email "radar-local-bot@users.noreply.github.com"
-          git add docs/data/history
-          if git diff --cached --quiet; then
-            echo "Sin cambios en el historial"
-          else
-            git commit -m "chore: actualizar historial [skip ci]"
-            git pull --rebase origin main || true
-            git push origin HEAD:main
-          fi
+      - name: Procesar lotes (análisis y resultados)
+        run: node scripts/build-data.js
 
       - uses: actions/configure-pages@v5
 
