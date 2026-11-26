@@ -1,0 +1,2 @@
+Sube aqui los archivos lote-AAAAMMDD-HHMM.json que te da Claude.
+Cada archivo (analisis o resultados) se procesa solo al hacer commit.
