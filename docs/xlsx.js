@@ -75,8 +75,8 @@
   }
 
   var HEAD = ['Fecha', 'Hora', 'Torneo', 'País', 'Local', 'Visita', 'Cuota local (antes del partido)', '% Local', '% Empate', '% Visita', 'Pronóstico', 'Marcador probable',
-    'Marcador final (90 min)', 'Goles local (minutos)', 'Goles visita (minutos)', 'Secuencia de goles', 'Resultado real', 'Acierto', 'Estado', 'Analizado (UTC)'];
-  var WIDTHS = [12, 7, 26, 14, 22, 22, 16, 9, 9, 9, 18, 12, 14, 22, 22, 34, 14, 9, 20, 18];
+    'Marcador final (90 min)', 'Goles local (minutos)', 'Goles visita (minutos)', 'Secuencia de goles', 'Resultado real', 'Acierto', 'Estado', 'Analizado (UTC)', 'Origen del análisis'];
+  var WIDTHS = [12, 7, 26, 14, 22, 22, 16, 9, 9, 9, 18, 12, 14, 22, 22, 34, 14, 9, 20, 18, 22];
 
   function matchesToRows(matches, tz) {
     var d = new Intl.DateTimeFormat('en-CA', { timeZone: tz, year: 'numeric', month: '2-digit', day: '2-digit' });
@@ -97,6 +97,7 @@
         pick, ok && m.scores.length ? m.scores[0].score : '',
         r ? r.home + '-' + r.away : '', gl('home'), gl('away'), seq, real,
         m.hit === true ? 'SÍ' : m.hit === false ? 'NO' : '', estado, (m.analyzedAt || '').slice(0, 16).replace('T', ' '),
+        m.origin && m.origin !== 'claude' ? (m.origin === 'chatgpt' ? 'ChatGPT (sin fuentes)' : m.origin === 'claude-parcial' ? 'Claude (fuentes parciales)' : m.origin) : 'Claude (con fuentes)',
       ]);
     });
     return rows;

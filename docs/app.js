@@ -127,7 +127,7 @@
       var favName = m.favorite === 'home' ? m.home : m.favorite === 'away' ? m.away : null;
       var favP = m.favorite === 'home' ? p[0] : m.favorite === 'away' ? p[2] : p[1];
       h += '<div class="pick"><div class="t">' + (favName ? 'Gana ' + esc(favName) + ' · ' + favP + '%' : 'Empate · ' + favP + '%') + (m.scores.length ? '<em>Marcador probable ' + esc(m.scores[0].score) + '</em>' : '') + '</div>';
-      h += '<span class="pills">' + (m.homeOdds ? '<span class="pill odds">Cuota local ' + m.homeOdds.toFixed(2) + '</span>' : '') + '<span class="pill est">Estimación de Claude</span></span>';
+      h += '<span class="pills">' + (m.homeOdds ? '<span class="pill odds">Cuota local ' + m.homeOdds.toFixed(2) + '</span>' : '') + (m.origin && m.origin !== 'claude' ? '<span class="pill est unv">Estimación de ' + (m.origin === 'claude-parcial' ? 'Claude · fuentes parciales' : esc(m.origin === 'chatgpt' ? 'ChatGPT · sin fuentes verificadas' : m.origin)) + '</span>' : '<span class="pill est">Estimación de Claude</span>') + '</span>';
       h += '</div>';
     }
     if (m.result) {
@@ -152,19 +152,19 @@
   function detailHtml(m) {
     var h = '<div class="detail">';
     if (m.status === 'OK') {
-      if (m.scores.length) h += '<h3>Marcadores más probables</h3><div class="scores">' + m.scores.map(function (s) { return '<span>' + esc(s.score) + '<small>' + Math.round(s.p * 100) + '%</small></span>'; }).join('') + '</div>';
+      if (m.scores.length) h += '<h3>Marcadores más probables</h3><div class="scores">' + m.scores.map(function (s) { return '<span>' + esc(s.score) + (s.p == null ? '' : '<small>' + Math.round(s.p * 100) + '%</small>') + '</span>'; }).join('') + '</div>';
       if ((m.reasoning || []).length) h += '<h3>Por qué</h3><ul>' + m.reasoning.map(function (e) { return '<li>' + esc(e) + '</li>'; }).join('') + '</ul>';
       h += '<h3>Forma reciente</h3>';
       h += '<div>' + esc(m.home) + ' ' + badges(m.recent.home) + '</div>';
-      h += '<ul class="evi">' + m.recent.home.map(function (x) { return '<li>' + esc(x.date) + ' · ' + (x.venue === 'H' ? 'local' : x.venue === 'A' ? 'visita' : '') + ' vs ' + esc(x.opponent) + ' ' + esc(x.score) + srcLink(x.source_url) + '</li>'; }).join('') + '</ul>';
+      h += '<ul class="evi">' + m.recent.home.map(function (x) { return '<li>' + (x.date ? esc(x.date) + ' · ' : '') + (x.venue === 'H' ? 'local ' : x.venue === 'A' ? 'visita ' : '') + 'vs ' + esc(x.opponent) + ' ' + esc(x.score) + srcLink(x.source_url) + '</li>'; }).join('') + '</ul>';
       h += '<div style="margin-top:6px">' + esc(m.away) + ' ' + badges(m.recent.away) + '</div>';
-      h += '<ul class="evi">' + m.recent.away.map(function (x) { return '<li>' + esc(x.date) + ' · ' + (x.venue === 'H' ? 'local' : x.venue === 'A' ? 'visita' : '') + ' vs ' + esc(x.opponent) + ' ' + esc(x.score) + srcLink(x.source_url) + '</li>'; }).join('') + '</ul>';
+      h += '<ul class="evi">' + m.recent.away.map(function (x) { return '<li>' + (x.date ? esc(x.date) + ' · ' : '') + (x.venue === 'H' ? 'local ' : x.venue === 'A' ? 'visita ' : '') + 'vs ' + esc(x.opponent) + ' ' + esc(x.score) + srcLink(x.source_url) + '</li>'; }).join('') + '</ul>';
     }
     if ((m.warnings || []).length > 1) h += '<h3>Advertencias</h3>' + m.warnings.slice(1).map(function (w) { return '<div class="warnLine">' + esc(w) + '</div>'; }).join('');
     var abs = (m.injuries || []).concat(m.suspensions || []);
     h += '<h3>Bajas y sanciones</h3>';
     h += abs.length ? '<ul>' + abs.map(function (c) { return '<li>' + esc(c.team === 'home' ? m.home : m.away) + ': ' + esc(c.player) + ' — ' + (c.status === 'out' ? 'baja' : 'duda') + (c.detail ? ' (' + esc(c.detail) + ')' : '') + (c.source_date ? ' · ' + esc(c.source_date) : '') + srcLink(c.source_url) + '</li>'; }).join('') + '</ul>' : '<div class="muted">Sin bajas verificadas.</div>';
-    if ((m.h2h || []).length) h += '<h3>Enfrentamientos directos</h3><ul>' + m.h2h.map(function (x) { return '<li>' + esc(x.date) + ' · ' + esc(x.home) + ' ' + esc(x.score) + ' ' + esc(x.away) + srcLink(x.source_url) + '</li>'; }).join('') + '</ul>';
+    if ((m.h2h || []).length) h += '<h3>Enfrentamientos directos</h3><ul>' + m.h2h.map(function (x) { return '<li>' + (x.date ? esc(x.date) + ' · ' : '') + esc(x.home) + ' ' + esc(x.score) + ' ' + esc(x.away) + srcLink(x.source_url) + '</li>'; }).join('') + '</ul>';
     if ((m.sources || []).length) {
       h += '<h3>Fuentes consultadas</h3><ul class="src">' + m.sources.map(function (s) {
         var u = safeUrl(s.url);
@@ -229,6 +229,7 @@
       '<div>Total: <b>' + t.hits + '/' + t.n + ' (' + Math.round(100 * t.hits / t.n) + '%)</b> <span class="muted">· esperado ' + Math.round(100 * t.sumPred / t.n) + '%</span></div>' +
       line('Cuando Claude favorece al local', t.byPick.home) + line('Cuando favorece empate', t.byPick.draw) + line('Cuando favorece a la visita', t.byPick.away) +
       Object.keys(t.byBucket).map(function (k) { return line('Favorito con ' + k, t.byBucket[k]); }).join('') +
+      (t.byOrigin && Object.keys(t.byOrigin).length > 1 ? '<div style="margin-top:6px"><b>Por origen del análisis</b></div>' + Object.keys(t.byOrigin).map(function (k) { return line(k === 'claude' ? 'Claude (con fuentes)' : k === 'chatgpt' ? 'ChatGPT (sin fuentes)' : k === 'claude-parcial' ? 'Claude (fuentes parciales)' : k, t.byOrigin[k]); }).join('') : '') +
       (t.scoreTop1.n ? '<div>Marcador exacto (el más probable): <b>' + t.scoreTop1.hits + '/' + t.scoreTop1.n + '</b></div>' : '');
   }
 
