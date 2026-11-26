@@ -191,3 +191,13 @@ test('la app no contiene claves ni llamadas a APIs externas', () => {
   const app = readFileSync(new URL('../docs/app.js', import.meta.url), 'utf8');
   assert.doesNotMatch(app, /fetch\(\s*['"]https?:/, 'solo se piden archivos propios');
 });
+
+test('origen chatgpt: se acepta sin fuentes, marcado como no verificado; origen claude sigue exigiendo fuentes', () => {
+  const base = { kickoff: '2026-11-26T17:45:00Z', competition: 'X', home: 'A', away: 'B', analyzedAt: '2026-11-25T10:00:00Z',
+    probs: { home: 0.6, draw: 0.25, away: 0.15 }, scores: ['2-1', '1-0'], recent: { home: [{ opponent: 'C', score: '1-0' }], away: [] } };
+  const now = Date.parse('2026-11-25T12:00:00Z');
+  const a = normalizeAnalysis({ ...base, origin: 'chatgpt' }, now).match;
+  assert.equal(a.status, 'OK'); assert.equal(a.verified, false); assert.equal(a.scores[0].p, null); assert.equal(a.favorite, 'home');
+  const b = normalizeAnalysis(base, now).match;
+  assert.equal(b.status, 'DATOS INSUFICIENTES');
+});
