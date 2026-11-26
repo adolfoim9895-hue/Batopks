@@ -1,0 +1,584 @@
+{
+ "schema": 2,
+ "createdAt": "2026-11-26T02:48:00Z",
+ "matches": [
+  {
+   "kickoff": "2026-11-28T19:45:00Z",
+   "competition": "Serie A",
+   "country": "Italia",
+   "home": "Inter",
+   "away": "Genoa",
+   "homeOdds": 1.34,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-26T02:48:00Z",
+   "probs": {
+    "home": 0.67,
+    "draw": 0.2,
+    "away": 0.13
+   },
+   "scores": [
+    {
+     "score": "2-0",
+     "p": 0.16
+    },
+    {
+     "score": "2-1",
+     "p": 0.13
+    },
+    {
+     "score": "1-0",
+     "p": 0.12
+    },
+    {
+     "score": "3-1",
+     "p": 0.1
+    }
+   ],
+   "reasoning": [
+    "Inter es 3º y Genoa 10º en Serie A. Inter promedia 2.8 goles por partido y Genoa 0.9 (Fox Sports).",
+    "Inter viene de empatar 4-4 en Atalanta (22 nov), ganar 2-0 a Como y 3-0 en Feyenoord por Champions; perdió 3-1 en el derbi con Milan (31 oct).",
+    "Genoa ganó 3 de sus últimos 5 (2-0 en Sassuolo, 2-1 en Lecce, 2-0 a Juventus) y perdió 2-1 con Milan.",
+    "H2H histórico en Serie A: Inter 21 victorias, Genoa 5 y 5 empates (FotMob, dato de febrero 2026).",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 Inter recibió 4 goles en Atalanta y pierde a Calhanoglu (lesión en el muslo); Zielinski es duda por una lesión en el pie.",
+    "🔴 FotMob muestra otra hora (domingo 29 nov); usé la de tu app: sábado 11:45 hora de Tijuana.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [
+     {
+      "opponent": "Atalanta",
+      "score": "4-4",
+      "source_url": "https://www.foxsports.com/soccer/serie-a-inter-milan-vs-genoa-nov-28-2026-game-boxscore-869508",
+      "date": "2026-11-22",
+      "venue": "A",
+      "competition": "Serie A"
+     },
+     {
+      "opponent": "Como",
+      "score": "2-0",
+      "source_url": "https://www.foxsports.com/soccer/serie-a-inter-milan-vs-genoa-nov-28-2026-game-boxscore-869508",
+      "date": "2026-11-08",
+      "venue": "H",
+      "competition": "Serie A"
+     },
+     {
+      "opponent": "Feyenoord",
+      "score": "3-0",
+      "source_url": "https://www.foxsports.com/soccer/serie-a-inter-milan-vs-genoa-nov-28-2026-game-boxscore-869508",
+      "date": "2026-11-03",
+      "venue": "A",
+      "competition": "Champions League"
+     },
+     {
+      "opponent": "AC Milan",
+      "score": "1-3",
+      "source_url": "https://www.foxsports.com/soccer/serie-a-inter-milan-vs-genoa-nov-28-2026-game-boxscore-869508",
+      "date": "2026-10-31",
+      "venue": "A",
+      "competition": "Serie A"
+     },
+     {
+      "opponent": "Venezia",
+      "score": "2-0",
+      "source_url": "https://www.foxsports.com/soccer/serie-a-inter-milan-vs-genoa-nov-28-2026-game-boxscore-869508",
+      "date": "2026-10-28",
+      "venue": "A"
+     }
+    ],
+    "away": [
+     {
+      "opponent": "Sassuolo",
+      "score": "2-0",
+      "source_url": "https://www.foxsports.com/soccer/serie-a-inter-milan-vs-genoa-nov-28-2026-game-boxscore-869508",
+      "date": "2026-11-22",
+      "venue": "A",
+      "competition": "Serie A"
+     },
+     {
+      "opponent": "AC Milan",
+      "score": "1-2",
+      "source_url": "https://www.foxsports.com/soccer/serie-a-inter-milan-vs-genoa-nov-28-2026-game-boxscore-869508",
+      "date": "2026-11-08",
+      "venue": "H",
+      "competition": "Serie A"
+     },
+     {
+      "opponent": "Lecce",
+      "score": "2-1",
+      "source_url": "https://www.foxsports.com/soccer/serie-a-inter-milan-vs-genoa-nov-28-2026-game-boxscore-869508",
+      "date": "2026-11-01",
+      "venue": "A",
+      "competition": "Serie A"
+     },
+     {
+      "opponent": "Juventus",
+      "score": "2-0",
+      "source_url": "https://www.foxsports.com/soccer/serie-a-inter-milan-vs-genoa-nov-28-2026-game-boxscore-869508",
+      "date": "2026-10-28",
+      "venue": "H"
+     },
+     {
+      "opponent": "Venezia",
+      "score": "1-0",
+      "source_url": "https://www.foxsports.com/soccer/serie-a-inter-milan-vs-genoa-nov-28-2026-game-boxscore-869508",
+      "date": "2026-10-25",
+      "venue": "H"
+     }
+    ]
+   },
+   "h2h": [],
+   "injuries": [
+    {
+     "team": "home",
+     "player": "Hakan Calhanoglu",
+     "status": "out",
+     "detail": "Distensión en el muslo derecho",
+     "source_url": "https://www.foxsports.com/soccer/serie-a-inter-milan-vs-genoa-nov-28-2026-game-boxscore-869508"
+    },
+    {
+     "team": "home",
+     "player": "Piotr Zielinski",
+     "status": "doubtful",
+     "detail": "Pie, día a día",
+     "source_url": "https://www.foxsports.com/soccer/serie-a-inter-milan-vs-genoa-nov-28-2026-game-boxscore-869508"
+    },
+    {
+     "team": "home",
+     "player": "Djed Spence",
+     "status": "out",
+     "detail": "Lesión en la pantorrilla (FotMob)",
+     "source_url": "https://www.fotmob.com/el/matches/inter-vs-genoa/2xzyqb"
+    },
+    {
+     "team": "away",
+     "player": "Elias Havel",
+     "status": "out",
+     "detail": "Tobillo (FotMob)",
+     "source_url": "https://www.fotmob.com/el/matches/inter-vs-genoa/2xzyqb"
+    },
+    {
+     "team": "away",
+     "player": "Lorenzo Venturino",
+     "status": "out",
+     "detail": "Muscular (FotMob)",
+     "source_url": "https://www.fotmob.com/el/matches/inter-vs-genoa/2xzyqb"
+    }
+   ],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://www.foxsports.com/soccer/serie-a-inter-milan-vs-genoa-nov-28-2026-game-boxscore-869508",
+     "title": "www.foxsports.com"
+    },
+    {
+     "url": "https://www.fotmob.com/el/matches/inter-vs-genoa/2xzyqb",
+     "title": "www.fotmob.com"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-28T15:00:00Z",
+   "competition": "Scottish Premiership",
+   "country": "Escocia",
+   "home": "Rangers",
+   "away": "Falkirk",
+   "homeOdds": 1.26,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-26T02:48:00Z",
+   "probs": {
+    "home": 0.56,
+    "draw": 0.24,
+    "away": 0.2
+   },
+   "scores": [
+    {
+     "score": "2-1",
+     "p": 0.14
+    },
+    {
+     "score": "2-0",
+     "p": 0.12
+    },
+    {
+     "score": "1-1",
+     "p": 0.12
+    },
+    {
+     "score": "1-0",
+     "p": 0.11
+    }
+   ],
+   "reasoning": [
+    "Rangers es 2º con 33 pts (10 victorias, 3 empates, 1 derrota; 26 goles a favor y 12 en contra) y lleva 13 partidos sin perder; Falkirk es 3º con 24 pts.",
+    "Falkirk lleva 6 victorias seguidas en liga, entre ellas 2-0 a Celtic (1 nov), 5-2 en Hearts (8 nov) y 2-1 a St Johnstone (21 nov).",
+    "En los 3 duelos de liga más recientes ganó Rangers (6-3 y 5-2 en el campo de Falkirk en la temporada pasada, 2-1 el 2 sep 2026); el único duelo en Ibrox terminó 0-0 (nov 2025).",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 Falkirk llega en su mejor racha y es el rival con más forma que Rangers ha tenido en semanas.",
+    "🔴 No encontré bajas ni sanciones confirmadas de ninguno de los dos equipos.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [],
+    "away": [
+     {
+      "opponent": "St Johnstone",
+      "score": "2-1",
+      "source_url": "https://falkirkfc.co.uk/next-up-rangers-a",
+      "date": "2026-11-21",
+      "venue": "H",
+      "competition": "Premiership"
+     },
+     {
+      "opponent": "Hearts",
+      "score": "5-2",
+      "source_url": "https://falkirkfc.co.uk/next-up-rangers-a",
+      "date": "2026-11-08",
+      "venue": "A",
+      "competition": "Premiership"
+     },
+     {
+      "opponent": "Celtic",
+      "score": "2-0",
+      "source_url": "https://falkirkfc.co.uk/next-up-rangers-a",
+      "date": "2026-11-01",
+      "venue": "H",
+      "competition": "Premiership"
+     }
+    ]
+   },
+   "h2h": [
+    {
+     "date": "2026-09-02",
+     "home": "Falkirk",
+     "away": "Rangers",
+     "score": "1-2",
+     "competition": "Premiership",
+     "source_url": "https://www.ysscores.com/en/match/5793986/Rangers-FC-vs-Falkirk-FC"
+    },
+    {
+     "date": "2026-05-16",
+     "home": "Falkirk",
+     "away": "Rangers",
+     "score": "2-5",
+     "competition": "Premiership",
+     "source_url": "https://www.ysscores.com/en/match/5793986/Rangers-FC-vs-Falkirk-FC"
+    },
+    {
+     "date": "2026-04-12",
+     "home": "Falkirk",
+     "away": "Rangers",
+     "score": "3-6",
+     "competition": "Premiership",
+     "source_url": "https://www.ysscores.com/en/match/5793986/Rangers-FC-vs-Falkirk-FC"
+    },
+    {
+     "date": "2025-11-30",
+     "home": "Rangers",
+     "away": "Falkirk",
+     "score": "0-0",
+     "competition": "Premiership",
+     "source_url": "https://www.ysscores.com/en/match/5793986/Rangers-FC-vs-Falkirk-FC"
+    }
+   ],
+   "injuries": [],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://www.skysports.com/rangers",
+     "title": "www.skysports.com"
+    },
+    {
+     "url": "https://falkirkfc.co.uk/next-up-rangers-a",
+     "title": "falkirkfc.co.uk"
+    },
+    {
+     "url": "https://www.sofascore.com/football/match/falkirk-fc-rangers/bXsnX",
+     "title": "www.sofascore.com"
+    },
+    {
+     "url": "https://www.ysscores.com/en/match/5793986/Rangers-FC-vs-Falkirk-FC",
+     "title": "www.ysscores.com"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-28T18:00:00Z",
+   "competition": "SuperLiga",
+   "country": "Rumania",
+   "home": "FCSB",
+   "away": "FK Csikszereda",
+   "homeOdds": 1.3,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-26T02:48:00Z",
+   "probs": {
+    "home": 0.62,
+    "draw": 0.24,
+    "away": 0.14
+   },
+   "scores": [
+    {
+     "score": "1-0",
+     "p": 0.17
+    },
+    {
+     "score": "2-0",
+     "p": 0.15
+    },
+    {
+     "score": "2-1",
+     "p": 0.11
+    },
+    {
+     "score": "1-1",
+     "p": 0.1
+    }
+   ],
+   "reasoning": [
+    "Csikszereda es último con 6 pts (1 victoria, 3 empates, 12 derrotas) y ha recibido 32 goles; FCSB es 9º con 22 pts, a 3 del último puesto de play-off.",
+    "FCSB está en mala racha: perdió 0-1 tres veces en sus últimos 5 (U Cluj, Corvinul y Gloria Bistrița en Copa) y ganó 4-1 a Rapid.",
+    "Csikszereda perdió 0-2 con Rapid y 0-4 con Corvinul, y empató 0-0 con U Cluj.",
+    "FCSB ganó 2-0 en la ida de esta temporada (goles de Radunović y Politic).",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 FCSB está en crisis de resultados y ha perdido tres veces por 0-1: favorito, pero no seguro.",
+    "🔴 FCSB sin Cisotti, Politic, Garita ni Ngezana (lesionados).",
+    "🔴 La forma reciente viene de una sola página sin fechas.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [
+     {
+      "opponent": "Rapid",
+      "score": "4-1",
+      "source_url": "https://beturi.ro/ponturi-pariuri/fotbal/liga-1/fcsb-csikszereda-28-11-2026/",
+      "competition": "SuperLiga"
+     },
+     {
+      "opponent": "Gloria Bistrița",
+      "score": "0-1",
+      "source_url": "https://beturi.ro/ponturi-pariuri/fotbal/liga-1/fcsb-csikszereda-28-11-2026/",
+      "competition": "Cupa României"
+     },
+     {
+      "opponent": "U Cluj",
+      "score": "0-1",
+      "source_url": "https://beturi.ro/ponturi-pariuri/fotbal/liga-1/fcsb-csikszereda-28-11-2026/",
+      "competition": "SuperLiga"
+     },
+     {
+      "opponent": "Corvinul",
+      "score": "0-1",
+      "source_url": "https://beturi.ro/ponturi-pariuri/fotbal/liga-1/fcsb-csikszereda-28-11-2026/",
+      "competition": "SuperLiga"
+     },
+     {
+      "opponent": "FC Argeș",
+      "score": "0-0",
+      "source_url": "https://beturi.ro/ponturi-pariuri/fotbal/liga-1/fcsb-csikszereda-28-11-2026/",
+      "venue": "A",
+      "competition": "SuperLiga"
+     }
+    ],
+    "away": [
+     {
+      "opponent": "Rapid",
+      "score": "0-2",
+      "source_url": "https://beturi.ro/ponturi-pariuri/fotbal/liga-1/fcsb-csikszereda-28-11-2026/",
+      "competition": "SuperLiga"
+     },
+     {
+      "opponent": "U Cluj",
+      "score": "0-0",
+      "source_url": "https://beturi.ro/ponturi-pariuri/fotbal/liga-1/fcsb-csikszereda-28-11-2026/",
+      "competition": "SuperLiga"
+     },
+     {
+      "opponent": "Corvinul",
+      "score": "0-4",
+      "source_url": "https://beturi.ro/ponturi-pariuri/fotbal/liga-1/fcsb-csikszereda-28-11-2026/",
+      "competition": "SuperLiga"
+     }
+    ]
+   },
+   "h2h": [
+    {
+     "date": null,
+     "home": "Csikszereda",
+     "away": "FCSB",
+     "score": "0-2",
+     "competition": "SuperLiga (ida 2026-27)",
+     "source_url": "https://beturi.ro/ponturi-pariuri/fotbal/liga-1/fcsb-csikszereda-28-11-2026/"
+    }
+   ],
+   "injuries": [
+    {
+     "team": "home",
+     "player": "Cisotti",
+     "status": "out",
+     "detail": "Lesión",
+     "source_url": "https://beturi.ro/ponturi-pariuri/fotbal/liga-1/fcsb-csikszereda-28-11-2026/"
+    },
+    {
+     "team": "home",
+     "player": "Politic",
+     "status": "out",
+     "detail": "Lesión",
+     "source_url": "https://beturi.ro/ponturi-pariuri/fotbal/liga-1/fcsb-csikszereda-28-11-2026/"
+    },
+    {
+     "team": "home",
+     "player": "Garita",
+     "status": "out",
+     "detail": "Lesión",
+     "source_url": "https://beturi.ro/ponturi-pariuri/fotbal/liga-1/fcsb-csikszereda-28-11-2026/"
+    },
+    {
+     "team": "home",
+     "player": "Ngezana",
+     "status": "out",
+     "detail": "Lesión",
+     "source_url": "https://beturi.ro/ponturi-pariuri/fotbal/liga-1/fcsb-csikszereda-28-11-2026/"
+    }
+   ],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://beturi.ro/ponturi-pariuri/fotbal/liga-1/fcsb-csikszereda-28-11-2026/",
+     "title": "beturi.ro"
+    },
+    {
+     "url": "https://www.sofascore.com/football/match/fk-csikszereda-miercurea-ciuc-fcsb/bqbsxEnc",
+     "title": "www.sofascore.com"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-28T17:45:00Z",
+   "competition": "Eredivisie",
+   "country": "Países Bajos",
+   "home": "PSV Eindhoven",
+   "away": "Go Ahead Eagles",
+   "homeOdds": 1.28,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-26T02:48:00Z",
+   "probs": {
+    "home": 0.72,
+    "draw": 0.16,
+    "away": 0.12
+   },
+   "scores": [
+    {
+     "score": "3-1",
+     "p": 0.14
+    },
+    {
+     "score": "2-0",
+     "p": 0.13
+    },
+    {
+     "score": "3-0",
+     "p": 0.12
+    },
+    {
+     "score": "2-1",
+     "p": 0.11
+    }
+   ],
+   "reasoning": [
+    "PSV lidera la Eredivisie con 29 pts tras 13 jornadas, 1 más que Ajax; Go Ahead Eagles estaba 8º con 17 pts y 24 goles a favor contra 27 en contra (tabla del 9 nov).",
+    "PSV viene de perder 1-5 con Real Madrid (24 nov, Champions) y 1-2 con Club Brugge en casa (4 nov): hay desgaste europeo, pero en liga ha sido muy superior.",
+    "No encontré h2h reciente verificable.",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 PSV juega 4 días después de recibir 5 goles de Real Madrid: posible rotación.",
+    "🔴 Go Ahead Eagles sin el portero Nick Marsman (rodilla); Dean James y Evert Linthorst son duda y Richonell Margaret no está claro.",
+    "🔴 No pude verificar los últimos resultados de liga de Go Ahead Eagles.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [
+     {
+      "opponent": "Real Madrid",
+      "score": "1-5",
+      "source_url": "https://www.vavel.com/en-us/data/psv-eindhoven/",
+      "date": "2026-11-24",
+      "competition": "Champions League"
+     },
+     {
+      "opponent": "Club Brugge",
+      "score": "1-2",
+      "source_url": "https://www.vavel.com/en-us/data/psv-eindhoven/",
+      "date": "2026-11-04",
+      "venue": "H",
+      "competition": "Champions League"
+     },
+     {
+      "opponent": "Porto",
+      "score": "1-0",
+      "source_url": "https://www.vavel.com/en-us/data/psv-eindhoven/",
+      "date": "2026-10-20",
+      "competition": "Champions League"
+     }
+    ],
+    "away": []
+   },
+   "h2h": [],
+   "injuries": [
+    {
+     "team": "away",
+     "player": "Nick Marsman",
+     "status": "out",
+     "detail": "Rodilla",
+     "source_url": "https://news.bet365.nl/nl-nl/article/psv-go-ahead-eagles-in-eredivisie-blessures-opstellingen-h2h-tv-gids-vorm-voorspellingen-en-meer/2026112511485518789"
+    },
+    {
+     "team": "away",
+     "player": "Dean James",
+     "status": "doubtful",
+     "detail": "Lesión leve",
+     "source_url": "https://news.bet365.nl/nl-nl/article/psv-go-ahead-eagles-in-eredivisie-blessures-opstellingen-h2h-tv-gids-vorm-voorspellingen-en-meer/2026112511485518789"
+    },
+    {
+     "team": "away",
+     "player": "Evert Linthorst",
+     "status": "doubtful",
+     "detail": "Lesión leve",
+     "source_url": "https://news.bet365.nl/nl-nl/article/psv-go-ahead-eagles-in-eredivisie-blessures-opstellingen-h2h-tv-gids-vorm-voorspellingen-en-meer/2026112511485518789"
+    },
+    {
+     "team": "away",
+     "player": "Richonell Margaret",
+     "status": "doubtful",
+     "detail": "No está claro si llega en forma",
+     "source_url": "https://news.bet365.nl/nl-nl/article/psv-go-ahead-eagles-in-eredivisie-blessures-opstellingen-h2h-tv-gids-vorm-voorspellingen-en-meer/2026112511485518789"
+    }
+   ],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://www.vavel.com/en-us/data/psv-eindhoven/",
+     "title": "www.vavel.com"
+    },
+    {
+     "url": "https://sport.sky.de/fussball/go-ahead-eagles-vs-heerenveen/556985",
+     "title": "sport.sky.de"
+    },
+    {
+     "url": "https://news.bet365.nl/nl-nl/article/psv-go-ahead-eagles-in-eredivisie-blessures-opstellingen-h2h-tv-gids-vorm-voorspellingen-en-meer/2026112511485518789",
+     "title": "news.bet365.nl"
+    },
+    {
+     "url": "https://oddspedia.com/football/go-ahead-eagles-psv-eindhoven-71416",
+     "title": "oddspedia.com"
+    }
+   ]
+  }
+ ]
+}
