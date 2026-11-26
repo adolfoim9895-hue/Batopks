@@ -1,0 +1,67 @@
+{
+  "schema": 2,
+  "createdAt": "2026-11-26T23:21:36Z",
+  "results": [
+    {
+      "id": "2026-11-26-besiktas-hapoel-beer-sheva",
+      "score": { "home": 2, "away": 1 },
+      "goals": [
+        { "minute": "75", "team": "home", "player": "Junior Olaitan" },
+        { "minute": "90", "team": "home", "player": "Orkun Kökçü" },
+        { "minute": "90+3", "team": "away", "player": "Javon East" }
+      ],
+      "source_url": "https://www.hurriyet.com.tr/sporarena/besiktas-2-1-hapoel-beer-sheva-uefa-avrupa-ligi-maci-ozeti-43391381",
+      "source_date": "2026-11-26"
+    },
+    {
+      "id": "2026-11-26-union-saint-gilloise-lech-poznan",
+      "score": { "home": 2, "away": 2 },
+      "goals": [
+        { "minute": "15", "team": "away", "player": "Agnero" },
+        { "minute": "18", "team": "away", "player": "Palma" },
+        { "minute": "54", "team": "home", "player": "Florucz" },
+        { "minute": "66", "team": "home", "player": "Rodríguez" }
+      ],
+      "source_url": "https://sport.sky.de/fussball/union-saint-gilloise-vs-posen/577829",
+      "source_date": "2026-11-26"
+    },
+    {
+      "id": "2026-11-26-marseille-levski-sofia",
+      "score": { "home": 1, "away": 0 },
+      "goals": [
+        { "minute": "28", "team": "home", "player": "Amine Gouiri", "type": "pen" }
+      ],
+      "source_url": "https://www.eurosport.fr/football/ligue-europa/2026-2027/olympique-de-marseille-levski-sofia_mtc21878842/live-commentary.shtml",
+      "source_date": "2026-11-26"
+    },
+    {
+      "id": "2026-11-26-sunderland-jagiellonia-bialystok",
+      "score": { "home": 1, "away": 1 },
+      "goals": [
+        { "minute": "47", "team": "home", "player": "Tymur Tutierov" },
+        { "minute": "52", "team": "away", "player": "Kamil Jóźwiak" }
+      ],
+      "source_url": "https://www.espn.com/soccer/report/_/gameId/401915513",
+      "source_date": "2026-11-26"
+    },
+    {
+      "id": "2026-11-26-ferencvaros-nk-celje",
+      "score": { "home": 0, "away": 0 },
+      "goals": [],
+      "source_url": "https://telex.hu/sport/2026/11/26/europa-liga-futball-ferencvaros-fradi-celje",
+      "source_date": "2026-11-26"
+    },
+    {
+      "id": "2026-11-26-hoffenheim-sturm-graz",
+      "score": { "home": 3, "away": 1 },
+      "goals": [
+        { "minute": "43", "team": "away", "player": "Oumar Diakité" },
+        { "minute": "72", "team": "home", "player": "Adam Hložek" },
+        { "minute": "80", "team": "home", "player": "Babase Conté" },
+        { "minute": "89", "team": "home", "player": "Max Moerstedt" }
+      ],
+      "source_url": "https://www.bundesliga.com/en/bundesliga/news/hoffenheim-sturm-graz-live-europa-league-blog-preview-report-ilzer-hlozek-conte-40066",
+      "source_date": "2026-11-27"
+    }
+  ]
+}
