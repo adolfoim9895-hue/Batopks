@@ -1,0 +1,251 @@
+{
+ "schema": 2,
+ "createdAt": "2026-11-26T02:40:00Z",
+ "matches": [
+  {
+   "kickoff": "2026-11-27T19:00:00Z",
+   "competition": "Eerste Divisie",
+   "country": "Países Bajos",
+   "home": "NAC Breda",
+   "away": "Den Bosch",
+   "homeOdds": 1.4,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-26T02:40:00Z",
+   "probs": {
+    "home": 0.58,
+    "draw": 0.24,
+    "away": 0.18
+   },
+   "scores": [
+    {
+     "score": "2-1",
+     "p": 0.14
+    },
+    {
+     "score": "2-0",
+     "p": 0.13
+    },
+    {
+     "score": "1-0",
+     "p": 0.12
+    },
+    {
+     "score": "1-1",
+     "p": 0.11
+    }
+   ],
+   "reasoning": [
+    "NAC Breda: 9 victorias, 4 empates y 3 derrotas en 16 jornadas (33 goles a favor, 23 en contra); Den Bosch: 6-4-6 (25 a favor, 26 en contra).",
+    "Forma: NAC ganó 3 de sus últimos 4 de liga (empató en Dordrecht); Den Bosch ganó a Venlo y Emmen pero perdió en Waalwijk y empató con Jong Utrecht.",
+    "H2H oficial: NAC 5 victorias, Den Bosch 3 y 3 empates en 11 duelos. NAC juega en casa.",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 La página consultada no mostró los marcadores de la forma reciente, solo ganó/empató/perdió.",
+    "🔴 No encontré bajas ni sanciones de ninguno de los dos equipos.",
+    "Aviso: análisis con datos parciales; varias fechas o marcadores de forma reciente no se pudieron verificar."
+   ],
+   "recent": {
+    "home": [],
+    "away": []
+   },
+   "h2h": [],
+   "injuries": [],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://scores24.live/en/soccer/m-27-11-2026-nac-breda-den-bosch-prediction",
+     "title": "scores24.live"
+    },
+    {
+     "url": "https://www.sofascore.com/football/match/fc-den-bosch-nac-breda/Xibsnjb",
+     "title": "www.sofascore.com"
+    },
+    {
+     "url": "https://www.fotmob.com/teams/9761/overview/nac-breda",
+     "title": "www.fotmob.com"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-28T02:00:00Z",
+   "competition": "Liga Promerica (Apertura 2026)",
+   "country": "Costa Rica",
+   "home": "Herediano",
+   "away": "Escorpiones Belén",
+   "homeOdds": 1.26,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-26T02:40:00Z",
+   "probs": {
+    "home": 0.47,
+    "draw": 0.28,
+    "away": 0.25
+   },
+   "scores": [
+    {
+     "score": "1-0",
+     "p": 0.16
+    },
+    {
+     "score": "2-1",
+     "p": 0.11
+    },
+    {
+     "score": "1-1",
+     "p": 0.14
+    },
+    {
+     "score": "2-0",
+     "p": 0.1
+    }
+   ],
+   "reasoning": [
+    "Ambos están eliminados del Apertura 2026; es la última jornada y cuenta para la tabla acumulada del descenso: Herediano 15 pts (antepenúltimo) y Escorpiones 14 pts.",
+    "Herediano ganó 2-0 en su visita a Escorpiones en septiembre y empató 1-1 con Inter San Carlos el 9 nov.",
+    "Casi sin datos de forma: la estimación se apoya sobre todo en la localía y en que ambos juegan sin objetivo de torneo.",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 Muy pocos datos: no encontré forma reciente ni bajas de ninguno de los dos equipos; es la estimación menos respaldada.",
+    "🔴 Fecha dudosa: La Nación dice viernes 27 nov a las 8 p. m. (hora de Costa Rica), pero el calendario del club y 365Scores muestran domingo 29 nov a las 21:00. Verifica la fecha en tu app de apuestas.",
+    "Aviso: análisis con datos parciales; varias fechas o marcadores de forma reciente no se pudieron verificar."
+   ],
+   "recent": {
+    "home": [
+     {
+      "opponent": "Inter San Carlos",
+      "score": "1-1",
+      "date": "2026-11-09",
+      "competition": "Liga Promerica",
+      "source_url": "https://www.365scores.com/es/football/team/club-sport-herediano-9071"
+     }
+    ],
+    "away": []
+   },
+   "h2h": [
+    {
+     "date": "2026-09-13",
+     "home": "Escorpiones Belén",
+     "away": "Herediano",
+     "score": "0-2",
+     "competition": "Liga Promerica",
+     "source_url": "https://www.herediano.com/calendario"
+    }
+   ],
+   "injuries": [],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://www.nacion.com/puro-deporte/herediano-vs-escorpiones-hora-y-canal-para-ver/UUOGCLRUHVBUTEISDL6KGYSRVU/story/",
+     "title": "www.nacion.com"
+    },
+    {
+     "url": "https://www.herediano.com/calendario",
+     "title": "www.herediano.com"
+    },
+    {
+     "url": "https://www.365scores.com/es/football/team/club-sport-herediano-9071",
+     "title": "www.365scores.com"
+    },
+    {
+     "url": "https://espndeportes.espn.com/futbol/equipo/calendario/_/id/862/liga/crc.1/temporada/2008/herediano",
+     "title": "espndeportes.espn.com"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-27T16:30:00Z",
+   "competition": "Primera Liga (FNL)",
+   "country": "Rusia",
+   "home": "Torpedo Moscow",
+   "away": "SKA Energia Khabarovsk",
+   "homeOdds": 1.41,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-26T02:40:00Z",
+   "probs": {
+    "home": 0.5,
+    "draw": 0.28,
+    "away": 0.22
+   },
+   "scores": [
+    {
+     "score": "1-0",
+     "p": 0.16
+    },
+    {
+     "score": "2-1",
+     "p": 0.12
+    },
+    {
+     "score": "1-1",
+     "p": 0.13
+    },
+    {
+     "score": "2-0",
+     "p": 0.11
+    }
+   ],
+   "reasoning": [
+    "Torpedo es 3º con 35 pts (10-5-4, goles 30:16); SKA es 12º con 20 pts (5-5-9, goles 25:29).",
+    "Forma en liga: Torpedo L-W-W-D-D; SKA D-W-W-W-W (10 goles a favor y 1 en contra en esos 5), así que viene mejor de lo que dice su tabla.",
+    "H2H: Torpedo ganó los dos últimos (4-1 en marzo y 0-2 de visita en agosto 2026); SKA ganó 1-0 en agosto de 2025.",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 SKA llega en racha de 4 victorias seguidas: Torpedo es favorito pero no con gran margen.",
+    "🔴 No encontré bajas ni sanciones; la hora (16:30 GMT) viene de una sola página.",
+    "Aviso: análisis con datos parciales; varias fechas o marcadores de forma reciente no se pudieron verificar."
+   ],
+   "recent": {
+    "home": [],
+    "away": []
+   },
+   "h2h": [
+    {
+     "date": "2026-08-30",
+     "home": "SKA Energia Khabarovsk",
+     "away": "Torpedo Moscow",
+     "score": "0-2",
+     "competition": "Primera Liga",
+     "source_url": "https://futbolpressa.ru/news/torpedo-moskva-ska-khabarovsk-prognoz-match"
+    },
+    {
+     "date": "2026-03-30",
+     "home": "Torpedo Moscow",
+     "away": "SKA Energia Khabarovsk",
+     "score": "4-1",
+     "competition": "Primera Liga",
+     "source_url": "https://futbolpressa.ru/news/torpedo-moskva-ska-khabarovsk-prognoz-match"
+    },
+    {
+     "date": "2025-08-03",
+     "home": "SKA Energia Khabarovsk",
+     "away": "Torpedo Moscow",
+     "score": "1-0",
+     "competition": "Primera Liga",
+     "source_url": "https://futbolpressa.ru/news/torpedo-moskva-ska-khabarovsk-prognoz-match"
+    },
+    {
+     "date": "2024-11-17",
+     "home": "SKA Energia Khabarovsk",
+     "away": "Torpedo Moscow",
+     "score": "2-2",
+     "competition": "Primera Liga",
+     "source_url": "https://futbolpressa.ru/news/torpedo-moskva-ska-khabarovsk-prognoz-match"
+    }
+   ],
+   "injuries": [],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://futbolpressa.ru/news/torpedo-moskva-ska-khabarovsk-prognoz-match",
+     "title": "futbolpressa.ru"
+    },
+    {
+     "url": "https://www.footballstreams.com/matches/torpedo-moskva-vs-ska-khabarovsk-20261127/",
+     "title": "www.footballstreams.com"
+    }
+   ]
+  }
+ ]
+}
