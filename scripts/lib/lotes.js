@@ -41,6 +41,10 @@ export function normalizeAnalysis(raw, now = Date.now()) {
   if (!home || !away || !competition) return { match: null, problems: [`${label}: faltan home, away o competition`] };
   if (!isIso(raw.kickoff)) return { match: null, problems: [`${label}: kickoff inválido (usa ISO UTC, ej. 2026-11-28T20:00:00Z)`] };
   if (!isIso(raw.analyzedAt)) return { match: null, problems: [`${label}: falta analyzedAt`] };
+  // origin: 'claude' (por defecto) exige fuentes verificables; cualquier otro origen (p. ej. 'chatgpt') se acepta
+  // SIN fuentes, pero queda marcado como no verificado y se contabiliza aparte.
+  const origin = (str(raw.origin, 20) || 'claude').toLowerCase();
+  const lenient = origin !== 'claude';
   const kick = Date.parse(raw.kickoff);
   const analyzed = Date.parse(raw.analyzedAt);
   if (analyzed >= kick) return { match: null, problems: [`${label}: analizado después del inicio del partido; se descarta (no se puede validar un pronóstico posterior)`] };
@@ -55,7 +59,7 @@ export function normalizeAnalysis(raw, now = Date.now()) {
     seen.add(n);
     sources.push({ url: String(s.url).trim(), title: str(s.title, 120) || String(s.url).trim(), date: isDate(s.date) ? s.date : null });
   }
-  const cited = (u) => seen.has(normUrl(u));
+  const cited = (u) => lenient || seen.has(normUrl(u));
 
   // evidencia: cada dato debe citar una fuente presente en `sources`
   const dropped = [];
@@ -66,19 +70,19 @@ export function normalizeAnalysis(raw, now = Date.now()) {
     }
     return out;
   };
-  const recentOf = (side) => keep(raw.recent && raw.recent[side], (x) => isDate(x.date) && SCORE_RE.test(x.score || '') && str(x.opponent, 60), `forma ${side}`).map((x) => {
+  const recentOf = (side) => keep(raw.recent && raw.recent[side], (x) => (lenient || isDate(x.date)) && SCORE_RE.test(x.score || '') && str(x.opponent, 60), `forma ${side}`).map((x) => {
     const [gf, ga] = x.score.split('-').map(Number);
     return {
-      date: x.date, opponent: str(x.opponent, 60), venue: ['H', 'A', 'N'].includes(x.venue) ? x.venue : null,
-      score: x.score, res: gf > ga ? 'W' : gf < ga ? 'L' : 'D', competition: str(x.competition, 60) || null, source_url: x.source_url,
+      date: isDate(x.date) ? x.date : null, opponent: str(x.opponent, 60), venue: ['H', 'A', 'N'].includes(x.venue) ? x.venue : null,
+      score: x.score, res: gf > ga ? 'W' : gf < ga ? 'L' : 'D', competition: str(x.competition, 60) || null, source_url: x.source_url || null,
     };
-  }).sort((a, b) => (a.date < b.date ? 1 : -1)).slice(0, 8);
+  }).sort((a, b) => (a.date && b.date ? (a.date < b.date ? 1 : -1) : 0)).slice(0, 8);
   const recent = { home: recentOf('home'), away: recentOf('away') };
-  const h2h = keep(raw.h2h, (x) => isDate(x.date) && SCORE_RE.test(x.score || '') && str(x.home, 60) && str(x.away, 60), 'h2h')
-    .map((x) => ({ date: x.date, home: str(x.home, 60), away: str(x.away, 60), score: x.score, competition: str(x.competition, 60) || null, source_url: x.source_url }))
-    .sort((a, b) => (a.date < b.date ? 1 : -1)).slice(0, 6);
+  const h2h = keep(raw.h2h, (x) => (lenient || isDate(x.date)) && SCORE_RE.test(x.score || '') && str(x.home, 60) && str(x.away, 60), 'h2h')
+    .map((x) => ({ date: isDate(x.date) ? x.date : null, home: str(x.home, 60), away: str(x.away, 60), score: x.score, competition: str(x.competition, 60) || null, source_url: x.source_url || null }))
+    .sort((a, b) => (a.date && b.date ? (a.date < b.date ? 1 : -1) : 0)).slice(0, 6);
   const absOf = (arr, what) => keep(arr, (x) => (x.team === 'home' || x.team === 'away') && str(x.player, 60), what)
-    .map((x) => ({ team: x.team, player: str(x.player, 60), status: x.status === 'doubtful' ? 'doubtful' : 'out', detail: str(x.detail, 140), source_url: x.source_url, source_date: isDate(x.source_date) ? x.source_date : null }));
+    .map((x) => ({ team: x.team, player: str(x.player, 60), status: x.status === 'doubtful' ? 'doubtful' : 'out', detail: str(x.detail, 140), source_url: x.source_url || null, source_date: isDate(x.source_date) ? x.source_date : null }));
   const injuries = absOf(raw.injuries, 'lesión');
   const suspensions = absOf(raw.suspensions, 'sanción');
   if (dropped.length) problems.push(`${label}: se descartaron ${dropped.length} dato(s) sin fuente válida en "sources" (${[...new Set(dropped)].join(', ')})`);
@@ -95,7 +99,7 @@ export function normalizeAnalysis(raw, now = Date.now()) {
     id: matchId(raw.kickoff, home, away),
     kickoff: new Date(kick).toISOString(),
     competition, country: str(raw.country, 40) || null,
-    home, away, homeOdds,
+    home, away, homeOdds, origin, verified: !lenient,
     analyzedAt: new Date(analyzed).toISOString(),
     status: 'OK', reason: null,
     probs: null, scores: [], favorite: null,
@@ -113,16 +117,20 @@ export function normalizeAnalysis(raw, now = Date.now()) {
   if (ph === null || pd === null || pa === null || ph < 0 || pd < 0 || pa < 0) { insufficient('Probabilidades ausentes o inválidas.'); problems.push(`${label}: probs inválidas`); return { match, problems }; }
   const sum = ph + pd + pa;
   if (sum < 0.97 || sum > 1.03) { insufficient('Las probabilidades no suman 100 %.'); problems.push(`${label}: probs suman ${sum.toFixed(2)}`); return { match, problems }; }
-  if (!sources.length) { insufficient('No hay fuentes citadas.'); return { match, problems }; }
-  if (recent.home.length < MIN_RECENT || recent.away.length < MIN_RECENT) {
+  if (!lenient && !sources.length) { insufficient('No hay fuentes citadas.'); return { match, problems }; }
+  if (!lenient && (recent.home.length < MIN_RECENT || recent.away.length < MIN_RECENT)) {
     insufficient(`Faltan partidos recientes verificados con fuente (local ${recent.home.length}, visita ${recent.away.length}; mínimo ${MIN_RECENT} por equipo).`);
     return { match, problems };
   }
   match.probs = { home: ph / sum, draw: pd / sum, away: pa / sum };
   match.favorite = favoriteOf(match.probs);
-  match.scores = (Array.isArray(raw.scores) ? raw.scores : [])
-    .filter((s) => s && SCORE_RE.test(s.score || '') && num(s.p) !== null && s.p > 0 && s.p < 1)
-    .map((s) => ({ score: s.score, p: s.p })).sort((a, b) => b.p - a.p).slice(0, 5);
+  // origen no verificado: los marcadores pueden venir como "2-1" o {score} sin porcentaje (se respeta el orden dado)
+  const rawScores = (Array.isArray(raw.scores) ? raw.scores : []).map((s) => (lenient && typeof s === 'string' ? { score: s } : s));
+  match.scores = rawScores
+    .filter((s) => s && SCORE_RE.test(s.score || '') && (lenient && num(s.p) === null ? true : num(s.p) !== null && s.p > 0 && s.p < 1))
+    .map((s) => ({ score: s.score, p: num(s.p) === null ? null : s.p }));
+  if (match.scores.every((s) => s.p !== null)) match.scores.sort((a, b) => b.p - a.p);
+  match.scores = match.scores.slice(0, 5);
   return { match, problems };
 }
 
@@ -162,7 +170,7 @@ const BUCKETS = ['<45%', '45-54%', '55-64%', '65%+'];
 const zero = () => ({ n: 0, hits: 0, sumPred: 0 });
 
 export function summarize(matches, now, problems) {
-  const totals = { n: 0, hits: 0, sumPred: 0, byPick: { home: zero(), draw: zero(), away: zero() }, byBucket: {}, scoreTop1: { n: 0, hits: 0 }, scoreInList: { n: 0, hits: 0 } };
+  const totals = { n: 0, hits: 0, sumPred: 0, byPick: { home: zero(), draw: zero(), away: zero() }, byBucket: {}, scoreTop1: { n: 0, hits: 0 }, scoreInList: { n: 0, hits: 0 }, byOrigin: {} };
   for (const b of BUCKETS) totals.byBucket[b] = zero();
   const open = [];
   let insufficient = 0;
@@ -172,6 +180,7 @@ export function summarize(matches, now, problems) {
     if (m.status !== 'OK') continue;
     const pred = m.probs[m.favorite];
     totals.n++; totals.sumPred += pred; if (m.hit) totals.hits++;
+    const og = m.origin || 'claude'; const ok2 = totals.byOrigin[og] || (totals.byOrigin[og] = zero()); ok2.n++; ok2.sumPred += pred; if (m.hit) ok2.hits++;
     const pk = totals.byPick[m.favorite]; pk.n++; pk.sumPred += pred; if (m.hit) pk.hits++;
     const bk = totals.byBucket[bucketOf(pred)]; bk.n++; bk.sumPred += pred; if (m.hit) bk.hits++;
     if (m.scores.length) { totals.scoreTop1.n++; totals.scoreInList.n++; if (m.scoreHit === 'top') totals.scoreTop1.hits++; if (m.scoreHit) totals.scoreInList.hits++; }
