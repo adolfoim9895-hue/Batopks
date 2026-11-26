@@ -1,0 +1,70 @@
+{
+  "schema": 2,
+  "titulo": "Guía para Claude: análisis manual de partidos (sin API)",
+  "instrucciones": [
+    "El usuario te manda capturas de partidos. Devuelve UN archivo JSON llamado lote-AAAAMMDD-HHMM.json (hora UTC de creación) para subirlo a docs/data/lotes/ de su repositorio de GitHub.",
+    "Zona horaria: las horas de las capturas están en America/Tijuana (UTC-8 en invierno, UTC-7 en verano) salvo que el usuario diga otra. Convierte todo a UTC con 'Z'.",
+    "ANÁLISIS de cada partido: busca en la web (a) los últimos 5-8 partidos de CADA equipo con rival, localía, marcador y fecha; (b) enfrentamientos directos (h2h); (c) bajas, sanciones y posibles rotaciones. Con eso estima qué es más probable (gana local, empate, gana visita) y los marcadores posibles.",
+    "IGNORA las cuotas de las casas de apuestas para estimar probabilidades. Solo registra la cuota decimal del LOCAL que aparece en la captura en 'homeOdds' (si viene en formato americano o fraccionario, conviértela a decimal). Si no aparece, usa null.",
+    "NO INVENTES. Cada dato de 'recent', 'h2h', 'injuries' y 'suspensions' lleva 'source_url' de una página que realmente consultaste, y esa URL debe estar también en 'sources' del partido. Lo que no tenga fuente se descarta al construir la app.",
+    "Mínimo 3 partidos recientes verificados por equipo. Si no los consigues, usa status 'DATOS INSUFICIENTES' con 'reason' y sin 'probs'. No rellenes con suposiciones.",
+    "Las probabilidades son TU estimación razonada (no un modelo estadístico validado): probs.home + draw + away = 1. Los marcadores ('scores', 3 a 5) llevan su probabilidad 'p' y deben ser coherentes con probs. En 'reasoning' pon 3 a 6 puntos cortos basados en hechos citados.",
+    "Solo analiza partidos que NO han empezado. 'analyzedAt' es el momento real (UTC) y debe ser anterior al inicio; si es posterior, la app lo descarta.",
+    "RESULTADOS: para partidos de la lista 'abiertos' que ya terminaron, busca marcador a los 90 minutos (sin prórroga ni penales) y los minutos de cada gol. 'goals' debe coincidir con el marcador (team = equipo al que se le acredita el gol; type 'pen' o 'og' si aplica). Si no encuentras minutos fiables, no los inventes: pídele al usuario una captura del partido y usa source:'captura'.",
+    "En un mismo lote puedes mezclar 'matches' (análisis nuevos) y 'results' (resultados). 'createdAt' es el momento real (UTC) en que generas el lote; un resultado solo vale si createdAt es posterior al inicio del partido.",
+    "Entrega el archivo con SendUserFile y explica en 3-4 líneas: cuántos partidos, cuáles quedaron en DATOS INSUFICIENTES y por qué."
+  ],
+  "campos": {
+    "matches[]": "kickoff (ISO UTC), competition, country (opcional), home, away, homeOdds (número o null), analyzedAt (ISO UTC), status ('OK' o 'DATOS INSUFICIENTES'), reason, probs{home,draw,away}, scores[{score:'2-1',p}], reasoning[], warnings[] (riesgos; empieza con 🔴), recent{home[],away[]} con {date,opponent,venue:'H|A|N',score:'goles_propios-goles_rival',competition,source_url}, h2h[] con {date,home,away,score,competition,source_url}, injuries[]/suspensions[] con {team:'home|away',player,status:'out|doubtful',detail,source_url,source_date}, sources[{url,title,date}]",
+    "results[]": "id (opcional, 'AAAA-MM-DD-local-visita' en minúsculas sin acentos con la fecha UTC del inicio) o home+away, score{home,away}, goals[{minute:'23' o '45+2', team:'home|away', player, type}], source_url o source:'captura', source_date"
+  },
+  "ejemplo_lote_analisis": {
+    "schema": 2,
+    "createdAt": "2026-12-03T18:05:00Z",
+    "matches": [
+      {
+        "kickoff": "2026-12-05T20:00:00Z",
+        "competition": "Liga Ejemplo",
+        "country": "Ejemplolandia",
+        "home": "Club Alfa",
+        "away": "Club Beta",
+        "homeOdds": 1.85,
+        "analyzedAt": "2026-12-03T18:00:00Z",
+        "status": "OK",
+        "probs": { "home": 0.52, "draw": 0.26, "away": 0.22 },
+        "scores": [ { "score": "1-0", "p": 0.14 }, { "score": "2-1", "p": 0.1 }, { "score": "1-1", "p": 0.1 } ],
+        "reasoning": [ "Alfa ganó 4 de sus últimos 5 partidos como local.", "Beta no ha ganado fuera en sus últimos 4." ],
+        "warnings": [ "🔴 ADVERTENCIA: Beta recupera a su delantero titular (duda)." ],
+        "recent": {
+          "home": [
+            { "date": "2026-11-29", "opponent": "Club X", "venue": "H", "score": "2-0", "source_url": "https://ejemplo.test/a" },
+            { "date": "2026-11-22", "opponent": "Club Y", "venue": "A", "score": "1-1", "source_url": "https://ejemplo.test/a" },
+            { "date": "2026-11-15", "opponent": "Club Z", "venue": "H", "score": "3-1", "source_url": "https://ejemplo.test/a" }
+          ],
+          "away": [
+            { "date": "2026-11-28", "opponent": "Club P", "venue": "A", "score": "0-1", "source_url": "https://ejemplo.test/b" },
+            { "date": "2026-11-21", "opponent": "Club Q", "venue": "H", "score": "2-2", "source_url": "https://ejemplo.test/b" },
+            { "date": "2026-11-14", "opponent": "Club R", "venue": "A", "score": "0-0", "source_url": "https://ejemplo.test/b" }
+          ]
+        },
+        "h2h": [ { "date": "2026-03-10", "home": "Club Beta", "away": "Club Alfa", "score": "1-1", "source_url": "https://ejemplo.test/a" } ],
+        "injuries": [ { "team": "away", "player": "Jugador Uno", "status": "doubtful", "detail": "molestia muscular", "source_url": "https://ejemplo.test/b", "source_date": "2026-12-03" } ],
+        "suspensions": [],
+        "sources": [ { "url": "https://ejemplo.test/a", "title": "Ficha de Club Alfa", "date": "2026-12-03" }, { "url": "https://ejemplo.test/b", "title": "Ficha de Club Beta", "date": "2026-12-03" } ]
+      }
+    ]
+  },
+  "ejemplo_lote_resultados": {
+    "schema": 2,
+    "createdAt": "2026-12-05T23:10:00Z",
+    "results": [
+      {
+        "id": "2026-12-05-club-alfa-club-beta",
+        "score": { "home": 2, "away": 1 },
+        "goals": [ { "minute": "23", "team": "home", "player": "Jugador A" }, { "minute": "55", "team": "away", "player": "Jugador B" }, { "minute": "78", "team": "home", "type": "pen" } ],
+        "source_url": "https://ejemplo.test/resultado",
+        "source_date": "2026-12-05"
+      }
+    ]
+  }
+}
