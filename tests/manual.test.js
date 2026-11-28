@@ -171,9 +171,10 @@ test('Excel: .xlsx válido (zip con CRC correcto) con fecha, torneo, equipos, cu
   assert.equal(r[0], '2026-12-05'); assert.equal(r[1], '12:00'); // 20:00Z = 12:00 en Tijuana (UTC-8)
   assert.equal(r[2], 'Liga Ejemplo'); assert.equal(r[4], 'Club Alfa'); assert.equal(r[5], 'Club Beta');
   assert.equal(r[6].v, 1.85);
-  assert.equal(r[13], "23', 78' (p)"); assert.equal(r[14], "55'");
-  assert.equal(r[15], "1-0 (23') · 1-1 (55') · 2-1 (78')");
-  assert.equal(r[17], 'SÍ');
+  assert.equal(rows[0][13], 'Marcador medio tiempo'); assert.equal(r[13], '1-0'); // gol local al 23', ninguno más antes del 45
+  assert.equal(r[14], "23', 78' (p)"); assert.equal(r[15], "55'");
+  assert.equal(r[16], "1-0 (23') · 1-1 (55') · 2-1 (78')");
+  assert.equal(r[18], 'SÍ');
   const bytes = RLX.makeXlsx(rows, RLX.WIDTHS, 'Partidos');
   const files = readZip(bytes);
   for (const [name, f] of Object.entries(files)) assert.equal(RLX.crc32(f.data), f.crc, name);
@@ -200,4 +201,17 @@ test('origen chatgpt: se acepta sin fuentes, marcado como no verificado; origen 
   assert.equal(a.status, 'OK'); assert.equal(a.verified, false); assert.equal(a.scores[0].p, null); assert.equal(a.favorite, 'home');
   const b = normalizeAnalysis(base, now).match;
   assert.equal(b.status, 'DATOS INSUFICIENTES');
+});
+
+test('medio tiempo: se deduce de los goles o se declara con ht', () => {
+  const base = { score: { home: 3, away: 1 }, source: 'captura' };
+  const g = [{ minute: '39', team: 'home' }, { minute: '45+1', team: 'away' }, { minute: '60', team: 'home' }, { minute: '90+2', team: 'home' }];
+  const a = normalizeResult({ ...base, goals: g }, 'x').result;
+  assert.deepEqual([a.ht.home, a.ht.away, a.ht.from], [1, 1, 'goles']);
+  const b = normalizeResult({ ...base, ht: { home: 2, away: 0 } }, 'x').result;
+  assert.deepEqual([b.ht.home, b.ht.away, b.ht.from], [2, 0, 'declarado']);
+  const c = normalizeResult({ ...base, ht: { home: 4, away: 0 } }, 'x');
+  assert.equal(c.result.ht, null); assert.ok(c.problems.some((p) => /medio tiempo/.test(p)));
+  assert.equal(normalizeResult({ score: { home: 0, away: 0 }, source: 'captura' }, 'x').result.ht.home, 0);
+  assert.equal(normalizeResult(base, 'x').result.ht, null); // sin goles ni ht: se desconoce
 });
