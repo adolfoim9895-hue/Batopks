@@ -12,12 +12,13 @@
     "Las probabilidades son TU estimación razonada (no un modelo estadístico validado): probs.home + draw + away = 1. Los marcadores ('scores', 3 a 5) llevan su probabilidad 'p' y deben ser coherentes con probs. En 'reasoning' pon 3 a 6 puntos cortos basados en hechos citados.",
     "Solo analiza partidos que NO han empezado. 'analyzedAt' es el momento real (UTC) y debe ser anterior al inicio; si es posterior, la app lo descarta.",
     "RESULTADOS: para partidos de la lista 'abiertos' que ya terminaron, busca marcador a los 90 minutos (sin prórroga ni penales) y los minutos de cada gol. 'goals' debe coincidir con el marcador (team = equipo al que se le acredita el gol; type 'pen' o 'og' si aplica). Si no encuentras minutos fiables, no los inventes: pídele al usuario una captura del partido y usa source:'captura'.",
+    "MEDIO TIEMPO: la app muestra y exporta al Excel el marcador al descanso. Si das los minutos de cada gol, lo deduce sola; si no los tienes, añade \"ht\": {\"home\":0,\"away\":1} con el marcador al descanso de una fuente.",
     "En un mismo lote puedes mezclar 'matches' (análisis nuevos) y 'results' (resultados). 'createdAt' es el momento real (UTC) en que generas el lote; un resultado solo vale si createdAt es posterior al inicio del partido.",
     "Entrega el archivo con SendUserFile y explica en 3-4 líneas: cuántos partidos, cuáles quedaron en DATOS INSUFICIENTES y por qué."
   ],
   "campos": {
     "matches[]": "kickoff (ISO UTC), competition, country (opcional), home, away, homeOdds (número o null), analyzedAt (ISO UTC), status ('OK' o 'DATOS INSUFICIENTES'), reason, probs{home,draw,away}, scores[{score:'2-1',p}], reasoning[], warnings[] (riesgos; empieza con 🔴), recent{home[],away[]} con {date,opponent,venue:'H|A|N',score:'goles_propios-goles_rival',competition,source_url}, h2h[] con {date,home,away,score,competition,source_url}, injuries[]/suspensions[] con {team:'home|away',player,status:'out|doubtful',detail,source_url,source_date}, sources[{url,title,date}]",
-    "results[]": "id (opcional, 'AAAA-MM-DD-local-visita' en minúsculas sin acentos con la fecha UTC del inicio) o home+away, score{home,away}, goals[{minute:'23' o '45+2', team:'home|away', player, type}], source_url o source:'captura', source_date"
+    "results[]": "ht{home,away} = marcador al MEDIO TIEMPO (opcional; si no lo pones, la app lo calcula con los minutos de gol: los goles hasta el 45+x). Pon ht cuando no tengas minutos de gol pero sí el marcador al descanso. id (opcional, 'AAAA-MM-DD-local-visita' en minúsculas sin acentos con la fecha UTC del inicio) o home+away, score{home,away}, goals[{minute:'23' o '45+2', team:'home|away', player, type}], source_url o source:'captura', source_date"
   },
   "ejemplo_lote_analisis": {
     "schema": 2,
