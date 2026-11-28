@@ -1,0 +1,1326 @@
+{
+ "schema": 2,
+ "createdAt": "2026-11-28T04:07:00Z",
+ "matches": [
+  {
+   "kickoff": "2026-11-28T06:00:00Z",
+   "competition": "J1 League",
+   "country": "Japón",
+   "home": "Vissel Kobe",
+   "away": "JEF United Chiba",
+   "homeOdds": 1.63,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-28T04:00:00Z",
+   "probs": {
+    "home": 0.52,
+    "draw": 0.26,
+    "away": 0.22
+   },
+   "scores": [
+    {
+     "score": "1-0",
+     "p": 0.14
+    },
+    {
+     "score": "2-1",
+     "p": 0.11
+    },
+    {
+     "score": "1-1",
+     "p": 0.12
+    },
+    {
+     "score": "2-0",
+     "p": 0.1
+    }
+   ],
+   "reasoning": [
+    "Vissel Kobe es 5º con 27 pts tras 15 jornadas (8-3-4, goles 24:16) y JEF United es 13º con 16 pts (4-4-7, goles 17:24).",
+    "Kobe viene de una racha irregular (L D W D L) y perdió sus últimos 2 partidos en casa; JEF trae W W W D L en la misma tabla.",
+    "El último duelo entre ambos fue en 2018, así que el historial directo no sirve de referencia.",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 Dos tablas dan datos distintos para JEF (13º con 16 pts o 17º con 13 pts); usé la más reciente.",
+    "🔴 Kobe juega ACL el 1 dic: posible rotación.",
+    "🔴 No encontré marcadores recientes con fecha de ninguno de los dos.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [],
+    "away": []
+   },
+   "h2h": [],
+   "injuries": [],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://www.365scores.com/football/team/vissel-kobe-2151/standings",
+     "title": "www.365scores.com"
+    },
+    {
+     "url": "https://news.7msport.com/news/newsdata/20261127/276847.shtml",
+     "title": "news.7msport.com"
+    },
+    {
+     "url": "https://www.livesoccertv.com/teams/japan/jef-united-ichihara/",
+     "title": "www.livesoccertv.com"
+    },
+    {
+     "url": "https://www.fotmob.com/teams/4688/overview/vissel-kobe",
+     "title": "www.fotmob.com"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-28T13:00:00Z",
+   "competition": "LaLiga",
+   "country": "España",
+   "home": "Real Betis",
+   "away": "Rayo Vallecano",
+   "homeOdds": 1.6,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-28T04:00:00Z",
+   "probs": {
+    "home": 0.62,
+    "draw": 0.22,
+    "away": 0.16
+   },
+   "scores": [
+    {
+     "score": "2-0",
+     "p": 0.15
+    },
+    {
+     "score": "1-0",
+     "p": 0.13
+    },
+    {
+     "score": "2-1",
+     "p": 0.12
+    },
+    {
+     "score": "1-1",
+     "p": 0.11
+    }
+   ],
+   "reasoning": [
+    "Betis lleva 4 partidos sin perder y 5 victorias en 8 desde mediados de octubre; Rayo perdió 0-1 con Real Sociedad y 0-1 con Valencia.",
+    "Rayo ha sacado solo 2 puntos en 6 partidos de visitante y ha perdido el 67% de sus salidas.",
+    "En el duelo de esta temporada en LaLiga quedaron 1-1 (y también 1-1 en La Cartuja en dic 2024).",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 Las fuentes no coinciden en la forma de Betis ni en el puesto de Rayo (16º con 12 pts o 18º).",
+    "🔴 Ceballos y Lo Celso figuran como baja o duda según la página; Morante aparece disponible en una y lesionado en otra.",
+    "🔴 Bernal está suspendido por Betis.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [
+     {
+      "opponent": "Slovan",
+      "score": "2-0",
+      "source_url": "https://dailysports.net/predictions/betis-strengthen-their-grip-on-the-top-four-betis-vs-rayo-vallecano-prediction/"
+     }
+    ],
+    "away": [
+     {
+      "opponent": "Valencia",
+      "score": "0-1",
+      "source_url": "https://dailysports.net/predictions/betis-strengthen-their-grip-on-the-top-four-betis-vs-rayo-vallecano-prediction/",
+      "venue": "H"
+     },
+     {
+      "opponent": "Real Sociedad",
+      "score": "0-1",
+      "source_url": "https://dailysports.net/predictions/betis-strengthen-their-grip-on-the-top-four-betis-vs-rayo-vallecano-prediction/"
+     }
+    ]
+   },
+   "h2h": [
+    {
+     "home": "Real Betis",
+     "away": "Rayo Vallecano",
+     "score": "1-1",
+     "source_url": "https://www.sportsmole.co.uk/football/betis/preview/betis-vs-rayo-vallecano-prediction-team-news-lineups_609939.html"
+    }
+   ],
+   "injuries": [
+    {
+     "team": "home",
+     "player": "Dani Ceballos",
+     "status": "doubtful",
+     "detail": "Molestia muscular",
+     "source_url": "https://www.whoscored.com/matches/1993966/preview/spain-laliga-2026-2027-real-betis-rayo-vallecano"
+    },
+    {
+     "team": "home",
+     "player": "Giovani Lo Celso",
+     "status": "doubtful",
+     "detail": "Contusión de rodilla",
+     "source_url": "https://www.whoscored.com/matches/1993966/preview/spain-laliga-2026-2027-real-betis-rayo-vallecano"
+    },
+    {
+     "team": "home",
+     "player": "Iker Losada",
+     "status": "out",
+     "detail": "Lesión",
+     "source_url": "https://www.sportsmole.co.uk/football/betis/preview/betis-vs-rayo-vallecano-prediction-team-news-lineups_609939.html"
+    },
+    {
+     "team": "away",
+     "player": "Augusto Batalla",
+     "status": "out",
+     "detail": "Fractura de pierna",
+     "source_url": "https://thefootballfaithful.com/real-betis-vs-rayo-vallecano-prediction-betting-tips-28-11-2026/"
+    },
+    {
+     "team": "away",
+     "player": "Luiz Felipe",
+     "status": "out",
+     "detail": "Ligamento cruzado",
+     "source_url": "https://thefootballfaithful.com/real-betis-vs-rayo-vallecano-prediction-betting-tips-28-11-2026/"
+    },
+    {
+     "team": "away",
+     "player": "Óscar Valentín",
+     "status": "doubtful",
+     "detail": "Rodilla; regreso a inicios de diciembre",
+     "source_url": "https://thefootballfaithful.com/real-betis-vs-rayo-vallecano-prediction-betting-tips-28-11-2026/"
+    }
+   ],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://www.sportsmole.co.uk/football/betis/preview/betis-vs-rayo-vallecano-prediction-team-news-lineups_609939.html",
+     "title": "www.sportsmole.co.uk"
+    },
+    {
+     "url": "https://www.whoscored.com/matches/1993966/preview/spain-laliga-2026-2027-real-betis-rayo-vallecano",
+     "title": "www.whoscored.com"
+    },
+    {
+     "url": "https://dailysports.net/predictions/betis-strengthen-their-grip-on-the-top-four-betis-vs-rayo-vallecano-prediction/",
+     "title": "dailysports.net"
+    },
+    {
+     "url": "https://thefootballfaithful.com/real-betis-vs-rayo-vallecano-prediction-betting-tips-28-11-2026/",
+     "title": "thefootballfaithful.com"
+    },
+    {
+     "url": "https://www.mightytips.com/football-predictions/real-betis-vs-rayo-vallecano-prediction-28-11-2026/",
+     "title": "www.mightytips.com"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-28T14:00:00Z",
+   "competition": "Serie A",
+   "country": "Italia",
+   "home": "Frosinone",
+   "away": "Parma",
+   "homeOdds": 1.47,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-28T04:00:00Z",
+   "probs": {
+    "home": 0.56,
+    "draw": 0.24,
+    "away": 0.2
+   },
+   "scores": [
+    {
+     "score": "2-1",
+     "p": 0.12
+    },
+    {
+     "score": "1-0",
+     "p": 0.12
+    },
+    {
+     "score": "2-0",
+     "p": 0.11
+    },
+    {
+     "score": "1-1",
+     "p": 0.11
+    }
+   ],
+   "reasoning": [
+    "Frosinone es 7º con 20 pts, pero llega de dos derrotas seguidas (0-1 con Cagliari y 1-5 en Milán); Parma es 16º con 8 pts y solo 2 victorias.",
+    "Parma perdió 1-5 en casa con Roma y ha ganado solo 1 de sus últimos 7 partidos de liga; ha encajado 7 goles en los últimos 2.",
+    "Frosinone no tiene a su goleador Raimondo (lesionado) ni a Birligea, su suplente.",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 Las fuentes no coinciden en el puesto de Frosinone (6º o 7º) ni en las bajas exactas.",
+    "🔴 Raimondo y Birligea (delanteros de Frosinone) no están: baja su pegada.",
+    "🔴 Los marcadores recientes vienen de una página sin fechas.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [
+     {
+      "opponent": "Milan",
+      "score": "1-5",
+      "source_url": "https://news.7msport.com/news/newsdata/20261127/276861.shtml",
+      "venue": "A"
+     },
+     {
+      "opponent": "Cagliari",
+      "score": "0-1",
+      "source_url": "https://9javista.com/frosinone-vs-parma-prediction-betting-tips-odds-28-november-2026/",
+      "venue": "A"
+     },
+     {
+      "opponent": "Torino",
+      "score": "2-0",
+      "source_url": "https://9javista.com/frosinone-vs-parma-prediction-betting-tips-odds-28-november-2026/",
+      "venue": "H"
+     },
+     {
+      "opponent": "Lecce",
+      "score": "5-1",
+      "source_url": "https://9javista.com/frosinone-vs-parma-prediction-betting-tips-odds-28-november-2026/",
+      "venue": "H"
+     },
+     {
+      "opponent": "Atalanta",
+      "score": "4-4",
+      "source_url": "https://9javista.com/frosinone-vs-parma-prediction-betting-tips-odds-28-november-2026/",
+      "venue": "A"
+     }
+    ],
+    "away": [
+     {
+      "opponent": "Roma",
+      "score": "1-5",
+      "source_url": "https://news.7msport.com/news/newsdata/20261127/276861.shtml",
+      "venue": "H"
+     },
+     {
+      "opponent": "Bologna",
+      "score": "1-2",
+      "source_url": "https://9javista.com/frosinone-vs-parma-prediction-betting-tips-odds-28-november-2026/",
+      "venue": "H"
+     },
+     {
+      "opponent": "Atalanta",
+      "score": "3-0",
+      "source_url": "https://9javista.com/frosinone-vs-parma-prediction-betting-tips-odds-28-november-2026/",
+      "venue": "A"
+     },
+     {
+      "opponent": "Udinese",
+      "score": "0-0",
+      "source_url": "https://9javista.com/frosinone-vs-parma-prediction-betting-tips-odds-28-november-2026/",
+      "venue": "H"
+     },
+     {
+      "opponent": "Lazio",
+      "score": "1-2",
+      "source_url": "https://9javista.com/frosinone-vs-parma-prediction-betting-tips-odds-28-november-2026/",
+      "venue": "A"
+     }
+    ]
+   },
+   "h2h": [],
+   "injuries": [
+    {
+     "team": "home",
+     "player": "Antonio Raimondo",
+     "status": "out",
+     "detail": "Lesión",
+     "source_url": "https://www.whoscored.com/matches/1980929/preview/italy-serie-a-2026-2027-frosinone-parma-calcio-1913"
+    },
+    {
+     "team": "home",
+     "player": "Daniel Birligea",
+     "status": "out",
+     "detail": "Lesión",
+     "source_url": "https://www.thestatszone.com/frosinone-vs-parma-preview-team-news-prediction-241450"
+    },
+    {
+     "team": "home",
+     "player": "Florian Grillitsch",
+     "status": "doubtful",
+     "detail": "Muslo/ingle",
+     "source_url": "https://www.fotmob.com/matches/frosinone-vs-parma/3bs0pu"
+    },
+    {
+     "team": "away",
+     "player": "David Romero",
+     "status": "out",
+     "detail": "Luxación acromioclavicular",
+     "source_url": "https://www.whoscored.com/matches/1980929/preview/italy-serie-a-2026-2027-frosinone-parma-calcio-1913"
+    },
+    {
+     "team": "away",
+     "player": "Lautaro Valenti",
+     "status": "out",
+     "detail": "Lesión",
+     "source_url": "https://www.thestatszone.com/frosinone-vs-parma-preview-team-news-prediction-241450"
+    },
+    {
+     "team": "away",
+     "player": "Pontus Almqvist",
+     "status": "out",
+     "detail": "Pantorrilla",
+     "source_url": "https://www.fotmob.com/matches/frosinone-vs-parma/3bs0pu"
+    },
+    {
+     "team": "away",
+     "player": "Hans Nicolussi Caviglia",
+     "status": "out",
+     "detail": "Hernia/ingle",
+     "source_url": "https://www.fotmob.com/matches/frosinone-vs-parma/3bs0pu"
+    }
+   ],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://www.sportsmole.co.uk/football/frosinone/preview/frosinone-vs-parma-prediction-team-news-lineups_609825.html",
+     "title": "www.sportsmole.co.uk"
+    },
+    {
+     "url": "https://www.whoscored.com/matches/1980929/preview/italy-serie-a-2026-2027-frosinone-parma-calcio-1913",
+     "title": "www.whoscored.com"
+    },
+    {
+     "url": "https://9javista.com/frosinone-vs-parma-prediction-betting-tips-odds-28-november-2026/",
+     "title": "9javista.com"
+    },
+    {
+     "url": "https://news.7msport.com/news/newsdata/20261127/276861.shtml",
+     "title": "news.7msport.com"
+    },
+    {
+     "url": "https://www.fotmob.com/matches/frosinone-vs-parma/3bs0pu",
+     "title": "www.fotmob.com"
+    },
+    {
+     "url": "https://www.thestatszone.com/frosinone-vs-parma-preview-team-news-prediction-241450",
+     "title": "www.thestatszone.com"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-28T14:30:00Z",
+   "competition": "Bundesliga",
+   "country": "Alemania",
+   "home": "Mainz 05",
+   "away": "Union Berlin",
+   "homeOdds": 1.45,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-28T04:00:00Z",
+   "probs": {
+    "home": 0.5,
+    "draw": 0.27,
+    "away": 0.23
+   },
+   "scores": [
+    {
+     "score": "1-0",
+     "p": 0.13
+    },
+    {
+     "score": "2-1",
+     "p": 0.11
+    },
+    {
+     "score": "1-1",
+     "p": 0.12
+    },
+    {
+     "score": "2-0",
+     "p": 0.1
+    }
+   ],
+   "reasoning": [
+    "Mainz perdió 4 seguidos en Bundesliga (su peor racha en seis años) y es uno de tres equipos sin victoria en casa.",
+    "Union lleva 5 partidos sin ganar, es el peor visitante de la liga (perdió 4 de los últimos 5 fuera sin marcar) y el que menos remata.",
+    "En los últimos 5 duelos: Mainz 1-3 Union (10 may 2026), Union 2-2 Mainz (10 ene 2026), Union 2-1 Mainz (ene 2025), y dos 1-1.",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 Duelo entre dos equipos en mala racha: el favorito de la cuota no es tan claro.",
+    "🔴 Union tiene varias bajas: Skov, Nsoki, Markgraf; Juranović enfermo; Van den Bosch suspendido.",
+    "🔴 Mainz sin Kohr; Silas es duda. Las fuentes difieren en otras bajas.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [],
+    "away": [
+     {
+      "opponent": "Freiburg",
+      "score": "0-2",
+      "source_url": "https://www.thestatszone.com/mainz-vs-union-berlin-preview-team-news-prediction-242690",
+      "venue": "A"
+     }
+    ]
+   },
+   "h2h": [
+    {
+     "home": "Mainz 05",
+     "away": "Union Berlin",
+     "score": "1-3",
+     "source_url": "https://www.squawka.com/en/news/previews/mainz-05-vs-union-berlin-predictions-betting-tips-28-11-26/",
+     "date": "2026-05-10",
+     "competition": "Bundesliga"
+    },
+    {
+     "home": "Union Berlin",
+     "away": "Mainz 05",
+     "score": "2-2",
+     "source_url": "https://www.squawka.com/en/news/previews/mainz-05-vs-union-berlin-predictions-betting-tips-28-11-26/",
+     "date": "2026-01-10",
+     "competition": "Bundesliga"
+    },
+    {
+     "home": "Union Berlin",
+     "away": "Mainz 05",
+     "score": "2-1",
+     "source_url": "https://www.squawka.com/en/news/previews/mainz-05-vs-union-berlin-predictions-betting-tips-28-11-26/",
+     "date": "2025-01-19",
+     "competition": "Bundesliga"
+    },
+    {
+     "home": "Mainz 05",
+     "away": "Union Berlin",
+     "score": "1-1",
+     "source_url": "https://www.squawka.com/en/news/previews/mainz-05-vs-union-berlin-predictions-betting-tips-28-11-26/",
+     "date": "2024-08-24",
+     "competition": "Bundesliga"
+    },
+    {
+     "home": "Mainz 05",
+     "away": "Union Berlin",
+     "score": "1-1",
+     "source_url": "https://www.squawka.com/en/news/previews/mainz-05-vs-union-berlin-predictions-betting-tips-28-11-26/",
+     "date": "2024-02-07",
+     "competition": "Bundesliga"
+    }
+   ],
+   "injuries": [
+    {
+     "team": "home",
+     "player": "Dominik Kohr",
+     "status": "out",
+     "detail": "Tobillo",
+     "source_url": "https://www.sportsmole.co.uk/football/mainz-05/preview/mainz-vs-union-berlin-prediction-team-news-lineups_609964.html"
+    },
+    {
+     "team": "home",
+     "player": "Silas Katompa",
+     "status": "doubtful",
+     "detail": "Regreso tras fractura",
+     "source_url": "https://footballwhispers.com/blog/mainz-05-vs-union-berlin-prediction-28-11-2026/"
+    },
+    {
+     "team": "away",
+     "player": "Robert Skov",
+     "status": "out",
+     "detail": "Golpe/lesión",
+     "source_url": "https://sports.yahoo.com/soccer/articles/preview-mainz-vs-1-fc-134500387.html"
+    },
+    {
+     "team": "away",
+     "player": "Stanley Nsoki",
+     "status": "out",
+     "detail": "Lesión muscular",
+     "source_url": "https://sports.yahoo.com/soccer/articles/preview-mainz-vs-1-fc-134500387.html"
+    },
+    {
+     "team": "away",
+     "player": "Andrik Markgraf",
+     "status": "out",
+     "detail": "Ligamento cruzado",
+     "source_url": "https://sports.yahoo.com/soccer/articles/preview-mainz-vs-1-fc-134500387.html"
+    },
+    {
+     "team": "away",
+     "player": "Felix Uduokhai",
+     "status": "doubtful",
+     "detail": "Isquiotibial",
+     "source_url": "https://sports.yahoo.com/soccer/articles/preview-mainz-vs-1-fc-134500387.html"
+    },
+    {
+     "team": "away",
+     "player": "Josip Juranović",
+     "status": "doubtful",
+     "detail": "Enfermo",
+     "source_url": "https://sports.yahoo.com/soccer/articles/preview-mainz-vs-1-fc-134500387.html"
+    }
+   ],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://www.sportsmole.co.uk/football/mainz-05/preview/mainz-vs-union-berlin-prediction-team-news-lineups_609964.html",
+     "title": "www.sportsmole.co.uk"
+    },
+    {
+     "url": "https://www.thestatszone.com/mainz-vs-union-berlin-preview-team-news-prediction-242690",
+     "title": "www.thestatszone.com"
+    },
+    {
+     "url": "https://footballwhispers.com/blog/mainz-05-vs-union-berlin-prediction-28-11-2026/",
+     "title": "footballwhispers.com"
+    },
+    {
+     "url": "https://www.squawka.com/en/news/previews/mainz-05-vs-union-berlin-predictions-betting-tips-28-11-26/",
+     "title": "www.squawka.com"
+    },
+    {
+     "url": "https://sports.yahoo.com/soccer/articles/preview-mainz-vs-1-fc-134500387.html",
+     "title": "sports.yahoo.com"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-28T15:00:00Z",
+   "competition": "Championship",
+   "country": "Inglaterra",
+   "home": "Birmingham City",
+   "away": "Bolton Wanderers",
+   "homeOdds": 1.48,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-28T04:00:00Z",
+   "probs": {
+    "home": 0.58,
+    "draw": 0.25,
+    "away": 0.17
+   },
+   "scores": [
+    {
+     "score": "2-0",
+     "p": 0.14
+    },
+    {
+     "score": "1-0",
+     "p": 0.13
+    },
+    {
+     "score": "2-1",
+     "p": 0.12
+    },
+    {
+     "score": "1-1",
+     "p": 0.1
+    }
+   ],
+   "reasoning": [
+    "Birmingham es 4º con 29 pts, lleva 8 partidos sin perder en casa (4 victorias y 4 empates) y tiene la mejor defensa de la categoría con 15 goles en 17 partidos.",
+    "Bolton está en la parte baja (17º o 19º según la fuente) con 18 pts, ha encajado 33 goles y suma solo 1 punto en sus últimos 3 de liga.",
+    "Bolton ganó 3-1 en casa en el último duelo (League One, mar 2025), pero Birmingham tiene mucha más calidad ahora.",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 Las fuentes no coinciden en el puesto de Bolton (17º o 19º).",
+    "🔴 Birmingham sin Laird y Lund (lesionados) y Cochrane suspendido.",
+    "🔴 Bolton tiene bajas: Hardie, McAtee, Nelson, Erhahon y Toal.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [],
+    "away": []
+   },
+   "h2h": [
+    {
+     "home": "Bolton Wanderers",
+     "away": "Birmingham City",
+     "score": "3-1",
+     "source_url": "https://www.sportskeeda.com/football/birmingham-city-vs-bolton-wanderers-prediction-betting-tips-november-28th-2026",
+     "competition": "League One"
+    }
+   ],
+   "injuries": [
+    {
+     "team": "home",
+     "player": "Ethan Laird",
+     "status": "out",
+     "detail": "Lesión",
+     "source_url": "https://onefootball.com/en/news/birmingham-v-bolton-wanderers-play-off-push-meets-survival-fight-43852045"
+    },
+    {
+     "team": "home",
+     "player": "Kristoffer Lund",
+     "status": "out",
+     "detail": "Lesión",
+     "source_url": "https://onefootball.com/en/news/birmingham-v-bolton-wanderers-play-off-push-meets-survival-fight-43852045"
+    },
+    {
+     "team": "away",
+     "player": "Ryan Hardie",
+     "status": "out",
+     "detail": "Ausente",
+     "source_url": "https://onefootball.com/en/news/birmingham-v-bolton-wanderers-play-off-push-meets-survival-fight-43852045"
+    },
+    {
+     "team": "away",
+     "player": "John McAtee",
+     "status": "out",
+     "detail": "Ausente",
+     "source_url": "https://onefootball.com/en/news/birmingham-v-bolton-wanderers-play-off-push-meets-survival-fight-43852045"
+    },
+    {
+     "team": "away",
+     "player": "Jayden Nelson",
+     "status": "out",
+     "detail": "Ausente",
+     "source_url": "https://onefootball.com/en/news/birmingham-v-bolton-wanderers-play-off-push-meets-survival-fight-43852045"
+    },
+    {
+     "team": "away",
+     "player": "Ethan Erhahon",
+     "status": "out",
+     "detail": "Ausente",
+     "source_url": "https://onefootball.com/en/news/birmingham-v-bolton-wanderers-play-off-push-meets-survival-fight-43852045"
+    },
+    {
+     "team": "away",
+     "player": "Eoin Toal",
+     "status": "out",
+     "detail": "Ausente",
+     "source_url": "https://onefootball.com/en/news/birmingham-v-bolton-wanderers-play-off-push-meets-survival-fight-43852045"
+    }
+   ],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://thefootballfaithful.com/birmingham-city-vs-bolton-wanderers-prediction-betting-tips-28-11-2026/",
+     "title": "thefootballfaithful.com"
+    },
+    {
+     "url": "https://statz.ai/news/19728962-birmingham-vs-bolton-predictions-betting-tips",
+     "title": "statz.ai"
+    },
+    {
+     "url": "https://onefootball.com/en/news/birmingham-v-bolton-wanderers-play-off-push-meets-survival-fight-43852045",
+     "title": "onefootball.com"
+    },
+    {
+     "url": "https://www.compare.bet/news/birmingham-city-vs-bolton-wanderers",
+     "title": "www.compare.bet"
+    },
+    {
+     "url": "https://www.sportskeeda.com/football/birmingham-city-vs-bolton-wanderers-prediction-betting-tips-november-28th-2026",
+     "title": "www.sportskeeda.com"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-28T15:00:00Z",
+   "competition": "Championship",
+   "country": "Inglaterra",
+   "home": "West Ham",
+   "away": "Stoke City",
+   "homeOdds": 1.63,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-28T04:00:00Z",
+   "probs": {
+    "home": 0.4,
+    "draw": 0.28,
+    "away": 0.32
+   },
+   "scores": [
+    {
+     "score": "1-1",
+     "p": 0.13
+    },
+    {
+     "score": "2-1",
+     "p": 0.1
+    },
+    {
+     "score": "1-0",
+     "p": 0.1
+    },
+    {
+     "score": "1-2",
+     "p": 0.09
+    }
+   ],
+   "reasoning": [
+    "West Ham es 13º con 24 pts, lleva 6 partidos sin ganar y perdió 0-1 en Portsmouth el 24 nov; con Scott Parker suma 2 puntos en 4 partidos.",
+    "Stoke es 2º, lleva 7 sin perder y 5 victorias seguidas de visitante; ganó 2-1 a Millwall el miércoles 25.",
+    "Es el partido donde me alejo más de la cuota: la forma del visitante pesa más que la localía de West Ham.",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 Las páginas dan puntos distintos a Stoke (32 o 35) y puestos distintos (2º o 5º).",
+    "🔴 West Ham sin Lamadrid; Walker-Peters y Areola son duda o baja por lesión muscular.",
+    "🔴 Stoke sin Ato Ampah; Lamine Cissé con problema muscular.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [
+     {
+      "opponent": "Portsmouth",
+      "score": "0-1",
+      "source_url": "https://readwestham.com/2026/11/27/how-to-watch-west-ham-vs-stoke-tv-kickoff-time-team-news/",
+      "date": "2026-11-24",
+      "venue": "A"
+     }
+    ],
+    "away": [
+     {
+      "opponent": "Millwall",
+      "score": "2-1",
+      "source_url": "https://readwestham.com/2026/11/27/how-to-watch-west-ham-vs-stoke-tv-kickoff-time-team-news/",
+      "date": "2026-11-25",
+      "venue": "H"
+     }
+    ]
+   },
+   "h2h": [],
+   "injuries": [
+    {
+     "team": "home",
+     "player": "Kieber Lamadrid",
+     "status": "out",
+     "detail": "Cirugía de rodilla",
+     "source_url": "https://greenstreethammers.com/west-ham-vs-stoke-preview-prediction-team-news-and-lineups-01m8bpr8zvz8"
+    },
+    {
+     "team": "home",
+     "player": "Kyle Walker-Peters",
+     "status": "doubtful",
+     "detail": "Muscular",
+     "source_url": "https://greenstreethammers.com/west-ham-vs-stoke-preview-prediction-team-news-and-lineups-01m8bpr8zvz8"
+    },
+    {
+     "team": "home",
+     "player": "Alphonse Areola",
+     "status": "doubtful",
+     "detail": "Muscular",
+     "source_url": "https://greenstreethammers.com/west-ham-vs-stoke-preview-prediction-team-news-and-lineups-01m8bpr8zvz8"
+    },
+    {
+     "team": "away",
+     "player": "Ato Ampah",
+     "status": "out",
+     "detail": "Rodilla",
+     "source_url": "https://greenstreethammers.com/west-ham-vs-stoke-preview-prediction-team-news-and-lineups-01m8bpr8zvz8"
+    },
+    {
+     "team": "away",
+     "player": "Lamine Cissé",
+     "status": "doubtful",
+     "detail": "Muscular",
+     "source_url": "https://greenstreethammers.com/west-ham-vs-stoke-preview-prediction-team-news-and-lineups-01m8bpr8zvz8"
+    }
+   ],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://readwestham.com/2026/11/27/how-to-watch-west-ham-vs-stoke-tv-kickoff-time-team-news/",
+     "title": "readwestham.com"
+    },
+    {
+     "url": "https://statz.ai/news/19728952-west-ham-vs-stoke-predictions-betting-tips",
+     "title": "statz.ai"
+    },
+    {
+     "url": "https://greenstreethammers.com/west-ham-vs-stoke-preview-prediction-team-news-and-lineups-01m8bpr8zvz8",
+     "title": "greenstreethammers.com"
+    },
+    {
+     "url": "https://www.whufc.com/en/news/west-ham-united-v-stoke-city-or-all-you-need-to-know",
+     "title": "www.whufc.com"
+    },
+    {
+     "url": "https://www.sportsmole.co.uk/football/west-ham-united/preview/west-ham-vs-stoke-prediction-team-news-lineups_609898.html",
+     "title": "www.sportsmole.co.uk"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-28T15:00:00Z",
+   "competition": "Premier League",
+   "country": "Inglaterra",
+   "home": "Leeds United",
+   "away": "Coventry City",
+   "homeOdds": 1.47,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-28T04:00:00Z",
+   "probs": {
+    "home": 0.58,
+    "draw": 0.24,
+    "away": 0.18
+   },
+   "scores": [
+    {
+     "score": "2-0",
+     "p": 0.14
+    },
+    {
+     "score": "1-0",
+     "p": 0.14
+    },
+    {
+     "score": "2-1",
+     "p": 0.11
+    },
+    {
+     "score": "1-1",
+     "p": 0.1
+    }
+   ],
+   "reasoning": [
+    "Leeds es 7º con 17 pts, no ha perdido en casa (2 victorias y 3 empates) y viene de ganar 4-1 en Chelsea y de ganar al Tottenham.",
+    "Coventry es 14º y ha ganado 1 de sus últimos 5 como visitante, con solo 3 goles en esos partidos.",
+    "Leeds ha ganado los dos últimos duelos directos; el último dato con marcador es un 3-0 en septiembre de 2024.",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 Coventry pierde a Awoniyi por lesión de tobillo y tiene otras bajas (Amenda, Eccles, Woolfenden, Wright).",
+    "🔴 Una página dice que Leeds tiene a todos disponibles, según Farke.",
+    "🔴 Los marcadores recientes de Coventry no los pude verificar con fecha.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [
+     {
+      "opponent": "Chelsea",
+      "score": "4-1",
+      "source_url": "https://www.tntsports.co.uk/betting/tips/leeds-united-vs-coventry-city-prediction-tips-and-odds-28-11-26/",
+      "venue": "A"
+     }
+    ],
+    "away": []
+   },
+   "h2h": [
+    {
+     "home": "Leeds United",
+     "away": "Coventry City",
+     "score": "3-0",
+     "source_url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Coventry_City_F.C._season",
+     "date": "2024-09-28",
+     "competition": "Championship"
+    }
+   ],
+   "injuries": [
+    {
+     "team": "away",
+     "player": "Taiwo Awoniyi",
+     "status": "out",
+     "detail": "Tobillo",
+     "source_url": "https://thefalse9.com/2026/11/leeds-united-vs-coventry-city-predicted-lineup-team-news-28-november.html"
+    },
+    {
+     "team": "away",
+     "player": "Aurèle Amenda",
+     "status": "out",
+     "detail": "Ausente",
+     "source_url": "https://www.mightytips.com/football-predictions/leeds-vs-coventry-prediction-28-11-2026/"
+    },
+    {
+     "team": "away",
+     "player": "Josh Eccles",
+     "status": "out",
+     "detail": "Ausente",
+     "source_url": "https://www.mightytips.com/football-predictions/leeds-vs-coventry-prediction-28-11-2026/"
+    },
+    {
+     "team": "away",
+     "player": "Luke Woolfenden",
+     "status": "out",
+     "detail": "Ausente",
+     "source_url": "https://www.mightytips.com/football-predictions/leeds-vs-coventry-prediction-28-11-2026/"
+    },
+    {
+     "team": "away",
+     "player": "Haji Wright",
+     "status": "out",
+     "detail": "Ausente",
+     "source_url": "https://www.mightytips.com/football-predictions/leeds-vs-coventry-prediction-28-11-2026/"
+    }
+   ],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://www.compare.bet/news/leeds-united-vs-coventry-city",
+     "title": "www.compare.bet"
+    },
+    {
+     "url": "https://thefalse9.com/2026/11/leeds-united-vs-coventry-city-predicted-lineup-team-news-28-november.html",
+     "title": "thefalse9.com"
+    },
+    {
+     "url": "https://www.mightytips.com/football-predictions/leeds-vs-coventry-prediction-28-11-2026/",
+     "title": "www.mightytips.com"
+    },
+    {
+     "url": "https://www.tntsports.co.uk/betting/tips/leeds-united-vs-coventry-city-prediction-tips-and-odds-28-11-26/",
+     "title": "www.tntsports.co.uk"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Coventry_City_F.C._season",
+     "title": "en.wikipedia.org"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-28T15:00:00Z",
+   "competition": "Championship",
+   "country": "Inglaterra",
+   "home": "West Bromwich Albion",
+   "away": "Bristol City",
+   "homeOdds": 1.66,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-28T04:00:00Z",
+   "probs": {
+    "home": 0.55,
+    "draw": 0.25,
+    "away": 0.2
+   },
+   "scores": [
+    {
+     "score": "2-1",
+     "p": 0.13
+    },
+    {
+     "score": "1-0",
+     "p": 0.12
+    },
+    {
+     "score": "2-0",
+     "p": 0.11
+    },
+    {
+     "score": "1-1",
+     "p": 0.1
+    }
+   ],
+   "reasoning": [
+    "West Brom es 5º, no ha perdido en sus últimos 5 en casa y está a 3 pts del top 2; Bristol City es 16º con 19 pts (5 victorias en 17 partidos).",
+    "Bristol ha encajado en 7 de sus 8 partidos de visitante; West Brom ha empatado 3 de 8 en casa, así que no siempre convierte el control en victoria.",
+    "Forebet le da 49/30/20 al local; mi estimación es parecida.",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 Las fuentes no coinciden en el puesto de Bristol (16º o 18º).",
+    "🔴 West Brom no tiene a Isaac Price ni a Nzingoula.",
+    "🔴 Luke McNally (Bristol) es duda por la rodilla.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [],
+    "away": []
+   },
+   "h2h": [],
+   "injuries": [
+    {
+     "team": "home",
+     "player": "Isaac Price",
+     "status": "out",
+     "detail": "Ausente",
+     "source_url": "https://dave.sport/news/west-brom-v-bristol-city-predicted-line-ups-november-2026/"
+    },
+    {
+     "team": "home",
+     "player": "Rabby Nzingoula",
+     "status": "out",
+     "detail": "Ausente",
+     "source_url": "https://dave.sport/news/west-brom-v-bristol-city-predicted-line-ups-november-2026/"
+    },
+    {
+     "team": "away",
+     "player": "Luke McNally",
+     "status": "doubtful",
+     "detail": "Rodilla",
+     "source_url": "https://dave.sport/news/west-brom-v-bristol-city-predicted-line-ups-november-2026/"
+    }
+   ],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://www.compare.bet/news/west-bromwich-albion-vs-bristol-city",
+     "title": "www.compare.bet"
+    },
+    {
+     "url": "https://thefootballfaithful.com/west-bromwich-albion-vs-bristol-city-prediction-betting-tips-28-11-2026/",
+     "title": "thefootballfaithful.com"
+    },
+    {
+     "url": "https://www.sportskeeda.com/football/west-brom-vs-bristol-city-prediction-betting-tips-28th-november-2026",
+     "title": "www.sportskeeda.com"
+    },
+    {
+     "url": "https://dave.sport/news/west-brom-v-bristol-city-predicted-line-ups-november-2026/",
+     "title": "dave.sport"
+    },
+    {
+     "url": "https://www.forebet.com/en/football/matches/west-bromwich-bristol-city-2507223",
+     "title": "www.forebet.com"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-28T17:30:00Z",
+   "competition": "Saudi Pro League",
+   "country": "Arabia Saudita",
+   "home": "Al Ahli",
+   "away": "Al Taawon",
+   "homeOdds": 1.39,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-28T04:00:00Z",
+   "probs": {
+    "home": 0.72,
+    "draw": 0.16,
+    "away": 0.12
+   },
+   "scores": [
+    {
+     "score": "2-0",
+     "p": 0.15
+    },
+    {
+     "score": "3-0",
+     "p": 0.12
+    },
+    {
+     "score": "3-1",
+     "p": 0.11
+    },
+    {
+     "score": "2-1",
+     "p": 0.11
+    }
+   ],
+   "reasoning": [
+    "Al Ahli es 5º con 24 pts (8-0-4, diferencia +11) y ha ganado sus 5 partidos de liga en Jeddah con goles 19:3.",
+    "Al Taawon es 17º con 5 pts, sin victorias en liga (0-5-7, diferencia -14).",
+    "Al Ahli perdió 1-6 en Al Shabab y 2-3 en Al-Shamal en sus salidas recientes, pero en casa es otro equipo.",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 Al Ahli sin Roger Ibañez (lesión) ni Abu Al-Shamat (hombro).",
+    "🔴 Este partido estaba programado el 7 de noviembre y fue pospuesto.",
+    "🔴 Al Taawon sin Al-Mufarrij, Al-Hurayji y Rajab.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [
+     {
+      "opponent": "Al Shabab",
+      "score": "1-6",
+      "source_url": "https://www.goal.com/en-ca/news/live-stream-online-tv-where-to-watch-al-ahli-v-al-taawoun/blt0ac1024fffdf9cde",
+      "venue": "A"
+     },
+     {
+      "opponent": "Al-Shamal",
+      "score": "2-3",
+      "source_url": "https://scoregpt.app/ai-football-predictions/saudi-pro-league/al-ahli-jeddah-vs-al-taawon-2026-11-28",
+      "venue": "A"
+     }
+    ],
+    "away": []
+   },
+   "h2h": [],
+   "injuries": [
+    {
+     "team": "home",
+     "player": "Roger Ibañez",
+     "status": "out",
+     "detail": "Lesión en la pierna",
+     "source_url": "https://www.goal.com/en/news/al-nassr-curse-rules-al-ahli-star-out-of-al-taawoun-clash/blt71eeb2fdfdc9b3f4"
+    },
+    {
+     "team": "home",
+     "player": "Saleh Abu Al-Shamat",
+     "status": "out",
+     "detail": "Hombro",
+     "source_url": "https://www.telecomasia.net/sports-betting/tips/football/al-ahli-sc-vs-al-taawon-prediction-for-the-match-on-28-november-2026/"
+    },
+    {
+     "team": "away",
+     "player": "Muteb Al-Mufarrij",
+     "status": "out",
+     "detail": "Aductor",
+     "source_url": "https://www.telecomasia.net/sports-betting/tips/football/al-ahli-sc-vs-al-taawon-prediction-for-the-match-on-28-november-2026/"
+    },
+    {
+     "team": "away",
+     "player": "Bassam Al-Hurayji",
+     "status": "out",
+     "detail": "Tobillo",
+     "source_url": "https://www.telecomasia.net/sports-betting/tips/football/al-ahli-sc-vs-al-taawon-prediction-for-the-match-on-28-november-2026/"
+    },
+    {
+     "team": "away",
+     "player": "Saif Rajab",
+     "status": "out",
+     "detail": "Hombro",
+     "source_url": "https://www.telecomasia.net/sports-betting/tips/football/al-ahli-sc-vs-al-taawon-prediction-for-the-match-on-28-november-2026/"
+    }
+   ],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://scoregpt.app/ai-football-predictions/saudi-pro-league/al-ahli-jeddah-vs-al-taawon-2026-11-28",
+     "title": "scoregpt.app"
+    },
+    {
+     "url": "https://www.protipster.com/betting-tips/al-ahli-saudi-fc-al-taawoun-fc/100084807",
+     "title": "www.protipster.com"
+    },
+    {
+     "url": "https://www.telecomasia.net/sports-betting/tips/football/al-ahli-sc-vs-al-taawon-prediction-for-the-match-on-28-november-2026/",
+     "title": "www.telecomasia.net"
+    },
+    {
+     "url": "https://www.goal.com/en-ca/news/live-stream-online-tv-where-to-watch-al-ahli-v-al-taawoun/blt0ac1024fffdf9cde",
+     "title": "www.goal.com"
+    },
+    {
+     "url": "https://www.goal.com/en/news/al-nassr-curse-rules-al-ahli-star-out-of-al-taawoun-clash/blt71eeb2fdfdc9b3f4",
+     "title": "www.goal.com"
+    },
+    {
+     "url": "https://berita.itera.ac.id/prediksi-al-ahli-vs-al-taawoun-analisis-kekuatan-tim-dan-statistik-liga-arab-saudi/",
+     "title": "berita.itera.ac.id"
+    }
+   ]
+  }
+ ],
+ "results": [
+  {
+   "home": "São Paulo",
+   "away": "Remo",
+   "score": {
+    "home": 3,
+    "away": 1
+   },
+   "goals": [
+    {
+     "minute": "39",
+     "team": "home",
+     "player": "Calleri"
+    },
+    {
+     "minute": "54",
+     "team": "away",
+     "player": "Gabriel Poveda"
+    },
+    {
+     "minute": "87",
+     "team": "home",
+     "player": "Ryan Francisco"
+    },
+    {
+     "minute": "90+4",
+     "team": "home",
+     "player": "Calleri"
+    }
+   ],
+   "source_url": "https://www.saopaulofc.net/no-morumbis-sao-paulo-vence-o-remo-pelo-brasileirao/",
+   "source_date": "2026-11-26"
+  },
+  {
+   "home": "NAC Breda",
+   "away": "Den Bosch",
+   "score": {
+    "home": 6,
+    "away": 2
+   },
+   "goals": [
+    {
+     "minute": "16",
+     "team": "home",
+     "player": "Hessel Eikelboom",
+     "type": "og"
+    },
+    {
+     "minute": "27",
+     "team": "home",
+     "player": "Stan Maas",
+     "type": "og"
+    },
+    {
+     "minute": "35",
+     "team": "home",
+     "player": "Moussa Soumano"
+    },
+    {
+     "minute": "45+1",
+     "team": "away",
+     "player": "Sebastian Karlsson Grach"
+    },
+    {
+     "minute": "58",
+     "team": "home",
+     "player": "Mohamed Nassoh"
+    },
+    {
+     "minute": "61",
+     "team": "away",
+     "player": "Sebastian Karlsson Grach"
+    },
+    {
+     "minute": "75",
+     "team": "home",
+     "player": "Moussa Soumano",
+     "type": "pen"
+    },
+    {
+     "minute": "82",
+     "team": "home",
+     "player": "Rio Hillen"
+    }
+   ],
+   "source_url": "https://www.worldfootball.net/match-report/co50/netherlands-eerste-divisie/ma12136393/nac-breda_fc-den-bosch/",
+   "source_date": "2026-11-27"
+  },
+  {
+   "home": "Torpedo Moscow",
+   "away": "SKA Energia Khabarovsk",
+   "score": {
+    "home": 2,
+    "away": 0
+   },
+   "goals": [
+    {
+     "minute": "28",
+     "team": "home",
+     "player": "Aleksandr Yushin"
+    },
+    {
+     "minute": "52",
+     "team": "home",
+     "type": "og"
+    }
+   ],
+   "source_url": "https://www.sport-express.net/football/rus_d1/news/torpedo-ska-habarovsk-2-0-schet-i-rezultat-matcha-20-go-tura-ligi-pari-27-noyabrya-2026-2479831/",
+   "source_date": "2026-11-27"
+  },
+  {
+   "home": "Herediano",
+   "away": "Escorpiones Belén",
+   "score": {
+    "home": 2,
+    "away": 1
+   },
+   "goals": [
+    {
+     "minute": "45+1",
+     "team": "away",
+     "player": "Danilo Pimpinati"
+    },
+    {
+     "minute": "59",
+     "team": "home",
+     "player": "Elías Aguilar",
+     "type": "pen"
+    },
+    {
+     "minute": "84",
+     "team": "home",
+     "player": "Fernando Lesme"
+    }
+   ],
+   "source_url": "https://www.teletica.com/club-sport-herediano/herediano-termino-el-suplicio-del-apertura-con-triunfo-ante-escorpiones_422013",
+   "source_date": "2026-11-28"
+  }
+ ]
+}
