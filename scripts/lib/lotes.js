@@ -159,8 +159,19 @@ export function normalizeResult(raw, lotCreatedAt) {
     if (h + a > 0) problems.push(`${who}: los minutos de gol no coinciden con el marcador ${h}-${a}; se guardó el resultado sin minutos`);
     goals = [];
   }
+  // medio tiempo: el declarado en 'ht' ({home,away}) o, si no viene, el que sale de los minutos de gol (minuto base <= 45, incluye 45+x)
+  let ht = null;
+  const rh = raw.ht && typeof raw.ht === 'object' ? raw.ht : null;
+  if (rh) {
+    if (Number.isInteger(rh.home) && Number.isInteger(rh.away) && rh.home >= 0 && rh.away >= 0 && rh.home <= h && rh.away <= a) ht = { home: rh.home, away: rh.away, from: 'declarado' };
+    else problems.push(`${who}: medio tiempo inválido (debe ser {home,away} y no mayor al marcador final); se ignora`);
+  }
+  if (!ht && (h + a === 0 || goals.length > 0)) {
+    const first = goals.filter((g) => Number(g.minute.split('+')[0]) <= 45);
+    ht = { home: first.filter((g) => g.team === 'home').length, away: first.filter((g) => g.team === 'away').length, from: 'goles' };
+  }
   return {
-    result: { home: h, away: a, goals, goalsKnown: h + a === 0 || goals.length > 0, source_url: url, source: url ? null : 'captura', source_date: isDate(raw.source_date) ? raw.source_date : null },
+    result: { home: h, away: a, ht, goals, goalsKnown: h + a === 0 || goals.length > 0, source_url: url, source: url ? null : 'captura', source_date: isDate(raw.source_date) ? raw.source_date : null },
     problems,
   };
 }
