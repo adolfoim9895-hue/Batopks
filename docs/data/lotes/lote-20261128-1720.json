@@ -1,0 +1,1545 @@
+{
+ "schema": 2,
+ "createdAt": "2026-11-28T17:20:00Z",
+ "matches": [
+  {
+   "kickoff": "2026-11-29T18:00:00Z",
+   "competition": "SuperLiga (jornada 17)",
+   "country": "Rumanía",
+   "home": "Rapid București",
+   "away": "FC Botoșani",
+   "homeOdds": 1.58,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-28T17:20:00Z",
+   "probs": {
+    "home": 0.57,
+    "draw": 0.26,
+    "away": 0.17
+   },
+   "scores": [
+    {
+     "score": "1-0",
+     "p": 0.16
+    },
+    {
+     "score": "2-0",
+     "p": 0.15
+    },
+    {
+     "score": "1-1",
+     "p": 0.12
+    },
+    {
+     "score": "2-1",
+     "p": 0.11
+    }
+   ],
+   "reasoning": [
+    "Rapid es 3º con 31 pts tras 15 partidos (9-4-2, goles 24:14, forma D W L W W) y Botoșani es 12º con 15 pts (3-6-6, goles 19:20, forma D L L L W).",
+    "Una fuente señala que Rapid ganó 6 de sus últimos 8 partidos de local en liga y venía de ganar 3-1 a Sepsi; Botoșani empató 3-3 en casa con Voluntari tras ir 3-0 arriba, y tiene entrenador nuevo.",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 Bajas de Rapid: Baroan (fractura), De Almeida (rodilla) y Graovac (menisco), según una fuente; el once es solo probable.",
+    "🔴 Las fuentes dan horas distintas (18:00 y 20:00 de Rumanía) e incluso una página oficial dice sábado 28; usé domingo 29 a las 18:00 UTC.",
+    "🔴 Los datos de forma de los dos equipos vienen de agregadores sin fecha por partido.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [],
+    "away": []
+   },
+   "h2h": [],
+   "injuries": [
+    {
+     "team": "home",
+     "player": "Antoine Baroan",
+     "status": "out",
+     "detail": "Fractura de pierna",
+     "source_url": "https://www.fotmob.com/matches/rapid-bucuresti-vs-botosani/8zy7ylj"
+    },
+    {
+     "team": "home",
+     "player": "De Almeida",
+     "status": "out",
+     "detail": "Rodilla",
+     "source_url": "https://www.gambling.com/ro/news/pariuri-rapid-bucuresti-botosani-superliga"
+    },
+    {
+     "team": "home",
+     "player": "Graovac",
+     "status": "out",
+     "detail": "Menisco",
+     "source_url": "https://www.gambling.com/ro/news/pariuri-rapid-bucuresti-botosani-superliga"
+    }
+   ],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://www.gambling.com/ro/news/pariuri-rapid-bucuresti-botosani-superliga",
+     "title": "www.gambling.com"
+    },
+    {
+     "url": "https://www.365scores.com/football/match/liga-1-136/fc-botosani-rapid-bucuresti-2042-12365-136",
+     "title": "www.365scores.com"
+    },
+    {
+     "url": "https://www.pontul-zilei.com/ponturi-pariuri/rapid-vs-botosani-ponturi-pariuri-superliga-29-noiembrie-2026/",
+     "title": "www.pontul-zilei.com"
+    },
+    {
+     "url": "https://digisport.ro/fotbal/liga-1/un-stadion-din-superliga-acoperit-cu-zapada-cu-o-zi-inainte-de-meci-strat-de-o-palma-4629987",
+     "title": "digisport.ro"
+    },
+    {
+     "url": "https://www.fotmob.com/matches/rapid-bucuresti-vs-botosani/8zy7ylj",
+     "title": "www.fotmob.com"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-29T16:00:00Z",
+   "competition": "SuperLiga (jornada 17)",
+   "country": "Serbia",
+   "home": "Železničar Pančevo",
+   "away": "OFK Beograd",
+   "homeOdds": 1.52,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-28T17:20:00Z",
+   "probs": {
+    "home": 0.6,
+    "draw": 0.24,
+    "away": 0.16
+   },
+   "scores": [
+    {
+     "score": "2-0",
+     "p": 0.15
+    },
+    {
+     "score": "1-0",
+     "p": 0.14
+    },
+    {
+     "score": "2-1",
+     "p": 0.12
+    },
+    {
+     "score": "1-1",
+     "p": 0.11
+    }
+   ],
+   "reasoning": [
+    "Železničar es 3º con 29 pts (9-2-3) y OFK Beograd es 12º con 11 pts (2-5-8, diferencia -12).",
+    "Železničar ha anotado en sus últimos 10 partidos y lleva una racha de victorias según un agregador; OFK pierde 4 seguidas y está 10 partidos sin ganar, la peor racha de la liga.",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 No encontré marcadores recientes con fecha de ninguno de los dos equipos; solo rachas de agregadores.",
+    "🔴 Una fuente da 17:00 hora de Belgrado (16:00 UTC); no vi lista de bajas.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [],
+    "away": []
+   },
+   "h2h": [],
+   "injuries": [],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://www.forebet.com/en/football-tips-and-predictions-for-serbia/superliga",
+     "title": "www.forebet.com"
+    },
+    {
+     "url": "https://www.windrawwin.com/us/picks/serbia-superliga/",
+     "title": "www.windrawwin.com"
+    },
+    {
+     "url": "https://www.fotmob.com/teams/676141/overview/zeleznicar-pancevo",
+     "title": "www.fotmob.com"
+    },
+    {
+     "url": "https://onefootball.com/en/match/2690330",
+     "title": "onefootball.com"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-29T21:00:00Z",
+   "competition": "Primera de Chile (fecha 29)",
+   "country": "Chile",
+   "home": "Universidad Católica",
+   "away": "Huachipato",
+   "homeOdds": 1.49,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-28T17:20:00Z",
+   "probs": {
+    "home": 0.58,
+    "draw": 0.25,
+    "away": 0.17
+   },
+   "scores": [
+    {
+     "score": "2-0",
+     "p": 0.14
+    },
+    {
+     "score": "1-0",
+     "p": 0.14
+    },
+    {
+     "score": "2-1",
+     "p": 0.12
+    },
+    {
+     "score": "1-1",
+     "p": 0.11
+    }
+   ],
+   "reasoning": [
+    "UC es 3º con 49 pts a dos jornadas del final y necesita ganar para seguir con opciones del Chile 2 (Libertadores); Huachipato es 11º con 37 pts, a tres de la zona de copas.",
+    "Una fuente da 8 victorias de UC en 14 partidos de local y señala bajas de Odriozola y Castro en Huachipato.",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 Las fuentes discrepan en las bajas de UC: una dice que Díaz, Valencia y Giani están suspendidos y García Basso fuera, otra incluye a Giani en el once probable.",
+    "🔴 Hora tomada de una fuente chilena (18:00 de Chile = 21:00 UTC); otra da 12:00.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [],
+    "away": []
+   },
+   "h2h": [],
+   "injuries": [
+    {
+     "team": "away",
+     "player": "Rodrigo Odriozola",
+     "status": "out",
+     "detail": "Baja según una fuente",
+     "source_url": "https://www.prensafutbol.cl/universidad-catolica-vs-huachipato-pronostico-y-apuestas-primera-division-29-11-2026/"
+    },
+    {
+     "team": "away",
+     "player": "José Castro",
+     "status": "out",
+     "detail": "Baja según una fuente",
+     "source_url": "https://www.prensafutbol.cl/universidad-catolica-vs-huachipato-pronostico-y-apuestas-primera-division-29-11-2026/"
+    },
+    {
+     "team": "home",
+     "player": "Agustín García Basso",
+     "status": "out",
+     "detail": "Molestias físicas",
+     "source_url": "https://www.notiulti.com/universidad-catolica-recibe-a-huachipato-en-el-claro-arena/"
+    }
+   ],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://www.prensafutbol.cl/universidad-catolica-vs-huachipato-hora-tv/",
+     "title": "www.prensafutbol.cl"
+    },
+    {
+     "url": "https://www.notiulti.com/universidad-catolica-recibe-a-huachipato-en-el-claro-arena/",
+     "title": "www.notiulti.com"
+    },
+    {
+     "url": "https://www.prensafutbol.cl/universidad-catolica-vs-huachipato-pronostico-y-apuestas-primera-division-29-11-2026/",
+     "title": "www.prensafutbol.cl"
+    },
+    {
+     "url": "https://tntsports.cl/nacional/universidad-catolica-vs-huachipato-cuando-a-que-hora-donde-ver-en-vivo-senales-hbo-max-nacional-20261127-0020.html",
+     "title": "tntsports.cl"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-29T16:00:00Z",
+   "competition": "Super Liga de Eslovaquia",
+   "country": "Eslovaquia",
+   "home": "Spartak Trnava",
+   "away": "Trenčín",
+   "homeOdds": 1.52,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-28T17:20:00Z",
+   "probs": {
+    "home": 0.57,
+    "draw": 0.25,
+    "away": 0.18
+   },
+   "scores": [
+    {
+     "score": "2-0",
+     "p": 0.14
+    },
+    {
+     "score": "1-0",
+     "p": 0.14
+    },
+    {
+     "score": "2-1",
+     "p": 0.12
+    },
+    {
+     "score": "1-1",
+     "p": 0.11
+    }
+   ],
+   "reasoning": [
+    "Trnava es 4º con 25 pts tras 14 partidos (7-4-3, goles 28:18); Trenčín es 12º, en zona de descenso según un agregador.",
+    "El último duelo fue 0-4 a favor de Trnava en Trenčín (23 ago 2026) y un agregador da victorias de Trnava en 7 de sus últimos 10; Trnava ganó 0-1 en Michalovce el 22 nov.",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 Forma reciente de Trnava mezclada entre fuentes (una da W L D L W, otra L D L W W); no verifiqué cada marcador.",
+    "🔴 Hora entre 16:00 y 17:00 UTC según la fuente; usé 16:00.",
+    "🔴 No encontré bajas confirmadas.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [],
+    "away": []
+   },
+   "h2h": [
+    {
+     "home": "Trenčín",
+     "away": "Spartak Trnava",
+     "score": "0-4",
+     "source_url": "https://analyse.7msport.com/5075857/index.shtml",
+     "date": "2026-08-23",
+     "competition": "Super Liga"
+    }
+   ],
+   "injuries": [],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://statsultra.com/forecasts/slovakia-super-liga/",
+     "title": "statsultra.com"
+    },
+    {
+     "url": "https://analyse.7msport.com/5075857/index.shtml",
+     "title": "analyse.7msport.com"
+    },
+    {
+     "url": "https://www.365scores.com/en-us/football/match/fortuna-liga-145/as-trencin-spartak-trnava-2110-2118-145",
+     "title": "www.365scores.com"
+    },
+    {
+     "url": "https://www.scorebat.com/spartak-trnava-vs-trencin-live-stream/",
+     "title": "www.scorebat.com"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-29T14:05:00Z",
+   "competition": "Premier League (jornada 12)",
+   "country": "Inglaterra",
+   "home": "Brighton",
+   "away": "Newcastle",
+   "homeOdds": 1.59,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-28T17:20:00Z",
+   "probs": {
+    "home": 0.55,
+    "draw": 0.24,
+    "away": 0.21
+   },
+   "scores": [
+    {
+     "score": "2-0",
+     "p": 0.13
+    },
+    {
+     "score": "2-1",
+     "p": 0.12
+    },
+    {
+     "score": "1-1",
+     "p": 0.11
+    },
+    {
+     "score": "1-0",
+     "p": 0.1
+    }
+   ],
+   "reasoning": [
+    "Brighton es 2º con 22 pts tras 11 jornadas (7-1-3), el mejor ataque (26 goles) y diferencia +17; Newcastle es 13º con 13 pts y lleva tres ligas sin ganar.",
+    "Brighton lleva 15 goles a favor y 1 en contra en cinco partidos como local; cayó 2-0 en Hull el fin de semana pasado (con dos goles encajados en el añadido) y ganó 4-0 al Craiova en Conference League el jueves.",
+    "Brighton rotaría algo por el partido europeo del jueves.",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 Bajas de Brighton: Costinha (suspendido), Ferguson, Mitoma, Yalcouye, Yohanna y Hadjam; O'Riley y Tzimas son duda y Boscagli duda por enfermedad. Newcastle: Joelinton y Jaouen fuera.",
+    "🔴 Las fuentes difieren en detalles de las bajas (nombres y estados); los once son solo probables.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [],
+    "away": []
+   },
+   "h2h": [],
+   "injuries": [
+    {
+     "team": "home",
+     "player": "Costinha",
+     "status": "out",
+     "detail": "Suspendido por expulsión ante Hull",
+     "source_url": "https://thehardtackle.com/round-up/2026/11/28/brighton-vs-newcastle-united-preview-prediction-probable-lineups-tactics-team-news-key-stats/"
+    },
+    {
+     "team": "home",
+     "player": "Kaoru Mitoma",
+     "status": "out",
+     "detail": "Isquiotibial",
+     "source_url": "https://thehardtackle.com/round-up/2026/11/28/brighton-vs-newcastle-united-preview-prediction-probable-lineups-tactics-team-news-key-stats/"
+    },
+    {
+     "team": "home",
+     "player": "Evan Ferguson",
+     "status": "out",
+     "detail": "Tobillo",
+     "source_url": "https://thehardtackle.com/round-up/2026/11/28/brighton-vs-newcastle-united-preview-prediction-probable-lineups-tactics-team-news-key-stats/"
+    },
+    {
+     "team": "home",
+     "player": "Matt O'Riley",
+     "status": "doubtful",
+     "detail": "Tobillo",
+     "source_url": "https://www.tufutbolero.com/en/news/brighton-newcastle-brighton-arrive-with-five-out-two-fe80d5"
+    },
+    {
+     "team": "away",
+     "player": "Joelinton",
+     "status": "out",
+     "detail": "Muslo; sin jugar desde el 2 de noviembre",
+     "source_url": "https://www.winonbetonline.com/brighton-newcastle-preview-second-place/"
+    },
+    {
+     "team": "away",
+     "player": "Ewen Jaouen",
+     "status": "out",
+     "detail": "Lesión",
+     "source_url": "https://thehardtackle.com/round-up/2026/11/28/brighton-vs-newcastle-united-preview-prediction-probable-lineups-tactics-team-news-key-stats/"
+    }
+   ],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://thehardtackle.com/round-up/2026/11/28/brighton-vs-newcastle-united-preview-prediction-probable-lineups-tactics-team-news-key-stats/",
+     "title": "thehardtackle.com"
+    },
+    {
+     "url": "https://sports.yahoo.com/soccer/articles/brighton-vs-newcastle-score-prediction-082337200.html",
+     "title": "sports.yahoo.com"
+    },
+    {
+     "url": "https://www.tufutbolero.com/en/news/brighton-newcastle-brighton-arrive-with-five-out-two-fe80d5",
+     "title": "www.tufutbolero.com"
+    },
+    {
+     "url": "https://www.thestatszone.com/brighton-vs-newcastle-preview-team-news-prediction-242301",
+     "title": "www.thestatszone.com"
+    },
+    {
+     "url": "https://dave.sport/news/brighton-newcastle-prediction/",
+     "title": "dave.sport"
+    },
+    {
+     "url": "https://www.winonbetonline.com/brighton-newcastle-preview-second-place/",
+     "title": "www.winonbetonline.com"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-29T21:30:00Z",
+   "competition": "Brasileirão (jornada 37)",
+   "country": "Brasil",
+   "home": "Corinthians",
+   "away": "Grêmio",
+   "homeOdds": 1.66,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-28T17:20:00Z",
+   "probs": {
+    "home": 0.48,
+    "draw": 0.28,
+    "away": 0.24
+   },
+   "scores": [
+    {
+     "score": "1-0",
+     "p": 0.15
+    },
+    {
+     "score": "1-1",
+     "p": 0.14
+    },
+    {
+     "score": "2-1",
+     "p": 0.11
+    },
+    {
+     "score": "2-0",
+     "p": 0.11
+    }
+   ],
+   "reasoning": [
+    "Duelo directo contra el descenso: el Corinthians puede asegurar la permanencia si gana y Inter y Mirassol no ganan; el Grêmio también pelea por no bajar.",
+    "Corinthians recupera a Yuri Alberto, Carrillo y Matheus Pereira tras suspensión y solo pierde a Labyad, Kayke y Gabriel Paulista; empató 1-1 con Atlético el miércoles 25.",
+    "Grêmio llega con ausencias y juega la final de Copa do Brasil contra Palmeiras la semana siguiente, lo que pudo influir en su alineación.",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 Las fuentes discrepan sobre el Grêmio: una dice que Noriega es el único suspendido; otra, que Kannemann y Villasanti están suspendidos y Marlon, Pavón, Caito y Diogo Barbosa lesionados.",
+    "🔴 Es partido de máxima tensión; el resultado puede ser más impredecible.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [],
+    "away": []
+   },
+   "h2h": [],
+   "injuries": [
+    {
+     "team": "home",
+     "player": "Zakaria Labyad",
+     "status": "out",
+     "detail": "Lesión",
+     "source_url": "https://www.espn.com.br/futebol/brasileirao/artigo/_/id/17570536/corinthians-x-gremio-onde-assistir-ao-vivo-horario-palpite-provaveis-escalacoes-jogo-brasileirao"
+    },
+    {
+     "team": "home",
+     "player": "Kayke",
+     "status": "out",
+     "detail": "Lesión",
+     "source_url": "https://www.espn.com.br/futebol/brasileirao/artigo/_/id/17570536/corinthians-x-gremio-onde-assistir-ao-vivo-horario-palpite-provaveis-escalacoes-jogo-brasileirao"
+    },
+    {
+     "team": "home",
+     "player": "Gabriel Paulista",
+     "status": "out",
+     "detail": "Lesión",
+     "source_url": "https://www.espn.com.br/futebol/brasileirao/artigo/_/id/17570536/corinthians-x-gremio-onde-assistir-ao-vivo-horario-palpite-provaveis-escalacoes-jogo-brasileirao"
+    }
+   ],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://www.flashscore.com.br/noticias/futebol-brasileirao-serie-a-corinthians-x-gremio-onde-assistir-previa-e-provaveis-escalacoes/C8D0mSKP/",
+     "title": "www.flashscore.com.br"
+    },
+    {
+     "url": "https://www.espn.com.br/futebol/brasileirao/artigo/_/id/17570536/corinthians-x-gremio-onde-assistir-ao-vivo-horario-palpite-provaveis-escalacoes-jogo-brasileirao",
+     "title": "www.espn.com.br"
+    },
+    {
+     "url": "https://www.spacemoney.com.br/esportes/corinthians-x-gremio-onde-assistir-escalacoes",
+     "title": "www.spacemoney.com.br"
+    },
+    {
+     "url": "https://netflu.com.br/corinthians-x-gremio-palpites-e-onde-assistir-29-11-2026",
+     "title": "netflu.com.br"
+    },
+    {
+     "url": "https://boca.com.br/esportes/corinthians-recebe-gremio-jogo-decisivo-permanencia-serie-a",
+     "title": "boca.com.br"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-29T23:30:00Z",
+   "competition": "Liga Profesional (cuartos de final Clausura)",
+   "country": "Argentina",
+   "home": "Boca Juniors",
+   "away": "Gimnasia La Plata",
+   "homeOdds": 1.46,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-28T17:20:00Z",
+   "probs": {
+    "home": 0.52,
+    "draw": 0.3,
+    "away": 0.18
+   },
+   "scores": [
+    {
+     "score": "1-0",
+     "p": 0.17
+    },
+    {
+     "score": "2-0",
+     "p": 0.14
+    },
+    {
+     "score": "1-1",
+     "p": 0.14
+    },
+    {
+     "score": "2-1",
+     "p": 0.1
+    }
+   ],
+   "reasoning": [
+    "Cuartos de final del Clausura en La Bombonera (20:30 de Argentina). Boca tiene la final de Copa Argentina el miércoles 2 de diciembre y su DT dijo que jugará con lo mejor disponible.",
+    "Boca haría un solo cambio: vuelve Ascacíbar por Milton Delgado, con una inflamación de rodilla. Gimnasia perdió al arquero Castillo por sanción tras incidentes y recupera a Insfrán; se espera un plan defensivo con seis defensores.",
+    "En playoffs un empate se define después; esta estimación se refiere al resultado a los 90 minutos.",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 Hora: 20:30 de Argentina (23:30 UTC) según varias fuentes.",
+    "🔴 Once solo probable; Delgado y Alarcón aparecen dudosos en una fuente.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [],
+    "away": []
+   },
+   "h2h": [],
+   "injuries": [
+    {
+     "team": "home",
+     "player": "Milton Delgado",
+     "status": "doubtful",
+     "detail": "Golpe en la rodilla; sería preservado",
+     "source_url": "https://www.diariomendoza.com.ar/deportes/boca-prepara-cambio-recibir-gimnasia-lp-cuartos-final-n187322"
+    },
+    {
+     "team": "away",
+     "player": "Harlen Castillo",
+     "status": "out",
+     "detail": "Sanción de una fecha por incidentes",
+     "source_url": "https://lanumero12.com.ar/boca-gimnasia-baja-confirmada-posible-formacion/"
+    }
+   ],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://www.infobae.com/deportes/2026/11/26/el-plan-de-boca-de-cara-al-final-de-temporada-quienes-jugaran-ante-gimnasia-en-el-clausura-y-con-platense-por-copa-argentina/",
+     "title": "www.infobae.com"
+    },
+    {
+     "url": "https://lanumero12.com.ar/boca-gimnasia-baja-confirmada-posible-formacion/",
+     "title": "lanumero12.com.ar"
+    },
+    {
+     "url": "https://www.diariomendoza.com.ar/deportes/boca-prepara-cambio-recibir-gimnasia-lp-cuartos-final-n187322",
+     "title": "www.diariomendoza.com.ar"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-29T20:00:00Z",
+   "competition": "Liga Profesional (cuartos de final Clausura)",
+   "country": "Argentina",
+   "home": "Rosario Central",
+   "away": "Barracas Central",
+   "homeOdds": 1.49,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-28T17:20:00Z",
+   "probs": {
+    "home": 0.52,
+    "draw": 0.29,
+    "away": 0.19
+   },
+   "scores": [
+    {
+     "score": "1-0",
+     "p": 0.16
+    },
+    {
+     "score": "2-0",
+     "p": 0.14
+    },
+    {
+     "score": "1-1",
+     "p": 0.14
+    },
+    {
+     "score": "2-1",
+     "p": 0.1
+    }
+   ],
+   "reasoning": [
+    "Rosario Central terminó líder de la Zona B con 34 pts; Barracas fue 5º de la Zona B con 26 pts y eliminó 1-0 a Defensa y Justicia en octavos como visitante.",
+    "El partido es de eliminación directa en Arroyito; esta estimación es a los 90 minutos.",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 Hora oficial según la AFA: 17:00 de Argentina (20:00 UTC); otras páginas dan 20:00 o 21:00.",
+    "🔴 Navarro y Cervi aparecen lesionados en una fuente, pero otras mencionan a Cervi como opción; once solo probable.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [],
+    "away": []
+   },
+   "h2h": [],
+   "injuries": [
+    {
+     "team": "home",
+     "player": "Federico Navarro",
+     "status": "out",
+     "detail": "Lesión en la pierna",
+     "source_url": "https://www.fichajes.com/directo/869546244005853010-rosario-central-vs-barracas-central"
+    },
+    {
+     "team": "home",
+     "player": "Franco Cervi",
+     "status": "doubtful",
+     "detail": "Pantorrilla; otras fuentes lo mencionan como opción",
+     "source_url": "https://www.fichajes.com/directo/869546244005853010-rosario-central-vs-barracas-central"
+    }
+   ],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://www.rosario3.com/deportes/finalmente-la-afa-confirmo-el-horario-de-central-ante-barracas-y-los-demas-partidos-por-los-cuartos-de-final-20261126-0014.html",
+     "title": "www.rosario3.com"
+    },
+    {
+     "url": "https://desarrollozonal.com/rosario-central-barracas-lugar-semifinales/",
+     "title": "desarrollozonal.com"
+    },
+    {
+     "url": "https://www.fichajes.com/directo/869546244005853010-rosario-central-vs-barracas-central",
+     "title": "www.fichajes.com"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-29T12:30:00Z",
+   "competition": "3. Liga (jornada 15)",
+   "country": "Alemania",
+   "home": "Viktoria Köln",
+   "away": "Fortuna Köln",
+   "homeOdds": 1.59,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-28T17:20:00Z",
+   "probs": {
+    "home": 0.54,
+    "draw": 0.26,
+    "away": 0.2
+   },
+   "scores": [
+    {
+     "score": "1-0",
+     "p": 0.15
+    },
+    {
+     "score": "2-0",
+     "p": 0.13
+    },
+    {
+     "score": "1-1",
+     "p": 0.12
+    },
+    {
+     "score": "2-1",
+     "p": 0.11
+    }
+   ],
+   "reasoning": [
+    "Viktoria Köln lidera o está arriba (32 pts en 14 jornadas, 10-2-2, goles 42:19, el mejor ataque) y lleva cuatro victorias de liga seguidas; Fortuna Köln es 17º con 13 pts (3-4-7, goles 12:17).",
+    "Fortuna tiene el peor ataque de la liga pero encaja poco (17 goles); una fuente señala que perdió cinco de sus seis últimos partidos de liga.",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 Las fuentes difieren sobre la posición exacta (1º/3º y 17º/19º) y la forma de Fortuna (S N N N N vs 1V 4D).",
+    "🔴 Es un derbi: puede haber más igualdad que la tabla sugiere.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [],
+    "away": []
+   },
+   "h2h": [],
+   "injuries": [],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://www.spox.com/fussball/news/Viktoria%20K%C3%B6ln-vs-Fortuna%20K%C3%B6ln-heute-live-sehen-wer-zeigt-uebertraegt-das-spiel-im-tv-und-livestream/bltaa70457eb478c004",
+     "title": "www.spox.com"
+    },
+    {
+     "url": "https://www.wettbasis.com/sportwetten-tipps/viktoria-koeln-vs-fortuna-koeln-tipp-prognose-quoten-29-11-2026",
+     "title": "www.wettbasis.com"
+    },
+    {
+     "url": "https://tipsterio.de/sportwetten-tipps/viktoria-koeln-vs-fortuna-koeln-wett-tipp-prognose-29-11-2026",
+     "title": "tipsterio.de"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-29T13:00:00Z",
+   "competition": "Segunda División (jornada 16)",
+   "country": "España",
+   "home": "Granada",
+   "away": "Ceuta",
+   "homeOdds": 1.58,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-28T17:20:00Z",
+   "probs": {
+    "home": 0.58,
+    "draw": 0.25,
+    "away": 0.17
+   },
+   "scores": [
+    {
+     "score": "2-0",
+     "p": 0.15
+    },
+    {
+     "score": "1-0",
+     "p": 0.14
+    },
+    {
+     "score": "2-1",
+     "p": 0.12
+    },
+    {
+     "score": "1-1",
+     "p": 0.11
+    }
+   ],
+   "reasoning": [
+    "Granada está cuarto y lleva ocho partidos sin perder (empató 1-1 en Sabadell); Ceuta es colista con 5 pts, perdió sus últimos cuatro y encadena 8 sin ganar.",
+    "Granada ha ganado cuatro y empatado dos de sus seis visitas anteriores de Ceuta; en la última, Ceuta ganó 2-1.",
+    "Granada no tiene laterales derechos naturales (Casadesús y Sergio López lesionados) y Ceuta pierde a Jordi Escobar (cruzado, fin de temporada) y a Cedric por sanción.",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 Una fuente (VAVEL) mezcla nombres entre ambos equipos; usé Infobae/Faro de Ceuta para las bajas.",
+    "🔴 Las fuentes dan la hora de 13:00 UTC (14:00 de España) pero alguna muestra 12:00 o 05:00; confirma en tu captura.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [],
+    "away": []
+   },
+   "h2h": [],
+   "injuries": [
+    {
+     "team": "home",
+     "player": "Pau Casadesús",
+     "status": "out",
+     "detail": "Lesión",
+     "source_url": "https://www.infobae.com/espana/agencias/2026/11/28/granada-y-ceuta-enfrentan-sus-diferentes-realidades/"
+    },
+    {
+     "team": "home",
+     "player": "Sergio López",
+     "status": "out",
+     "detail": "Sobrecarga muscular",
+     "source_url": "https://www.infobae.com/espana/agencias/2026/11/28/granada-y-ceuta-enfrentan-sus-diferentes-realidades/"
+    },
+    {
+     "team": "away",
+     "player": "Jordi Escobar",
+     "status": "out",
+     "detail": "Ligamento cruzado de la rodilla izquierda; probablemente fuera lo que resta de temporada",
+     "source_url": "https://elfarodeceuta.es/actualidad/horario-donde-ver-granada-ceuta-caballas-quieren-votar-victoria/"
+    },
+    {
+     "team": "away",
+     "player": "Toni Abad",
+     "status": "out",
+     "detail": "Lesión",
+     "source_url": "https://www.infobae.com/espana/agencias/2026/11/28/granada-y-ceuta-enfrentan-sus-diferentes-realidades/"
+    },
+    {
+     "team": "away",
+     "player": "Lapeña",
+     "status": "out",
+     "detail": "Lesión",
+     "source_url": "https://www.infobae.com/espana/agencias/2026/11/28/granada-y-ceuta-enfrentan-sus-diferentes-realidades/"
+    }
+   ],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://www.infobae.com/espana/agencias/2026/11/28/granada-y-ceuta-enfrentan-sus-diferentes-realidades/",
+     "title": "www.infobae.com"
+    },
+    {
+     "url": "https://dailysports.net/predictions/can-granada-extend-their-unbeaten-run-against-ceuta-prediction-november-29-2026/",
+     "title": "dailysports.net"
+    },
+    {
+     "url": "https://www.ceroacero.es/noticias/granada-vs-ad-ceuta-prediccion-noticias-de-equipos-y-alineaciones-segunda-division-29-11/1271310",
+     "title": "www.ceroacero.es"
+    },
+    {
+     "url": "https://elfarodeceuta.es/actualidad/horario-donde-ver-granada-ceuta-caballas-quieren-votar-victoria/",
+     "title": "elfarodeceuta.es"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-29T16:00:00Z",
+   "competition": "Segunda División (jornada 16)",
+   "country": "España",
+   "home": "Almería",
+   "away": "Sporting Gijón",
+   "homeOdds": 1.57,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-28T17:20:00Z",
+   "probs": {
+    "home": 0.5,
+    "draw": 0.28,
+    "away": 0.22
+   },
+   "scores": [
+    {
+     "score": "1-0",
+     "p": 0.15
+    },
+    {
+     "score": "2-1",
+     "p": 0.12
+    },
+    {
+     "score": "1-1",
+     "p": 0.13
+    },
+    {
+     "score": "2-0",
+     "p": 0.11
+    }
+   ],
+   "reasoning": [
+    "Almería venía de ganar 3-2 a Ceuta el lunes 23; el último duelo fue 3-1 a favor de Sporting en Gijón (24 mayo 2026) y el anterior 2-1 para Almería en casa (20 sept 2025).",
+    "No encontré la tabla ni la forma reciente de Sporting ni bajas de ninguno; la estimación se apoya solo en el contexto de local y el historial.",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 Datos muy escasos: sin tabla actual, sin bajas ni forma reciente de Sporting. Tómalo con mucha cautela.",
+    "🔴 Las fuentes dan 16:00 y 20:00 UTC; usé 16:00.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [],
+    "away": []
+   },
+   "h2h": [
+    {
+     "home": "Sporting Gijón",
+     "away": "Almería",
+     "score": "3-1",
+     "source_url": "https://starting11.com/es/fixtures/almeria-vs-sporting-gijon",
+     "date": "2026-05-24",
+     "competition": "Segunda División"
+    },
+    {
+     "home": "Almería",
+     "away": "Sporting Gijón",
+     "score": "2-1",
+     "source_url": "https://starting11.com/es/fixtures/almeria-vs-sporting-gijon",
+     "date": "2025-09-20",
+     "competition": "Segunda División"
+    }
+   ],
+   "injuries": [],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://starting11.com/es/fixtures/almeria-vs-sporting-gijon",
+     "title": "starting11.com"
+    },
+    {
+     "url": "https://www.fotmob.com/match/5868559",
+     "title": "www.fotmob.com"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-29T16:00:00Z",
+   "competition": "Bundesliga de Austria",
+   "country": "Austria",
+   "home": "Sturm Graz",
+   "away": "WSG Tirol",
+   "homeOdds": 1.61,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-28T17:20:00Z",
+   "probs": {
+    "home": 0.52,
+    "draw": 0.26,
+    "away": 0.22
+   },
+   "scores": [
+    {
+     "score": "2-0",
+     "p": 0.13
+    },
+    {
+     "score": "1-0",
+     "p": 0.13
+    },
+    {
+     "score": "2-1",
+     "p": 0.12
+    },
+    {
+     "score": "1-1",
+     "p": 0.11
+    }
+   ],
+   "reasoning": [
+    "No encontré datos actuales (tabla, forma, bajas) de ninguno de los dos para esta jornada. Lo único verificado es el historial: Sturm no perdía ante WSG en 15 partidos hasta dic 2025 (13V, 2E).",
+    "Sturm Graz perdió 1-3 con Hoffenheim el jueves 26 (Europa League), por lo que pudo llegar con desgaste.",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 Casi sin datos actuales: estimación prudente, cercana a una base de local favorito; no la uses como análisis fuerte.",
+    "🔴 Hora no confirmada; usé 16:00 UTC como supuesto.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [],
+    "away": []
+   },
+   "h2h": [],
+   "injuries": [],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://www.fotmob.com/matches/wsg-tirol-vs-sturm-graz/141gfe",
+     "title": "www.fotmob.com"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-29T18:15:00Z",
+   "competition": "Pro League de Bélgica (jornada 13)",
+   "country": "Bélgica",
+   "home": "Union Saint-Gilloise",
+   "away": "KAA Gent",
+   "homeOdds": 1.5,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-28T17:20:00Z",
+   "probs": {
+    "home": 0.48,
+    "draw": 0.28,
+    "away": 0.24
+   },
+   "scores": [
+    {
+     "score": "1-1",
+     "p": 0.14
+    },
+    {
+     "score": "1-0",
+     "p": 0.13
+    },
+    {
+     "score": "2-1",
+     "p": 0.12
+    },
+    {
+     "score": "2-0",
+     "p": 0.11
+    }
+   ],
+   "reasoning": [
+    "Union SG es 1º y Gent 3º; una fuente señala que Union ha marcado en 9 partidos de liga seguidos.",
+    "Los últimos cruces fueron parejos: 1-1 (6 dic 2025), 0-0 (22 abr 2026) y 0-0 (21 may 2026), además de 3-2 y 3-1 a favor de Union en 2025.",
+    "Union empató 2-2 con Lech Poznań el jueves 26 (Conference League).",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 No encontré bajas confirmadas ni marcadores recientes de liga con fecha; solo rachas.",
+    "🔴 Una fuente lista a Pavlić como fuera de la plantilla.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [],
+    "away": []
+   },
+   "h2h": [
+    {
+     "home": "Union Saint-Gilloise",
+     "away": "KAA Gent",
+     "score": "1-1",
+     "source_url": "https://www.sportschau.de/live-und-ergebnisse/fussball/belgien-eerste-klasse/ma12152173/union-saint-gilloise_kaa-gent/info",
+     "date": "2025-12-06",
+     "competition": "Pro League"
+    },
+    {
+     "home": "Union Saint-Gilloise",
+     "away": "KAA Gent",
+     "score": "0-0",
+     "source_url": "https://www.sportschau.de/live-und-ergebnisse/fussball/belgien-eerste-klasse/ma12152173/union-saint-gilloise_kaa-gent/info",
+     "date": "2026-04-22",
+     "competition": "Pro League"
+    },
+    {
+     "home": "KAA Gent",
+     "away": "Union Saint-Gilloise",
+     "score": "0-0",
+     "source_url": "https://www.sportschau.de/live-und-ergebnisse/fussball/belgien-eerste-klasse/ma12152173/union-saint-gilloise_kaa-gent/info",
+     "date": "2026-05-21",
+     "competition": "Pro League"
+    }
+   ],
+   "injuries": [],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://www.kickoff.co.uk/belgian-pro-league-predictions-stats-odds/union-sg-vs-gent/",
+     "title": "www.kickoff.co.uk"
+    },
+    {
+     "url": "https://www.sportschau.de/live-und-ergebnisse/fussball/belgien-eerste-klasse/ma12152173/union-saint-gilloise_kaa-gent/info",
+     "title": "www.sportschau.de"
+    },
+    {
+     "url": "https://starting11.com/es/fixtures/union-saint-gilloise-vs-gent",
+     "title": "starting11.com"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-29T16:00:00Z",
+   "competition": "Eliteserien (jornada 28)",
+   "country": "Noruega",
+   "home": "Brann",
+   "away": "Kristiansund",
+   "homeOdds": 1.7,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-28T17:20:00Z",
+   "probs": {
+    "home": 0.52,
+    "draw": 0.26,
+    "away": 0.22
+   },
+   "scores": [
+    {
+     "score": "2-1",
+     "p": 0.12
+    },
+    {
+     "score": "1-0",
+     "p": 0.12
+    },
+    {
+     "score": "2-0",
+     "p": 0.12
+    },
+    {
+     "score": "1-1",
+     "p": 0.12
+    }
+   ],
+   "reasoning": [
+    "Brann llega con forma W D W W L y Kristiansund con W L W L L, según un agregador; en el último duelo, Kristiansund ganó 3-2 en casa (15 mar 2026).",
+    "Una fuente da a Brann con Nygård, Guðmundsson y Cornic dudosos.",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 La tabla de las fuentes se contradice; no pude verificar posiciones ni goles actuales.",
+    "🔴 Hora: 17:00 locales (16:00 UTC) según una fuente de Bergen.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [],
+    "away": []
+   },
+   "h2h": [
+    {
+     "home": "Kristiansund",
+     "away": "Brann",
+     "score": "3-2",
+     "source_url": "https://livesoccer.planetsport.com/live/soccer/match-detail/norway-eliteserien-brann-vs-kristiansund/2026-11-29/3182288/teamhistory",
+     "date": "2026-03-15",
+     "competition": "Eliteserien"
+    }
+   ],
+   "injuries": [
+    {
+     "team": "home",
+     "player": "Niklas Nygård",
+     "status": "doubtful",
+     "detail": "Lesión",
+     "source_url": "https://starting11.com/fixtures/brann-vs-kristiansund-bk"
+    },
+    {
+     "team": "home",
+     "player": "Guðmundsson",
+     "status": "doubtful",
+     "detail": "Lesión",
+     "source_url": "https://starting11.com/fixtures/brann-vs-kristiansund-bk"
+    },
+    {
+     "team": "home",
+     "player": "Cornic",
+     "status": "doubtful",
+     "detail": "Lesión en la pierna",
+     "source_url": "https://starting11.com/fixtures/brann-vs-kristiansund-bk"
+    }
+   ],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://starting11.com/fixtures/brann-vs-kristiansund-bk",
+     "title": "starting11.com"
+    },
+    {
+     "url": "https://livesoccer.planetsport.com/live/soccer/match-detail/norway-eliteserien-brann-vs-kristiansund/2026-11-29/3182288/teamhistory",
+     "title": "livesoccer.planetsport.com"
+    },
+    {
+     "url": "https://www.visitnorway.no/events//brann-kristiansund-eliteserien-2026/515248/",
+     "title": "www.visitnorway.no"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-29T13:45:00Z",
+   "competition": "Ekstraklasa (jornada 16)",
+   "country": "Polonia",
+   "home": "Lech Poznań",
+   "away": "Pogoń Szczecin",
+   "homeOdds": 1.59,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-28T17:20:00Z",
+   "probs": {
+    "home": 0.52,
+    "draw": 0.26,
+    "away": 0.22
+   },
+   "scores": [
+    {
+     "score": "2-1",
+     "p": 0.12
+    },
+    {
+     "score": "1-0",
+     "p": 0.12
+    },
+    {
+     "score": "2-0",
+     "p": 0.12
+    },
+    {
+     "score": "1-1",
+     "p": 0.12
+    }
+   ],
+   "reasoning": [
+    "No encontré tabla ni forma actual de ninguno para la jornada 16; lo único que sé es que Lech empató 2-2 con Union SG el jueves 26.",
+    "La estimación es una base prudente de local favorito.",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 Casi sin datos actuales; no la uses como análisis fuerte.",
+    "🔴 Dos páginas del mismo sitio dan fechas distintas (sábado 28 a las 17:00 GMT y domingo 29 a las 13:45 GMT); usé domingo 29. Confirma con tu captura.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [],
+    "away": []
+   },
+   "h2h": [],
+   "injuries": [],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://starting11.com/es/fixtures/lech-poznan-vs-pogon-szczecin",
+     "title": "starting11.com"
+    },
+    {
+     "url": "https://starting11.com/fixtures/lech-poznan-vs-pogon-szczecin",
+     "title": "starting11.com"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-29T15:30:00Z",
+   "competition": "Ekstraklasa (jornada 16)",
+   "country": "Polonia",
+   "home": "Legia Varsovia",
+   "away": "Wieczysta Cracovia",
+   "homeOdds": 1.61,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-28T17:20:00Z",
+   "probs": {
+    "home": 0.52,
+    "draw": 0.27,
+    "away": 0.21
+   },
+   "scores": [
+    {
+     "score": "2-0",
+     "p": 0.14
+    },
+    {
+     "score": "1-0",
+     "p": 0.14
+    },
+    {
+     "score": "2-1",
+     "p": 0.12
+    },
+    {
+     "score": "1-1",
+     "p": 0.12
+    }
+   ],
+   "reasoning": [
+    "Una fuente da a Legia forma W D W D D (1,8 goles a favor y 1,2 en contra por partido) y a Wieczysta D L D L L (1,0 a favor y 2,0 en contra).",
+    "La estimación sale de esa forma y de la localía.",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 Tres fuentes dan este partido el sábado 28 (17:00–20:00 UTC), no el domingo; usé domingo 29 a las 15:30 UTC porque así lo viste en tu captura. Confirma la fecha: si ya empezó, ignóralo.",
+    "🔴 Sin tabla, bajas ni marcadores con fecha.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [],
+    "away": []
+   },
+   "h2h": [],
+   "injuries": [],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://www.foresportia.com/en/prediction/ekstraklasa/legia-warszawa-wieczysta-krakow-2026-11-28/",
+     "title": "www.foresportia.com"
+    },
+    {
+     "url": "https://starting11.com/fixtures/legia-warszawa-vs-wieczysta-krakow",
+     "title": "starting11.com"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-29T15:30:00Z",
+   "competition": "Ekstraklasa (jornada 16)",
+   "country": "Polonia",
+   "home": "Jagiellonia Białystok",
+   "away": "Radomiak Radom",
+   "homeOdds": 1.63,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-28T17:20:00Z",
+   "probs": {
+    "home": 0.48,
+    "draw": 0.28,
+    "away": 0.24
+   },
+   "scores": [
+    {
+     "score": "1-0",
+     "p": 0.14
+    },
+    {
+     "score": "1-1",
+     "p": 0.14
+    },
+    {
+     "score": "2-1",
+     "p": 0.12
+    },
+    {
+     "score": "2-0",
+     "p": 0.11
+    }
+   ],
+   "reasoning": [
+    "No encontré datos actuales de la jornada para ninguno de los dos; Jagiellonia empató 1-1 con Sunderland el jueves 26 en Conference League.",
+    "Estimación prudente por localía, sin base estadística actual.",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 Casi sin datos actuales; no la uses como análisis fuerte.",
+    "🔴 Una página da este partido el sábado 28; usé domingo 29 a las 15:30 UTC como supuesto. Confirma con tu captura.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [],
+    "away": []
+   },
+   "h2h": [],
+   "injuries": [],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://ontourfootball.com/fixtures/jagiellonia-vs-radomiak-radom-2026-11-28",
+     "title": "ontourfootball.com"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-29T14:00:00Z",
+   "competition": "Allsvenskan (jornada 30)",
+   "country": "Suecia",
+   "home": "Malmö FF",
+   "away": "Brommapojkarna",
+   "homeOdds": 1.6,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-28T17:20:00Z",
+   "probs": {
+    "home": 0.54,
+    "draw": 0.24,
+    "away": 0.22
+   },
+   "scores": [
+    {
+     "score": "2-1",
+     "p": 0.13
+    },
+    {
+     "score": "1-0",
+     "p": 0.12
+    },
+    {
+     "score": "2-0",
+     "p": 0.12
+    },
+    {
+     "score": "1-1",
+     "p": 0.11
+    }
+   ],
+   "reasoning": [
+    "Una fuente da a Malmö forma W L D W W y a Brommapojkarna L D L L D.",
+    "En el historial general que muestra un agregador (20 partidos desde 2007), Malmö ganó 15 y Brommapojkarna 1; los últimos duelos de liga fueron 2-3 (jul 2025), 1-2 (may 2025) y 2-1 (nov 2024).",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 No pude verificar la tabla actual; si Malmö o Brommapojkarna se juegan algo en la última jornada, no lo sé.",
+    "🔴 Hora asumida: 15:00 locales (14:00 UTC); una fuente da 17:00.",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [],
+    "away": []
+   },
+   "h2h": [
+    {
+     "home": "Brommapojkarna",
+     "away": "Malmö FF",
+     "score": "2-3",
+     "source_url": "https://espndeportes.espn.com/futbol/partido/_/juegoId/401842891/if-brommapojkarna-malmo-ff",
+     "date": "2025-07-26",
+     "competition": "Allsvenskan"
+    },
+    {
+     "home": "Malmö FF",
+     "away": "Brommapojkarna",
+     "score": "1-2",
+     "source_url": "https://espndeportes.espn.com/futbol/partido/_/juegoId/401842891/if-brommapojkarna-malmo-ff",
+     "date": "2025-05-05",
+     "competition": "Allsvenskan"
+    },
+    {
+     "home": "Malmö FF",
+     "away": "Brommapojkarna",
+     "score": "2-1",
+     "source_url": "https://espndeportes.espn.com/futbol/partido/_/juegoId/401842891/if-brommapojkarna-malmo-ff",
+     "date": "2024-11-10",
+     "competition": "Allsvenskan"
+    }
+   ],
+   "injuries": [],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://livesoccer.planetsport.com/live/soccer/match-detail/sweden-allsvenskan-malmo-ff-vs-brommapojkarna/2026-11-29/3183901/teamhistory",
+     "title": "livesoccer.planetsport.com"
+    },
+    {
+     "url": "https://statshub.sportradar.com/admiral/en/match/67126906",
+     "title": "statshub.sportradar.com"
+    },
+    {
+     "url": "https://espndeportes.espn.com/futbol/partido/_/juegoId/401842891/if-brommapojkarna-malmo-ff",
+     "title": "espndeportes.espn.com"
+    }
+   ]
+  },
+  {
+   "kickoff": "2026-11-29T14:00:00Z",
+   "competition": "Allsvenskan (jornada 30)",
+   "country": "Suecia",
+   "home": "Halmstad",
+   "away": "Mjällby",
+   "homeOdds": 1.52,
+   "origin": "claude-parcial",
+   "analyzedAt": "2026-11-28T17:20:00Z",
+   "probs": {
+    "home": 0.45,
+    "draw": 0.27,
+    "away": 0.28
+   },
+   "scores": [
+    {
+     "score": "1-1",
+     "p": 0.14
+    },
+    {
+     "score": "1-0",
+     "p": 0.12
+    },
+    {
+     "score": "2-1",
+     "p": 0.11
+    },
+    {
+     "score": "0-1",
+     "p": 0.1
+    }
+   ],
+   "reasoning": [
+    "Mjällby fue campeón en 2025 (23-6-1) y ganó los últimos duelos con Halmstad (1-0 en ago 2025, 3-1 en abr 2025).",
+    "No encontré la tabla ni la forma de 2026 de ninguno: el registro que vi (Halmstad 1-3-5, Mjällby 4-2-3) es de las primeras jornadas y está desactualizado.",
+    "Estimación propia; no se usaron cuotas."
+   ],
+   "warnings": [
+    "🔴 La cuota local de 1.52 para Halmstad me parece inusualmente baja frente a Mjällby; revisa que la captura la tenga bien.",
+    "🔴 Sin datos actuales: estimación muy prudente, casi equilibrada.",
+    "🔴 Hora asumida: 15:00 locales (14:00 UTC).",
+    "Aviso: análisis con datos parciales; no todo se pudo verificar con fecha y fuente."
+   ],
+   "recent": {
+    "home": [],
+    "away": []
+   },
+   "h2h": [
+    {
+     "home": "Mjällby",
+     "away": "Halmstad",
+     "score": "1-0",
+     "source_url": "https://espndeportes.espn.com/futbol/partido/_/juegoId/401842894/mjallby-aif-halmstads-bk",
+     "date": "2025-08-30",
+     "competition": "Allsvenskan"
+    },
+    {
+     "home": "Halmstad",
+     "away": "Mjällby",
+     "score": "1-3",
+     "source_url": "https://espndeportes.espn.com/futbol/partido/_/juegoId/401842894/mjallby-aif-halmstads-bk",
+     "date": "2025-04-23",
+     "competition": "Allsvenskan"
+    }
+   ],
+   "injuries": [],
+   "suspensions": [],
+   "sources": [
+    {
+     "url": "https://www.espn.ph/football/match/_/gameId/401842894/mjallby-aif-halmstads-bk",
+     "title": "www.espn.ph"
+    },
+    {
+     "url": "https://espndeportes.espn.com/futbol/partido/_/juegoId/401842894/mjallby-aif-halmstads-bk",
+     "title": "espndeportes.espn.com"
+    },
+    {
+     "url": "https://statshub.sportradar.com/sblive/en/match/56523773/statistics",
+     "title": "statshub.sportradar.com"
+    }
+   ]
+  }
+ ]
+}
