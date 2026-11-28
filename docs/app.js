@@ -76,6 +76,7 @@
   function matchesOfDay(key) {
     return allMatches().filter(function (m) { return dayKeyOf(new Date(m.kickoff)) === key; });
   }
+  function htText(m) { var t = m.result && m.result.ht; return t ? ' · Medio tiempo ' + t.home + '-' + t.away : ''; }
   function isWaiting(m) { return !m.result && Date.now() > Date.parse(m.kickoff) + WAIT_MS; }
 
   function isFav(m) { return state.favs.m.indexOf(m.id) >= 0; }
@@ -131,8 +132,8 @@
       h += '</div>';
     }
     if (m.result) {
-      if (m.hit !== null) h += '<div class="resLine ' + (m.hit ? 'ok' : 'bad') + '">' + (m.hit ? '✅ Acertó' : '❌ Falló') + ' · Final ' + m.result.home + '-' + m.result.away + (m.scoreHit === 'top' ? ' · marcador exacto' : '') + '</div>';
-      else h += '<div class="resLine ok" style="background:rgba(154,163,209,.14);color:var(--muted)">Final ' + m.result.home + '-' + m.result.away + '</div>';
+      if (m.hit !== null) h += '<div class="resLine ' + (m.hit ? 'ok' : 'bad') + '">' + (m.hit ? '✅ Acertó' : '❌ Falló') + ' · Final ' + m.result.home + '-' + m.result.away + htText(m) + (m.scoreHit === 'top' ? ' · marcador exacto' : '') + '</div>';
+      else h += '<div class="resLine ok" style="background:rgba(154,163,209,.14);color:var(--muted)">Final ' + m.result.home + '-' + m.result.away + htText(m) + '</div>';
       var gt = goalsText(m);
       if (gt) h += '<div class="goalsLine">⚽ ' + gt + '</div>';
       else if (m.result.home + m.result.away > 0) h += '<div class="goalsLine">⚽ Minutos de gol: sin datos verificados.</div>';
